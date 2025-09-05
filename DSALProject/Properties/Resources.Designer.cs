@@ -233,6 +233,26 @@ namespace DSALProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Food_Bundle_A {
+            get {
+                object obj = ResourceManager.GetObject("Food Bundle A", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Food_Bundle_B {
+            get {
+                object obj = ResourceManager.GetObject("Food Bundle B", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Halo_Halo_Supreme {
             get {
                 object obj = ResourceManager.GetObject("Halo-Halo Supreme", resourceCulture);

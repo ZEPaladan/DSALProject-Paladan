@@ -133,8 +133,14 @@
   <data name="Longanisa Breakfast" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Longanisa Breakfast.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Vanilla Shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vanilla Shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Beef Wonton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Beef Wonton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ranch Snack Wrap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ranch Snack Wrap.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Halo-Halo Supreme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Halo-Halo Supreme.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +153,9 @@
   </data>
   <data name="McCafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\McCafe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Quarter Pounder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Quarter Pounder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pancit Canton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pancit Canton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +174,9 @@
   </data>
   <data name="Taho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Taho.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strawberry Shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Strawberry Shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Honey Walnut Shrimp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Honey Walnut Shrimp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,6 +205,9 @@
   <data name="Taiwanese Popcorn Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Taiwanese Popcorn Chicken.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="McFlurry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\McFlurry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Beef Broccoli Lauriat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Beef Broccoli Lauriat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,19 +226,10 @@
   <data name="Chicken Mami" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Chicken Mami.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Quarter Pounder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Quarter Pounder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Food Bundle A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Food Bundle A.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ranch Snack Wrap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ranch Snack Wrap.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="McFlurry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\McFlurry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Vanilla Shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Vanilla Shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Strawberry Shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Strawberry Shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Food Bundle B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Food Bundle B.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
