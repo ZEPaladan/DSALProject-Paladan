@@ -68,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Lesson3Example2.resx">
       <DependentUpon>Lesson3Example2.cs</DependentUpon>
@@ -87,6 +88,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-entrée Lauriat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-entrée Lauriat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beef Broccoli Lauriat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beef Broccoli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beef Wonton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buchi Dim Sum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bundle Feast 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bundle Feast 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken Mami.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Halo-Halo Supreme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honey Walnut Shrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Longanisa Breakfast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lumpiang Shanghai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pancit Canton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salt and Pepper Pork.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siomai Chao Fan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taiwanese Popcorn Chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tocino Breakfast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wonton Noodle Soup.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
