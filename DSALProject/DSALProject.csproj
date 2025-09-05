@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lesson2Activity1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson2Activity1.Designer.cs">
+      <DependentUpon>Lesson2Activity1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Quiz1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lesson2Activity1.resx">
+      <DependentUpon>Lesson2Activity1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -148,6 +157,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Wonton Noodle Soup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Elegant Chinese New Year Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bacon Quarter Pounder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baked Apple Pie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Big Mac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken McNuggets.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate Chip Cookie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deluxe McCrispy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Egg McMuffin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filet-O-Fish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hot Fudge Sundae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McCafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quarter Pounder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ranch Snack Wrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McFlurry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vanilla Shake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strawberry Shake.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

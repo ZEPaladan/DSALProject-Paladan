@@ -72,36 +72,36 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button_exit = new System.Windows.Forms.Button();
+            this.button_cancel = new System.Windows.Forms.Button();
+            this.button_new = new System.Windows.Forms.Button();
+            this.button_calculate = new System.Windows.Forms.Button();
+            this.radiobutton_nodiscount = new System.Windows.Forms.RadioButton();
+            this.radiobutton_employeedisc = new System.Windows.Forms.RadioButton();
+            this.radiobutton_withdisccard = new System.Windows.Forms.RadioButton();
+            this.radiobutton_seniorcitizen = new System.Windows.Forms.RadioButton();
+            this.textbox_discountedamount = new System.Windows.Forms.TextBox();
+            this.textbox_discountamount = new System.Windows.Forms.TextBox();
+            this.textbox_price = new System.Windows.Forms.TextBox();
+            this.textbox_quantity = new System.Windows.Forms.TextBox();
+            this.textbox_itemname = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textbox_totalquantity = new System.Windows.Forms.TextBox();
+            this.textbox_totaldiscountgiven = new System.Windows.Forms.TextBox();
+            this.textbox_totaldicountedamount = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textbox_itemname = new System.Windows.Forms.TextBox();
-            this.textbox_quantity = new System.Windows.Forms.TextBox();
-            this.textbox_price = new System.Windows.Forms.TextBox();
-            this.textbox_discountedamount = new System.Windows.Forms.TextBox();
-            this.textbox_discountamount = new System.Windows.Forms.TextBox();
-            this.radiobutton_seniorcitizen = new System.Windows.Forms.RadioButton();
-            this.radiobutton_withdisccard = new System.Windows.Forms.RadioButton();
-            this.radiobutton_employeedisc = new System.Windows.Forms.RadioButton();
-            this.radiobutton_nodiscount = new System.Windows.Forms.RadioButton();
-            this.button_calculate = new System.Windows.Forms.Button();
-            this.button_new = new System.Windows.Forms.Button();
-            this.button_exit = new System.Windows.Forms.Button();
-            this.button_cancel = new System.Windows.Forms.Button();
-            this.textbox_totaldicountedamount = new System.Windows.Forms.TextBox();
-            this.textbox_totaldiscountgiven = new System.Windows.Forms.TextBox();
-            this.textbox_totalquantity = new System.Windows.Forms.TextBox();
-            this.textbox_cashrendered = new System.Windows.Forms.TextBox();
             this.textbox_change = new System.Windows.Forms.TextBox();
+            this.textbox_cashrendered = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -596,6 +596,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.Control;
             this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(38, 9);
             this.label21.Name = "label21";
@@ -637,6 +638,128 @@
             this.groupBox2.Size = new System.Drawing.Size(436, 137);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
+            // 
+            // button_exit
+            // 
+            this.button_exit.Location = new System.Drawing.Point(332, 106);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(98, 23);
+            this.button_exit.TabIndex = 17;
+            this.button_exit.Text = "EXIT";
+            this.button_exit.UseVisualStyleBackColor = true;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
+            // 
+            // button_cancel
+            // 
+            this.button_cancel.Location = new System.Drawing.Point(332, 82);
+            this.button_cancel.Name = "button_cancel";
+            this.button_cancel.Size = new System.Drawing.Size(98, 23);
+            this.button_cancel.TabIndex = 16;
+            this.button_cancel.Text = "CANCEL";
+            this.button_cancel.UseVisualStyleBackColor = true;
+            // 
+            // button_new
+            // 
+            this.button_new.Location = new System.Drawing.Point(332, 58);
+            this.button_new.Name = "button_new";
+            this.button_new.Size = new System.Drawing.Size(98, 23);
+            this.button_new.TabIndex = 15;
+            this.button_new.Text = "NEW";
+            this.button_new.UseVisualStyleBackColor = true;
+            this.button_new.Click += new System.EventHandler(this.button_new_Click);
+            // 
+            // button_calculate
+            // 
+            this.button_calculate.Location = new System.Drawing.Point(332, 34);
+            this.button_calculate.Name = "button_calculate";
+            this.button_calculate.Size = new System.Drawing.Size(98, 23);
+            this.button_calculate.TabIndex = 14;
+            this.button_calculate.Text = "CALCULATE";
+            this.button_calculate.UseVisualStyleBackColor = true;
+            this.button_calculate.Click += new System.EventHandler(this.button_calculate_Click);
+            // 
+            // radiobutton_nodiscount
+            // 
+            this.radiobutton_nodiscount.AutoSize = true;
+            this.radiobutton_nodiscount.Location = new System.Drawing.Point(227, 104);
+            this.radiobutton_nodiscount.Name = "radiobutton_nodiscount";
+            this.radiobutton_nodiscount.Size = new System.Drawing.Size(84, 17);
+            this.radiobutton_nodiscount.TabIndex = 13;
+            this.radiobutton_nodiscount.TabStop = true;
+            this.radiobutton_nodiscount.Text = "No Discount";
+            this.radiobutton_nodiscount.UseVisualStyleBackColor = true;
+            this.radiobutton_nodiscount.CheckedChanged += new System.EventHandler(this.radiobutton_nodiscount_CheckedChanged);
+            // 
+            // radiobutton_employeedisc
+            // 
+            this.radiobutton_employeedisc.AutoSize = true;
+            this.radiobutton_employeedisc.Location = new System.Drawing.Point(227, 81);
+            this.radiobutton_employeedisc.Name = "radiobutton_employeedisc";
+            this.radiobutton_employeedisc.Size = new System.Drawing.Size(98, 17);
+            this.radiobutton_employeedisc.TabIndex = 12;
+            this.radiobutton_employeedisc.TabStop = true;
+            this.radiobutton_employeedisc.Text = "Employee Disc.";
+            this.radiobutton_employeedisc.UseVisualStyleBackColor = true;
+            this.radiobutton_employeedisc.CheckedChanged += new System.EventHandler(this.radiobutton_employeedisc_CheckedChanged);
+            // 
+            // radiobutton_withdisccard
+            // 
+            this.radiobutton_withdisccard.AutoSize = true;
+            this.radiobutton_withdisccard.Location = new System.Drawing.Point(227, 58);
+            this.radiobutton_withdisccard.Name = "radiobutton_withdisccard";
+            this.radiobutton_withdisccard.Size = new System.Drawing.Size(99, 17);
+            this.radiobutton_withdisccard.TabIndex = 11;
+            this.radiobutton_withdisccard.TabStop = true;
+            this.radiobutton_withdisccard.Text = "With Disc. Card";
+            this.radiobutton_withdisccard.UseVisualStyleBackColor = true;
+            this.radiobutton_withdisccard.CheckedChanged += new System.EventHandler(this.radiobutton_withdisccard_CheckedChanged);
+            // 
+            // radiobutton_seniorcitizen
+            // 
+            this.radiobutton_seniorcitizen.AutoSize = true;
+            this.radiobutton_seniorcitizen.Location = new System.Drawing.Point(227, 37);
+            this.radiobutton_seniorcitizen.Name = "radiobutton_seniorcitizen";
+            this.radiobutton_seniorcitizen.Size = new System.Drawing.Size(89, 17);
+            this.radiobutton_seniorcitizen.TabIndex = 10;
+            this.radiobutton_seniorcitizen.TabStop = true;
+            this.radiobutton_seniorcitizen.Text = "Senior Citizen";
+            this.radiobutton_seniorcitizen.UseVisualStyleBackColor = true;
+            this.radiobutton_seniorcitizen.CheckedChanged += new System.EventHandler(this.radiobutton_seniorcitizen_CheckedChanged);
+            // 
+            // textbox_discountedamount
+            // 
+            this.textbox_discountedamount.Location = new System.Drawing.Point(109, 106);
+            this.textbox_discountedamount.Name = "textbox_discountedamount";
+            this.textbox_discountedamount.Size = new System.Drawing.Size(112, 20);
+            this.textbox_discountedamount.TabIndex = 9;
+            // 
+            // textbox_discountamount
+            // 
+            this.textbox_discountamount.Location = new System.Drawing.Point(109, 83);
+            this.textbox_discountamount.Name = "textbox_discountamount";
+            this.textbox_discountamount.Size = new System.Drawing.Size(112, 20);
+            this.textbox_discountamount.TabIndex = 8;
+            // 
+            // textbox_price
+            // 
+            this.textbox_price.Location = new System.Drawing.Point(109, 59);
+            this.textbox_price.Name = "textbox_price";
+            this.textbox_price.Size = new System.Drawing.Size(112, 20);
+            this.textbox_price.TabIndex = 7;
+            // 
+            // textbox_quantity
+            // 
+            this.textbox_quantity.Location = new System.Drawing.Point(109, 36);
+            this.textbox_quantity.Name = "textbox_quantity";
+            this.textbox_quantity.Size = new System.Drawing.Size(112, 20);
+            this.textbox_quantity.TabIndex = 6;
+            // 
+            // textbox_itemname
+            // 
+            this.textbox_itemname.Location = new System.Drawing.Point(109, 13);
+            this.textbox_itemname.Name = "textbox_itemname";
+            this.textbox_itemname.Size = new System.Drawing.Size(321, 20);
+            this.textbox_itemname.TabIndex = 5;
             // 
             // label27
             // 
@@ -698,6 +821,27 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Summary";
             // 
+            // textbox_totalquantity
+            // 
+            this.textbox_totalquantity.Location = new System.Drawing.Point(142, 13);
+            this.textbox_totalquantity.Name = "textbox_totalquantity";
+            this.textbox_totalquantity.Size = new System.Drawing.Size(288, 20);
+            this.textbox_totalquantity.TabIndex = 20;
+            // 
+            // textbox_totaldiscountgiven
+            // 
+            this.textbox_totaldiscountgiven.Location = new System.Drawing.Point(142, 36);
+            this.textbox_totaldiscountgiven.Name = "textbox_totaldiscountgiven";
+            this.textbox_totaldiscountgiven.Size = new System.Drawing.Size(288, 20);
+            this.textbox_totaldiscountgiven.TabIndex = 19;
+            // 
+            // textbox_totaldicountedamount
+            // 
+            this.textbox_totaldicountedamount.Location = new System.Drawing.Point(142, 58);
+            this.textbox_totaldicountedamount.Name = "textbox_totaldicountedamount";
+            this.textbox_totaldicountedamount.Size = new System.Drawing.Size(288, 20);
+            this.textbox_totaldicountedamount.TabIndex = 18;
+            // 
             // label30
             // 
             this.label30.AutoSize = true;
@@ -737,15 +881,21 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
-            // label28
+            // textbox_change
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(4, 16);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(162, 24);
-            this.label28.TabIndex = 3;
-            this.label28.Text = "Cash Rendered:";
+            this.textbox_change.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_change.Location = new System.Drawing.Point(234, 41);
+            this.textbox_change.Name = "textbox_change";
+            this.textbox_change.Size = new System.Drawing.Size(196, 31);
+            this.textbox_change.TabIndex = 22;
+            // 
+            // textbox_cashrendered
+            // 
+            this.textbox_cashrendered.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_cashrendered.Location = new System.Drawing.Point(9, 43);
+            this.textbox_cashrendered.Name = "textbox_cashrendered";
+            this.textbox_cashrendered.Size = new System.Drawing.Size(196, 31);
+            this.textbox_cashrendered.TabIndex = 21;
             // 
             // label29
             // 
@@ -757,164 +907,15 @@
             this.label29.TabIndex = 4;
             this.label29.Text = "Change:";
             // 
-            // textbox_itemname
+            // label28
             // 
-            this.textbox_itemname.Location = new System.Drawing.Point(109, 13);
-            this.textbox_itemname.Name = "textbox_itemname";
-            this.textbox_itemname.Size = new System.Drawing.Size(321, 20);
-            this.textbox_itemname.TabIndex = 5;
-            // 
-            // textbox_quantity
-            // 
-            this.textbox_quantity.Location = new System.Drawing.Point(109, 36);
-            this.textbox_quantity.Name = "textbox_quantity";
-            this.textbox_quantity.Size = new System.Drawing.Size(112, 20);
-            this.textbox_quantity.TabIndex = 6;
-            // 
-            // textbox_price
-            // 
-            this.textbox_price.Location = new System.Drawing.Point(109, 59);
-            this.textbox_price.Name = "textbox_price";
-            this.textbox_price.Size = new System.Drawing.Size(112, 20);
-            this.textbox_price.TabIndex = 7;
-            // 
-            // textbox_discountedamount
-            // 
-            this.textbox_discountedamount.Location = new System.Drawing.Point(109, 106);
-            this.textbox_discountedamount.Name = "textbox_discountedamount";
-            this.textbox_discountedamount.Size = new System.Drawing.Size(112, 20);
-            this.textbox_discountedamount.TabIndex = 9;
-            // 
-            // textbox_discountamount
-            // 
-            this.textbox_discountamount.Location = new System.Drawing.Point(109, 83);
-            this.textbox_discountamount.Name = "textbox_discountamount";
-            this.textbox_discountamount.Size = new System.Drawing.Size(112, 20);
-            this.textbox_discountamount.TabIndex = 8;
-            // 
-            // radiobutton_seniorcitizen
-            // 
-            this.radiobutton_seniorcitizen.AutoSize = true;
-            this.radiobutton_seniorcitizen.Location = new System.Drawing.Point(227, 37);
-            this.radiobutton_seniorcitizen.Name = "radiobutton_seniorcitizen";
-            this.radiobutton_seniorcitizen.Size = new System.Drawing.Size(89, 17);
-            this.radiobutton_seniorcitizen.TabIndex = 10;
-            this.radiobutton_seniorcitizen.TabStop = true;
-            this.radiobutton_seniorcitizen.Text = "Senior Citizen";
-            this.radiobutton_seniorcitizen.UseVisualStyleBackColor = true;
-            this.radiobutton_seniorcitizen.CheckedChanged += new System.EventHandler(this.radiobutton_seniorcitizen_CheckedChanged);
-            // 
-            // radiobutton_withdisccard
-            // 
-            this.radiobutton_withdisccard.AutoSize = true;
-            this.radiobutton_withdisccard.Location = new System.Drawing.Point(227, 58);
-            this.radiobutton_withdisccard.Name = "radiobutton_withdisccard";
-            this.radiobutton_withdisccard.Size = new System.Drawing.Size(99, 17);
-            this.radiobutton_withdisccard.TabIndex = 11;
-            this.radiobutton_withdisccard.TabStop = true;
-            this.radiobutton_withdisccard.Text = "With Disc. Card";
-            this.radiobutton_withdisccard.UseVisualStyleBackColor = true;
-            this.radiobutton_withdisccard.CheckedChanged += new System.EventHandler(this.radiobutton_withdisccard_CheckedChanged);
-            // 
-            // radiobutton_employeedisc
-            // 
-            this.radiobutton_employeedisc.AutoSize = true;
-            this.radiobutton_employeedisc.Location = new System.Drawing.Point(227, 81);
-            this.radiobutton_employeedisc.Name = "radiobutton_employeedisc";
-            this.radiobutton_employeedisc.Size = new System.Drawing.Size(98, 17);
-            this.radiobutton_employeedisc.TabIndex = 12;
-            this.radiobutton_employeedisc.TabStop = true;
-            this.radiobutton_employeedisc.Text = "Employee Disc.";
-            this.radiobutton_employeedisc.UseVisualStyleBackColor = true;
-            this.radiobutton_employeedisc.CheckedChanged += new System.EventHandler(this.radiobutton_employeedisc_CheckedChanged);
-            // 
-            // radiobutton_nodiscount
-            // 
-            this.radiobutton_nodiscount.AutoSize = true;
-            this.radiobutton_nodiscount.Location = new System.Drawing.Point(227, 104);
-            this.radiobutton_nodiscount.Name = "radiobutton_nodiscount";
-            this.radiobutton_nodiscount.Size = new System.Drawing.Size(84, 17);
-            this.radiobutton_nodiscount.TabIndex = 13;
-            this.radiobutton_nodiscount.TabStop = true;
-            this.radiobutton_nodiscount.Text = "No Discount";
-            this.radiobutton_nodiscount.UseVisualStyleBackColor = true;
-            this.radiobutton_nodiscount.CheckedChanged += new System.EventHandler(this.radiobutton_nodiscount_CheckedChanged);
-            // 
-            // button_calculate
-            // 
-            this.button_calculate.Location = new System.Drawing.Point(332, 34);
-            this.button_calculate.Name = "button_calculate";
-            this.button_calculate.Size = new System.Drawing.Size(98, 23);
-            this.button_calculate.TabIndex = 14;
-            this.button_calculate.Text = "CALCULATE";
-            this.button_calculate.UseVisualStyleBackColor = true;
-            this.button_calculate.Click += new System.EventHandler(this.button_calculate_Click);
-            // 
-            // button_new
-            // 
-            this.button_new.Location = new System.Drawing.Point(332, 58);
-            this.button_new.Name = "button_new";
-            this.button_new.Size = new System.Drawing.Size(98, 23);
-            this.button_new.TabIndex = 15;
-            this.button_new.Text = "NEW";
-            this.button_new.UseVisualStyleBackColor = true;
-            this.button_new.Click += new System.EventHandler(this.button_new_Click);
-            // 
-            // button_exit
-            // 
-            this.button_exit.Location = new System.Drawing.Point(332, 106);
-            this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(98, 23);
-            this.button_exit.TabIndex = 17;
-            this.button_exit.Text = "EXIT";
-            this.button_exit.UseVisualStyleBackColor = true;
-            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
-            // 
-            // button_cancel
-            // 
-            this.button_cancel.Location = new System.Drawing.Point(332, 82);
-            this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(98, 23);
-            this.button_cancel.TabIndex = 16;
-            this.button_cancel.Text = "CANCEL";
-            this.button_cancel.UseVisualStyleBackColor = true;
-            // 
-            // textbox_totaldicountedamount
-            // 
-            this.textbox_totaldicountedamount.Location = new System.Drawing.Point(142, 58);
-            this.textbox_totaldicountedamount.Name = "textbox_totaldicountedamount";
-            this.textbox_totaldicountedamount.Size = new System.Drawing.Size(288, 20);
-            this.textbox_totaldicountedamount.TabIndex = 18;
-            // 
-            // textbox_totaldiscountgiven
-            // 
-            this.textbox_totaldiscountgiven.Location = new System.Drawing.Point(142, 36);
-            this.textbox_totaldiscountgiven.Name = "textbox_totaldiscountgiven";
-            this.textbox_totaldiscountgiven.Size = new System.Drawing.Size(288, 20);
-            this.textbox_totaldiscountgiven.TabIndex = 19;
-            // 
-            // textbox_totalquantity
-            // 
-            this.textbox_totalquantity.Location = new System.Drawing.Point(142, 13);
-            this.textbox_totalquantity.Name = "textbox_totalquantity";
-            this.textbox_totalquantity.Size = new System.Drawing.Size(288, 20);
-            this.textbox_totalquantity.TabIndex = 20;
-            // 
-            // textbox_cashrendered
-            // 
-            this.textbox_cashrendered.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_cashrendered.Location = new System.Drawing.Point(9, 43);
-            this.textbox_cashrendered.Name = "textbox_cashrendered";
-            this.textbox_cashrendered.Size = new System.Drawing.Size(196, 31);
-            this.textbox_cashrendered.TabIndex = 21;
-            // 
-            // textbox_change
-            // 
-            this.textbox_change.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_change.Location = new System.Drawing.Point(234, 41);
-            this.textbox_change.Name = "textbox_change";
-            this.textbox_change.Size = new System.Drawing.Size(196, 31);
-            this.textbox_change.TabIndex = 22;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(4, 16);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(162, 24);
+            this.label28.TabIndex = 3;
+            this.label28.Text = "Cash Rendered:";
             // 
             // button5
             // 
@@ -1081,6 +1082,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::DSALProject.Properties.Resources.Red_Elegant_Chinese_New_Year_Menu;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(993, 568);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button15);
@@ -1104,8 +1107,10 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "Lesson3Example2";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Lesson3Example2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();

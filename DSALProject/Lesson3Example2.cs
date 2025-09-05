@@ -262,6 +262,11 @@ namespace DSALProject
             textbox_quantity.Clear();
         }
 
+        private void Lesson3Example2_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button_exit_Click(object sender, EventArgs e)
         {
             this.Close();
