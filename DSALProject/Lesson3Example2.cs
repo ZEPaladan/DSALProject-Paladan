@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DSALProject
 {
-    public partial class Form1 : Form
+    public partial class Lesson3Example2 : Form
     {
-        public Form1()
+        public Lesson3Example2()
         {
             InitializeComponent();
         }
