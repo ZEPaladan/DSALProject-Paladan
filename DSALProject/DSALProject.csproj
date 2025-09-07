@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lesson3Example3_PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Example3_PrintForm.Designer.cs">
+      <DependentUpon>Lesson3Example3_PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson3Example3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Example3.Designer.cs">
+      <DependentUpon>Lesson3Example3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson2Activity3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson2Activity3.resx">
       <DependentUpon>Lesson2Activity3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Example3.resx">
+      <DependentUpon>Lesson3Example3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Example3_PrintForm.resx">
+      <DependentUpon>Lesson3Example3_PrintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -220,6 +238,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Food Bundle B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BBQ Chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Breakfast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buffalo Chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calzone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cheeseburger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicago Deep Dish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detroit-Style Pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Four Cheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hawaiian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Margherita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meat Lovers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mushroom Truffle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neapolitan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pepperoni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seafood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sicilian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spinach and Feta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supreme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Veggie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
