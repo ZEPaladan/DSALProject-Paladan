@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lesson3activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3activity.Designer.cs">
+      <DependentUpon>Lesson3activity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson3Example5_PrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson2Activity3.resx">
       <DependentUpon>Lesson2Activity3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3activity.resx">
+      <DependentUpon>Lesson3activity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson3Example3.resx">
       <DependentUpon>Lesson3Example3.cs</DependentUpon>
