@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lesson3Example5_PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Example5_PrintForm.Designer.cs">
+      <DependentUpon>Lesson3Example5_PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lesson3Example5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson3Example5.Designer.cs">
+      <DependentUpon>Lesson3Example5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson3Example3_PrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson3Example3_PrintForm.resx">
       <DependentUpon>Lesson3Example3_PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Example5.resx">
+      <DependentUpon>Lesson3Example5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson3Example5_PrintForm.resx">
+      <DependentUpon>Lesson3Example5_PrintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
