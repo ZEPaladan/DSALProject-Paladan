@@ -267,6 +267,11 @@ namespace DSALProject
 
         }
 
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button_exit_Click(object sender, EventArgs e)
         {
             this.Close();

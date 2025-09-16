@@ -18,6 +18,40 @@ namespace DSALProject
             total_tuition_fee2, total_misc_fee2, labfee2, cisco_fee2, exam_booklet_fee2,
             total_other_school_fees, total_tuition_and_fee2;
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Quiz1PrintForm print = new Quiz1PrintForm();
+
+            print.textbox_coursenumber.Text = this.textbox_coursenumber.Text;
+            print.textbox_coursecode.Text = this.textbox_coursecode.Text;
+            print.textbox_coursedesc.Text = this.textbox_coursedesc.Text;
+            print.textbox_unitlect.Text = this.textbox_unitlecture.Text;
+            print.textbox_unitlab.Text = this.textbox_unitlab.Text;
+            print.textbox_time.Text = this.textbox_time.Text;
+            print.textbox_day.Text = this.textbox_day.Text;
+            print.textbox_creditunits.Text = this.textbox_creditunits.Text;
+            print.textbox_totalnoofunits.Text = this.textbox_totalnoofunits.Text;
+            print.textbox_labfee.Text = this.textbox_labfee.Text;
+            print.textbox_totaltuitionfee.Text = this.textbox_totaltuitionfee.Text;
+            print.textbox_totalmiscfee.Text = this.textbox_totalmiscfee.Text;
+            print.textbox_ciscolabfee.Text = this.textbox_ciscofee.Text;
+            print.textbox_exambokletfee.Text = this.textbox_exambookletfee.Text;
+            print.textbox_totaltuitionandfee.Text = this.textbox_totaltuitionandfee.Text;
+
+
+
+            print.listbox_coursenumber.Items.AddRange(this.listbox_coursenumber.Items);
+            print.listbox_coursecode.Items.AddRange(this.listbox_coursecode.Items);
+            print.listbox_coursedesc.Items.AddRange(this.listbox_coursedesc.Items);
+            print.listbox_unitlec.Items.AddRange(this.listbox_unitlec.Items);
+            print.listbox_unitlab.Items.AddRange(this.listbox_unitlab.Items);
+            print.listbox_creditunits.Items.AddRange(this.listbox_creditunits.Items);
+            print.listbox_time.Items.AddRange(this.listbox_time.Items);
+            print.listbox_day.Items.AddRange(this.listbox_day.Items);
+
+            print.Show();
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();

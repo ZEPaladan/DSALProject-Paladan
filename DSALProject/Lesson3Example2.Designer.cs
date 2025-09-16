@@ -603,6 +603,7 @@
             this.label21.Size = new System.Drawing.Size(367, 28);
             this.label21.TabIndex = 1;
             this.label21.Text = "CHOWQUEEN POINT OF SALE";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label22
             // 

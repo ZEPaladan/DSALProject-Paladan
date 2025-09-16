@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrelimExam_Lesson5Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrelimExam_Lesson5Activity.Designer.cs">
+      <DependentUpon>PrelimExam_Lesson5Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz1PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz1PrintForm.Designer.cs">
+      <DependentUpon>Quiz1PrintForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson3activity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,9 @@
     <EmbeddedResource Include="Lesson3Example5_PrintForm.resx">
       <DependentUpon>Lesson3Example5_PrintForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrelimExam_Lesson5Activity.resx">
+      <DependentUpon>PrelimExam_Lesson5Activity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -138,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Quiz1.resx">
       <DependentUpon>Quiz1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz1PrintForm.resx">
+      <DependentUpon>Quiz1PrintForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
