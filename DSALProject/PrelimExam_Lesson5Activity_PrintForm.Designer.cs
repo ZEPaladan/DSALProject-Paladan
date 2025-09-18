@@ -609,6 +609,7 @@
             this.textbox_earnings.Name = "textbox_earnings";
             this.textbox_earnings.Size = new System.Drawing.Size(100, 15);
             this.textbox_earnings.TabIndex = 52;
+            this.textbox_earnings.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textbox_deductions
             // 
