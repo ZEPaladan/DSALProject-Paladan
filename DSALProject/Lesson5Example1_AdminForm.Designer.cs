@@ -106,6 +106,7 @@
             this.Controls.Add(this.menuStrip2);
             this.Name = "Lesson5Example1_AdminForm";
             this.Text = "Lesson5Example1_AdminForm";
+            this.Load += new System.EventHandler(this.Lesson5Example1_AdminForm_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);

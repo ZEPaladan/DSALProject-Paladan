@@ -16,5 +16,12 @@ namespace DSALProject
         {
             InitializeComponent();
         }
+
+        private void Lesson5Example1_AdminForm_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;   // Fullscreen size
+            
+        }
+    
     }
 }
