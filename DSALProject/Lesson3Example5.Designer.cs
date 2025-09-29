@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textbox_employeenumber = new System.Windows.Forms.TextBox();
-            this.textbox_firstname = new System.Windows.Forms.TextBox();
-            this.textbox_surname = new System.Windows.Forms.TextBox();
-            this.textbox_middlename = new System.Windows.Forms.TextBox();
+            this.datetimepicker_paydate = new System.Windows.Forms.DateTimePicker();
+            this.textbox_department = new System.Windows.Forms.TextBox();
+            this.textbox_employeestatus = new System.Windows.Forms.TextBox();
+            this.textbox_numberofdependents = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.textbox_designation = new System.Windows.Forms.TextBox();
             this.textbox_civilstatus = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textbox_numberofdependents = new System.Windows.Forms.TextBox();
-            this.textbox_employeestatus = new System.Windows.Forms.TextBox();
-            this.textbox_department = new System.Windows.Forms.TextBox();
-            this.datetimepicker_paydate = new System.Windows.Forms.DateTimePicker();
+            this.textbox_surname = new System.Windows.Forms.TextBox();
+            this.textbox_middlename = new System.Windows.Forms.TextBox();
+            this.textbox_firstname = new System.Windows.Forms.TextBox();
+            this.textbox_employeenumber = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textbox_incomepercutoff = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.textbox_noofhourspercutoff_basicpay = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.textbox_rateperhour_basicpay = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textbox_totalhonorariumpay = new System.Windows.Forms.TextBox();
@@ -79,6 +79,8 @@
             this.textbox_grossincome = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.textbox_taxcontribution = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
             this.textbox_pagibigcontribution = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.textbox_philhealthcontribution = new System.Windows.Forms.TextBox();
@@ -86,18 +88,19 @@
             this.textbox_ssscontribution = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textbox_facultysavingsdeposit = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textbox_pagibigloan = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textbox_sssloan = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
+            this.combobox_others = new System.Windows.Forms.ComboBox();
             this.textbox_others = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.textbox_salaryloan = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.textbox_facultysavingsloan = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
+            this.textbox_facultysavingsdeposit = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textbox_pagibigloan = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textbox_sssloan = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label33 = new System.Windows.Forms.Label();
             this.textbox_totaldeduction = new System.Windows.Forms.TextBox();
@@ -109,9 +112,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.listbox_payslipview = new System.Windows.Forms.ListBox();
-            this.combobox_others = new System.Windows.Forms.ComboBox();
-            this.textbox_taxcontribution = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -153,41 +153,120 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // datetimepicker_paydate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Employee Number:";
+            this.datetimepicker_paydate.Location = new System.Drawing.Point(425, 60);
+            this.datetimepicker_paydate.Name = "datetimepicker_paydate";
+            this.datetimepicker_paydate.Size = new System.Drawing.Size(195, 20);
+            this.datetimepicker_paydate.TabIndex = 21;
             // 
-            // label2
+            // textbox_department
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "First Name:";
+            this.textbox_department.Location = new System.Drawing.Point(425, 115);
+            this.textbox_department.Name = "textbox_department";
+            this.textbox_department.Size = new System.Drawing.Size(195, 20);
+            this.textbox_department.TabIndex = 20;
             // 
-            // label3
+            // textbox_employeestatus
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Surname:";
+            this.textbox_employeestatus.Location = new System.Drawing.Point(425, 86);
+            this.textbox_employeestatus.Name = "textbox_employeestatus";
+            this.textbox_employeestatus.Size = new System.Drawing.Size(195, 20);
+            this.textbox_employeestatus.TabIndex = 19;
             // 
-            // label4
+            // textbox_numberofdependents
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 66);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Middle Name:";
+            this.textbox_numberofdependents.Location = new System.Drawing.Point(425, 27);
+            this.textbox_numberofdependents.Name = "textbox_numberofdependents";
+            this.textbox_numberofdependents.Size = new System.Drawing.Size(195, 20);
+            this.textbox_numberofdependents.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(329, 118);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 13);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Department:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(329, 91);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 13);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Employee Status:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(329, 63);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Paydate:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(329, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Dependent(s):";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(329, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Number of";
+            // 
+            // textbox_designation
+            // 
+            this.textbox_designation.Location = new System.Drawing.Point(108, 139);
+            this.textbox_designation.Name = "textbox_designation";
+            this.textbox_designation.Size = new System.Drawing.Size(195, 20);
+            this.textbox_designation.TabIndex = 11;
+            // 
+            // textbox_civilstatus
+            // 
+            this.textbox_civilstatus.Location = new System.Drawing.Point(108, 115);
+            this.textbox_civilstatus.Name = "textbox_civilstatus";
+            this.textbox_civilstatus.Size = new System.Drawing.Size(195, 20);
+            this.textbox_civilstatus.TabIndex = 10;
+            // 
+            // textbox_surname
+            // 
+            this.textbox_surname.Location = new System.Drawing.Point(108, 88);
+            this.textbox_surname.Name = "textbox_surname";
+            this.textbox_surname.Size = new System.Drawing.Size(195, 20);
+            this.textbox_surname.TabIndex = 9;
+            // 
+            // textbox_middlename
+            // 
+            this.textbox_middlename.Location = new System.Drawing.Point(108, 63);
+            this.textbox_middlename.Name = "textbox_middlename";
+            this.textbox_middlename.Size = new System.Drawing.Size(195, 20);
+            this.textbox_middlename.TabIndex = 8;
+            // 
+            // textbox_firstname
+            // 
+            this.textbox_firstname.Location = new System.Drawing.Point(108, 37);
+            this.textbox_firstname.Name = "textbox_firstname";
+            this.textbox_firstname.Size = new System.Drawing.Size(195, 20);
+            this.textbox_firstname.TabIndex = 7;
+            // 
+            // textbox_employeenumber
+            // 
+            this.textbox_employeenumber.Location = new System.Drawing.Point(108, 13);
+            this.textbox_employeenumber.Name = "textbox_employeenumber";
+            this.textbox_employeenumber.Size = new System.Drawing.Size(195, 20);
+            this.textbox_employeenumber.TabIndex = 6;
             // 
             // label5
             // 
@@ -207,120 +286,41 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Civil Status:";
             // 
-            // textbox_employeenumber
+            // label3
             // 
-            this.textbox_employeenumber.Location = new System.Drawing.Point(108, 13);
-            this.textbox_employeenumber.Name = "textbox_employeenumber";
-            this.textbox_employeenumber.Size = new System.Drawing.Size(195, 20);
-            this.textbox_employeenumber.TabIndex = 6;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Surname:";
             // 
-            // textbox_firstname
+            // label4
             // 
-            this.textbox_firstname.Location = new System.Drawing.Point(108, 37);
-            this.textbox_firstname.Name = "textbox_firstname";
-            this.textbox_firstname.Size = new System.Drawing.Size(195, 20);
-            this.textbox_firstname.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 66);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Middle Name:";
             // 
-            // textbox_surname
+            // label2
             // 
-            this.textbox_surname.Location = new System.Drawing.Point(108, 88);
-            this.textbox_surname.Name = "textbox_surname";
-            this.textbox_surname.Size = new System.Drawing.Size(195, 20);
-            this.textbox_surname.TabIndex = 9;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "First Name:";
             // 
-            // textbox_middlename
+            // label1
             // 
-            this.textbox_middlename.Location = new System.Drawing.Point(108, 63);
-            this.textbox_middlename.Name = "textbox_middlename";
-            this.textbox_middlename.Size = new System.Drawing.Size(195, 20);
-            this.textbox_middlename.TabIndex = 8;
-            // 
-            // textbox_designation
-            // 
-            this.textbox_designation.Location = new System.Drawing.Point(108, 139);
-            this.textbox_designation.Name = "textbox_designation";
-            this.textbox_designation.Size = new System.Drawing.Size(195, 20);
-            this.textbox_designation.TabIndex = 11;
-            // 
-            // textbox_civilstatus
-            // 
-            this.textbox_civilstatus.Location = new System.Drawing.Point(108, 115);
-            this.textbox_civilstatus.Name = "textbox_civilstatus";
-            this.textbox_civilstatus.Size = new System.Drawing.Size(195, 20);
-            this.textbox_civilstatus.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(329, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Number of";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(329, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Dependent(s):";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(329, 63);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Paydate:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(329, 91);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 13);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Employee Status:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(329, 118);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "Department:";
-            // 
-            // textbox_numberofdependents
-            // 
-            this.textbox_numberofdependents.Location = new System.Drawing.Point(425, 27);
-            this.textbox_numberofdependents.Name = "textbox_numberofdependents";
-            this.textbox_numberofdependents.Size = new System.Drawing.Size(195, 20);
-            this.textbox_numberofdependents.TabIndex = 17;
-            // 
-            // textbox_employeestatus
-            // 
-            this.textbox_employeestatus.Location = new System.Drawing.Point(425, 86);
-            this.textbox_employeestatus.Name = "textbox_employeestatus";
-            this.textbox_employeestatus.Size = new System.Drawing.Size(195, 20);
-            this.textbox_employeestatus.TabIndex = 19;
-            // 
-            // textbox_department
-            // 
-            this.textbox_department.Location = new System.Drawing.Point(425, 115);
-            this.textbox_department.Name = "textbox_department";
-            this.textbox_department.Size = new System.Drawing.Size(195, 20);
-            this.textbox_department.TabIndex = 20;
-            // 
-            // datetimepicker_paydate
-            // 
-            this.datetimepicker_paydate.Location = new System.Drawing.Point(425, 60);
-            this.datetimepicker_paydate.Name = "datetimepicker_paydate";
-            this.datetimepicker_paydate.Size = new System.Drawing.Size(195, 20);
-            this.datetimepicker_paydate.TabIndex = 21;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Employee Number:";
             // 
             // groupBox2
             // 
@@ -347,6 +347,16 @@
             this.textbox_incomepercutoff.TabIndex = 27;
             this.textbox_incomepercutoff.TextChanged += new System.EventHandler(this.textbox_incomepercutoff_TextChanged);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(5, 46);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(114, 13);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "No. of Hours / Cut Off:";
+            // 
             // textbox_noofhourspercutoff_basicpay
             // 
             this.textbox_noofhourspercutoff_basicpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -354,6 +364,16 @@
             this.textbox_noofhourspercutoff_basicpay.Name = "textbox_noofhourspercutoff_basicpay";
             this.textbox_noofhourspercutoff_basicpay.Size = new System.Drawing.Size(195, 20);
             this.textbox_noofhourspercutoff_basicpay.TabIndex = 26;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(5, 21);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 13);
+            this.label14.TabIndex = 22;
+            this.label14.Text = "Rate / Hour:";
             // 
             // textbox_rateperhour_basicpay
             // 
@@ -372,26 +392,6 @@
             this.label12.Size = new System.Drawing.Size(89, 13);
             this.label12.TabIndex = 24;
             this.label12.Text = "Income / Cut Off:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(5, 46);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(114, 13);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "No. of Hours / Cut Off:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(5, 21);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 13);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "Rate / Hour:";
             // 
             // button1
             // 
@@ -516,6 +516,7 @@
             this.textbox_noofhourspercutoff_otherincome.Name = "textbox_noofhourspercutoff_otherincome";
             this.textbox_noofhourspercutoff_otherincome.Size = new System.Drawing.Size(195, 20);
             this.textbox_noofhourspercutoff_otherincome.TabIndex = 26;
+            this.textbox_noofhourspercutoff_otherincome.TextChanged += new System.EventHandler(this.textbox_noofhourspercutoff_otherincome_TextChanged);
             // 
             // label19
             // 
@@ -613,6 +614,24 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "REGULAR DEDUCTION";
             // 
+            // textbox_taxcontribution
+            // 
+            this.textbox_taxcontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_taxcontribution.Location = new System.Drawing.Point(135, 94);
+            this.textbox_taxcontribution.Name = "textbox_taxcontribution";
+            this.textbox_taxcontribution.Size = new System.Drawing.Size(195, 20);
+            this.textbox_taxcontribution.TabIndex = 29;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(5, 97);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(87, 13);
+            this.label34.TabIndex = 28;
+            this.label34.Text = "Tax Contribution:";
+            // 
             // textbox_pagibigcontribution
             // 
             this.textbox_pagibigcontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -690,6 +709,71 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "OTHER DEDUCTION";
             // 
+            // combobox_others
+            // 
+            this.combobox_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combobox_others.FormattingEnabled = true;
+            this.combobox_others.Location = new System.Drawing.Point(135, 143);
+            this.combobox_others.Name = "combobox_others";
+            this.combobox_others.Size = new System.Drawing.Size(195, 21);
+            this.combobox_others.TabIndex = 34;
+            this.combobox_others.SelectedIndexChanged += new System.EventHandler(this.combobox_others_SelectedIndexChanged);
+            // 
+            // textbox_others
+            // 
+            this.textbox_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_others.Location = new System.Drawing.Point(135, 170);
+            this.textbox_others.Name = "textbox_others";
+            this.textbox_others.Size = new System.Drawing.Size(195, 20);
+            this.textbox_others.TabIndex = 33;
+            this.textbox_others.TextChanged += new System.EventHandler(this.textbox_others_TextChanged);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(5, 121);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(66, 13);
+            this.label29.TabIndex = 29;
+            this.label29.Text = "Salary Loan:";
+            // 
+            // textbox_salaryloan
+            // 
+            this.textbox_salaryloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_salaryloan.Location = new System.Drawing.Point(135, 117);
+            this.textbox_salaryloan.Name = "textbox_salaryloan";
+            this.textbox_salaryloan.Size = new System.Drawing.Size(195, 20);
+            this.textbox_salaryloan.TabIndex = 32;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(5, 96);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(112, 13);
+            this.label30.TabIndex = 28;
+            this.label30.Text = "Faculty Savings Loan:";
+            // 
+            // textbox_facultysavingsloan
+            // 
+            this.textbox_facultysavingsloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_facultysavingsloan.Location = new System.Drawing.Point(135, 93);
+            this.textbox_facultysavingsloan.Name = "textbox_facultysavingsloan";
+            this.textbox_facultysavingsloan.Size = new System.Drawing.Size(195, 20);
+            this.textbox_facultysavingsloan.TabIndex = 31;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(5, 146);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.TabIndex = 30;
+            this.label31.Text = "Others:";
+            // 
             // textbox_facultysavingsdeposit
             // 
             this.textbox_facultysavingsdeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -743,60 +827,6 @@
             this.label28.Size = new System.Drawing.Size(124, 13);
             this.label28.TabIndex = 24;
             this.label28.Text = "Faculty Savings Deposit:";
-            // 
-            // textbox_others
-            // 
-            this.textbox_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_others.Location = new System.Drawing.Point(135, 170);
-            this.textbox_others.Name = "textbox_others";
-            this.textbox_others.Size = new System.Drawing.Size(195, 20);
-            this.textbox_others.TabIndex = 33;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(5, 121);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(66, 13);
-            this.label29.TabIndex = 29;
-            this.label29.Text = "Salary Loan:";
-            // 
-            // textbox_salaryloan
-            // 
-            this.textbox_salaryloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_salaryloan.Location = new System.Drawing.Point(135, 117);
-            this.textbox_salaryloan.Name = "textbox_salaryloan";
-            this.textbox_salaryloan.Size = new System.Drawing.Size(195, 20);
-            this.textbox_salaryloan.TabIndex = 32;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(5, 96);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(112, 13);
-            this.label30.TabIndex = 28;
-            this.label30.Text = "Faculty Savings Loan:";
-            // 
-            // textbox_facultysavingsloan
-            // 
-            this.textbox_facultysavingsloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_facultysavingsloan.Location = new System.Drawing.Point(135, 93);
-            this.textbox_facultysavingsloan.Name = "textbox_facultysavingsloan";
-            this.textbox_facultysavingsloan.Size = new System.Drawing.Size(195, 20);
-            this.textbox_facultysavingsloan.TabIndex = 31;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(5, 146);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 13);
-            this.label31.TabIndex = 30;
-            this.label31.Text = "Others:";
             // 
             // groupBox8
             // 
@@ -904,33 +934,6 @@
             this.listbox_payslipview.Name = "listbox_payslipview";
             this.listbox_payslipview.Size = new System.Drawing.Size(366, 576);
             this.listbox_payslipview.TabIndex = 39;
-            // 
-            // combobox_others
-            // 
-            this.combobox_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combobox_others.FormattingEnabled = true;
-            this.combobox_others.Location = new System.Drawing.Point(135, 143);
-            this.combobox_others.Name = "combobox_others";
-            this.combobox_others.Size = new System.Drawing.Size(195, 21);
-            this.combobox_others.TabIndex = 34;
-            // 
-            // textbox_taxcontribution
-            // 
-            this.textbox_taxcontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_taxcontribution.Location = new System.Drawing.Point(135, 94);
-            this.textbox_taxcontribution.Name = "textbox_taxcontribution";
-            this.textbox_taxcontribution.Size = new System.Drawing.Size(195, 20);
-            this.textbox_taxcontribution.TabIndex = 29;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(5, 97);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(87, 13);
-            this.label34.TabIndex = 28;
-            this.label34.Text = "Tax Contribution:";
             // 
             // pictureBox1
             // 

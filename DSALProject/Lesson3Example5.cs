@@ -76,6 +76,42 @@ namespace DSALProject
             textbox_totalincomepay.Text = other_netincome.ToString("n");
         }
 
+        private void textbox_noofhourspercutoff_otherincome_TextChanged(object sender, EventArgs e)
+        {
+            
+            
+
+        }
+
+        private void combobox_others_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (combobox_others.Text == "Others 1")
+            {
+                textbox_others.Text = "500.00";
+            }
+            else if (combobox_others.Text == "Others 2")
+            {
+                textbox_others.Text = "550.00";
+            }
+            else if (combobox_others.Text == "Others 3")
+            {
+                textbox_others.Text = "1550.00";
+            }
+            else if (combobox_others.Text == "Others 4")
+            {
+                textbox_others.Text = "1250.00";
+            }
+            else 
+            {
+                MessageBox.Show("No other loan option selected.");
+            }
+        }
+
+        private void textbox_others_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             Lesson3Example5_PrintForm print1 = new Lesson3Example5_PrintForm();
@@ -161,6 +197,315 @@ namespace DSALProject
 
             netincome = grossincome - total_deduction;
             textbox_netincome.Text = netincome.ToString("n");
+
+            try
+            {
+                other_numhrs = Convert.ToDouble(textbox_noofhourspercutoff_otherincome.Text);
+                other_rate = Convert.ToDouble(textbox_rateperhour_otherincome.Text);
+                other_netincome = other_numhrs * other_rate;
+                grossincome = basic_netincome + hono_netincome + other_netincome;
+                textbox_grossincome.Text = grossincome.ToString("n");
+                textbox_pagibigcontribution.Text = "100.00";
+
+                //philhealth contribution based on the gross income
+                if (grossincome <= 10000)
+                {
+                    textbox_philhealthcontribution.Text = "137.50";
+                }
+                else if (grossincome > 10000 && grossincome <= 11000)
+                {
+                    textbox_philhealthcontribution.Text = "151.25";
+                }
+                else if (grossincome > 11000 && grossincome <= 12000)
+                {
+                    textbox_philhealthcontribution.Text = "165.00";
+                }
+                else if (grossincome > 12000 && grossincome <= 13000)
+                {
+                    textbox_philhealthcontribution.Text = "178.75";
+                }
+                else if (grossincome > 13000 && grossincome <= 14000)
+                {
+                    textbox_philhealthcontribution.Text = "192.50";
+                }
+                else if (grossincome > 14000 && grossincome <= 15000)
+                {
+                    textbox_philhealthcontribution.Text = "206.25";
+                }
+                else if (grossincome > 15000 && grossincome <= 16000)
+                {
+                    textbox_philhealthcontribution.Text = "220.00";
+                }
+                else if (grossincome > 16000 && grossincome <= 17000)
+                {
+                    textbox_philhealthcontribution.Text = "233.75";
+                }
+                else if (grossincome > 17000 && grossincome <= 18000)
+                {
+                    textbox_philhealthcontribution.Text = "247.50";
+                }
+                else if (grossincome > 18000 && grossincome <= 19000)
+                {
+                    textbox_philhealthcontribution.Text = "261.25";
+                }
+                else if (grossincome > 19000 && grossincome <= 20000)
+                {
+                    textbox_philhealthcontribution.Text = "275.00";
+                }
+                else if (grossincome > 20000 && grossincome <= 21000)
+                {
+                    textbox_philhealthcontribution.Text = "288.75";
+                }
+                else if (grossincome > 21000 && grossincome <= 22000)
+                {
+                    textbox_philhealthcontribution.Text = "302.50";
+                }
+                else if (grossincome > 22000 && grossincome <= 23000)
+                {
+                    textbox_philhealthcontribution.Text = "316.25";
+                }
+                else if (grossincome > 23000 && grossincome <= 24000)
+                {
+                    textbox_philhealthcontribution.Text = "330.00";
+                }
+                else if (grossincome > 24000 && grossincome <= 25000)
+                {
+                    textbox_philhealthcontribution.Text = "343.75";
+                }
+                else if (grossincome > 25000 && grossincome <= 26000)
+                {
+                    textbox_philhealthcontribution.Text = "357.50";
+                }
+                else if (grossincome > 26000 && grossincome <= 27000)
+                {
+                    textbox_philhealthcontribution.Text = "371.25";
+                }
+                else if (grossincome > 27000 && grossincome <= 28000)
+                {
+                    textbox_philhealthcontribution.Text = "385.00";
+                }
+                else if (grossincome > 28000 && grossincome <= 29000)
+                {
+                    textbox_philhealthcontribution.Text = "398.75";
+                }
+                else if (grossincome > 29000 && grossincome <= 30000)
+                {
+                    textbox_philhealthcontribution.Text = "412.50";
+                }
+                else if (grossincome > 30000 && grossincome <= 31000)
+                {
+                    textbox_philhealthcontribution.Text = "426.25";
+                }
+                else if (grossincome > 31000 && grossincome <= 32000)
+                {
+                    textbox_philhealthcontribution.Text = "440.00";
+                }
+                else if (grossincome > 32000 && grossincome <= 33000)
+                {
+                    textbox_philhealthcontribution.Text = "453.75";
+                }
+                else if (grossincome > 33000 && grossincome <= 34000)
+                {
+                    textbox_philhealthcontribution.Text = "467.50";
+                }
+                else if (grossincome > 34000 && grossincome <= 35000)
+                {
+                    textbox_philhealthcontribution.Text = "481.25";
+                }
+                else if (grossincome > 35000 && grossincome <= 36000)
+                {
+                    textbox_philhealthcontribution.Text = "495.00";
+                }
+                else if (grossincome > 36000 && grossincome <= 37000)
+                {
+                    textbox_philhealthcontribution.Text = "508.75";
+                }
+                else if (grossincome > 37000 && grossincome <= 38000)
+                {
+                    textbox_philhealthcontribution.Text = "522.50";
+                }
+                else if (grossincome > 38000 && grossincome <= 39000)
+                {
+                    textbox_philhealthcontribution.Text = "536.25";
+                }
+                else if (grossincome > 39000 && grossincome <= 39999.99)
+                {
+                    textbox_philhealthcontribution.Text = "543.13";
+                }
+                else
+                {
+                    textbox_philhealthcontribution.Text = "550.00";
+                }
+
+                //sss contribution
+                if (grossincome < 1000)
+                {
+                    textbox_ssscontribution.Text = "0.00";
+                }
+                else if (grossincome > 1000 && grossincome <= 1249.99)
+                {
+                    textbox_ssscontribution.Text = "36.30";
+                }
+                else if (grossincome > 1250 && grossincome <= 1749.99)
+                {
+                    textbox_ssscontribution.Text = "54.50";
+                }
+                else if (grossincome > 1750 && grossincome <= 2249.99)
+                {
+                    textbox_ssscontribution.Text = "72.70";
+                }
+                else if (grossincome > 2250 && grossincome <= 2749.99)
+                {
+                    textbox_ssscontribution.Text = "90.80";
+                }
+                else if (grossincome > 2750 && grossincome <= 3249.99)
+                {
+                    textbox_ssscontribution.Text = "109.00";
+                }
+                else if (grossincome > 3250 && grossincome <= 3749.99)
+                {
+                    textbox_ssscontribution.Text = "127.20";
+                }
+                else if (grossincome > 3750 && grossincome <= 4249.99)
+                {
+                    textbox_ssscontribution.Text = "145.30";
+                }
+                else if (grossincome > 4250 && grossincome <= 4749.99)
+                {
+                    textbox_ssscontribution.Text = "163.50";
+                }
+                else if (grossincome > 4750 && grossincome <= 5249.99)
+                {
+                    textbox_ssscontribution.Text = "181.70";
+                }
+                else if (grossincome > 5250 && grossincome <= 5749.99)
+                {
+                    textbox_ssscontribution.Text = "199.80";
+                }
+                else if (grossincome > 5750 && grossincome <= 6249.99)
+                {
+                    textbox_ssscontribution.Text = "218.00";
+                }
+                else if (grossincome > 6250 && grossincome <= 6749.99)
+                {
+                    textbox_ssscontribution.Text = "236.20";
+                }
+                else if (grossincome > 6750 && grossincome <= 7249.99)
+                {
+                    textbox_ssscontribution.Text = "254.30";
+                }
+                else if (grossincome > 7250 && grossincome <= 7749.99)
+                {
+                    textbox_ssscontribution.Text = "272.50";
+                }
+                else if (grossincome > 7750 && grossincome <= 8249.99)
+                {
+                    textbox_ssscontribution.Text = "290.70";
+                }
+                else if (grossincome > 8250 && grossincome <= 8749.99)
+                {
+                    textbox_ssscontribution.Text = "308.80";
+                }
+                else if (grossincome > 8750 && grossincome <= 9249.99)
+                {
+                    textbox_ssscontribution.Text = "327.00";
+                }
+                else if (grossincome > 9250 && grossincome <= 9749.99)
+                {
+                    textbox_ssscontribution.Text = "345.20";
+                }
+                else if (grossincome > 9750 && grossincome <= 10249.99)
+                {
+                    textbox_ssscontribution.Text = "363.30";
+                }
+                else if (grossincome > 10250 && grossincome <= 10749.99)
+                {
+                    textbox_ssscontribution.Text = "381.50";
+                }
+                else if (grossincome > 10750 && grossincome <= 11249.99)
+                {
+                    textbox_ssscontribution.Text = "399.70";
+                }
+                else if (grossincome > 11250 && grossincome <= 11749.99)
+                {
+                    textbox_ssscontribution.Text = "417.80";
+                }
+                else if (grossincome > 11750 && grossincome <= 12249.99)
+                {
+                    textbox_ssscontribution.Text = "436.00";
+                }
+                else if (grossincome > 12250 && grossincome <= 12749.99)
+                {
+                    textbox_ssscontribution.Text = "454.20";
+                }
+                else if (grossincome > 12750 && grossincome <= 13249.99)
+                {
+                    textbox_ssscontribution.Text = "472.30";
+                }
+                else if (grossincome > 13250 && grossincome <= 13749.99)
+                {
+                    textbox_ssscontribution.Text = "490.50";
+                }
+                else if (grossincome > 13750 && grossincome <= 14249.99)
+                {
+                    textbox_ssscontribution.Text = "508.70";
+                }
+                else if (grossincome > 14250 && grossincome <= 14749.99)
+                {
+                    textbox_ssscontribution.Text = "526.80";
+                }
+                else if (grossincome > 14750 && grossincome <= 15249.99)
+                {
+                    textbox_ssscontribution.Text = "545.00";
+                }
+                else if (grossincome > 15250 && grossincome <= 15749.99)
+                {
+                    textbox_ssscontribution.Text = "563.20";
+                }
+                else
+                {
+                    textbox_ssscontribution.Text = "581.30";
+                }
+
+                //tax contribution
+                double tax = 0;
+
+                if (grossincome <= 20833.33) // 250,000 annual ÷ 12
+                {
+                    textbox_taxcontribution.Text = "0.00";
+                }
+                else if (grossincome > 20833.33 && grossincome <= 33333.33) // 250k–400k
+                {
+                    tax = ((((grossincome * 12) - 250000) * 0.20) / 12);
+                    textbox_taxcontribution.Text = tax.ToString("n");
+                }
+                else if (grossincome > 33333.33 && grossincome <= 66666.67) // 400k–800k
+                {
+                    tax = ((30000 + ((grossincome * 12) - 400000) * 0.25) / 12);
+                    textbox_taxcontribution.Text = tax.ToString("n");
+                }
+                else if (grossincome > 66666.67 && grossincome <= 166666.67) // 800k–2M
+                {
+                    tax = ((130000 + ((grossincome * 12) - 800000) * 0.30) / 12);
+                    textbox_taxcontribution.Text = tax.ToString("n");
+                }
+                else if (grossincome > 166666.67 && grossincome <= 666666.67) // 2M–8M
+                {
+                    tax = ((490000 + ((grossincome * 12) - 2000000) * 0.32) / 12);
+                    textbox_taxcontribution.Text = tax.ToString("n");
+                }
+                else // above 8M
+                {
+                    tax = ((2410000 + ((grossincome * 12) - 8000000) * 0.35) / 12);
+                    textbox_taxcontribution.Text = tax.ToString("n");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Invalid data entry.");
+                textbox_noofhourspercutoff_otherincome.Clear();
+                textbox_noofhourspercutoff_otherincome.Focus();
+            }
         }
 
 
