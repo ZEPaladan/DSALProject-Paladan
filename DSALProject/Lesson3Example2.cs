@@ -26,6 +26,9 @@ namespace DSALProject
             textbox_totaldiscountgiven.Enabled = false;
             textbox_totaldicountedamount.Enabled = false;
             textbox_change.Enabled = false;
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -264,10 +267,30 @@ namespace DSALProject
 
         private void Lesson3Example2_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
         {
 
         }

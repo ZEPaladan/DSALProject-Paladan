@@ -15,6 +15,9 @@ namespace DSALProject
         public Lesson2Activity1()
         {
             InitializeComponent();
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -116,6 +119,11 @@ namespace DSALProject
         private void button_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Lesson2Activity1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

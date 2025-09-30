@@ -149,34 +149,34 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(626, 174);
+            this.groupBox1.Size = new System.Drawing.Size(679, 174);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // datetimepicker_paydate
             // 
-            this.datetimepicker_paydate.Location = new System.Drawing.Point(425, 60);
+            this.datetimepicker_paydate.Location = new System.Drawing.Point(478, 59);
             this.datetimepicker_paydate.Name = "datetimepicker_paydate";
             this.datetimepicker_paydate.Size = new System.Drawing.Size(195, 20);
             this.datetimepicker_paydate.TabIndex = 21;
             // 
             // textbox_department
             // 
-            this.textbox_department.Location = new System.Drawing.Point(425, 115);
+            this.textbox_department.Location = new System.Drawing.Point(478, 114);
             this.textbox_department.Name = "textbox_department";
             this.textbox_department.Size = new System.Drawing.Size(195, 20);
             this.textbox_department.TabIndex = 20;
             // 
             // textbox_employeestatus
             // 
-            this.textbox_employeestatus.Location = new System.Drawing.Point(425, 86);
+            this.textbox_employeestatus.Location = new System.Drawing.Point(478, 85);
             this.textbox_employeestatus.Name = "textbox_employeestatus";
             this.textbox_employeestatus.Size = new System.Drawing.Size(195, 20);
             this.textbox_employeestatus.TabIndex = 19;
             // 
             // textbox_numberofdependents
             // 
-            this.textbox_numberofdependents.Location = new System.Drawing.Point(425, 27);
+            this.textbox_numberofdependents.Location = new System.Drawing.Point(478, 26);
             this.textbox_numberofdependents.Name = "textbox_numberofdependents";
             this.textbox_numberofdependents.Size = new System.Drawing.Size(195, 20);
             this.textbox_numberofdependents.TabIndex = 17;
@@ -184,7 +184,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(329, 118);
+            this.label11.Location = new System.Drawing.Point(382, 117);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 16;
@@ -193,7 +193,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(329, 91);
+            this.label10.Location = new System.Drawing.Point(382, 90);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 13);
             this.label10.TabIndex = 15;
@@ -202,7 +202,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(329, 63);
+            this.label9.Location = new System.Drawing.Point(382, 62);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 14;
@@ -211,7 +211,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(329, 29);
+            this.label8.Location = new System.Drawing.Point(382, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
             this.label8.TabIndex = 13;
@@ -220,7 +220,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(329, 16);
+            this.label7.Location = new System.Drawing.Point(382, 15);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 12;
@@ -331,7 +331,7 @@
             this.groupBox2.Controls.Add(this.textbox_rateperhour_basicpay);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(13, 193);
+            this.groupBox2.Location = new System.Drawing.Point(12, 201);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(332, 100);
             this.groupBox2.TabIndex = 1;
@@ -395,7 +395,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(644, 135);
+            this.button1.Location = new System.Drawing.Point(718, 173);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 23);
             this.button1.TabIndex = 3;
@@ -412,7 +412,7 @@
             this.groupBox3.Controls.Add(this.textbox_rateperhour_honorarium);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 299);
+            this.groupBox3.Location = new System.Drawing.Point(11, 307);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(332, 100);
             this.groupBox3.TabIndex = 28;
@@ -483,7 +483,7 @@
             this.groupBox4.Controls.Add(this.textbox_rateperhour_otherincome);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(13, 405);
+            this.groupBox4.Location = new System.Drawing.Point(12, 413);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(332, 100);
             this.groupBox4.TabIndex = 29;
@@ -553,7 +553,7 @@
             this.groupBox5.Controls.Add(this.label22);
             this.groupBox5.Controls.Add(this.textbox_grossincome);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(12, 511);
+            this.groupBox5.Location = new System.Drawing.Point(11, 519);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(332, 71);
             this.groupBox5.TabIndex = 30;
@@ -607,7 +607,7 @@
             this.groupBox6.Controls.Add(this.textbox_ssscontribution);
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(351, 193);
+            this.groupBox6.Location = new System.Drawing.Point(522, 201);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(342, 121);
             this.groupBox6.TabIndex = 28;
@@ -702,7 +702,7 @@
             this.groupBox7.Controls.Add(this.textbox_sssloan);
             this.groupBox7.Controls.Add(this.label28);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(351, 320);
+            this.groupBox7.Location = new System.Drawing.Point(522, 328);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(342, 206);
             this.groupBox7.TabIndex = 29;
@@ -833,7 +833,7 @@
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Controls.Add(this.textbox_totaldeduction);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(351, 532);
+            this.groupBox8.Location = new System.Drawing.Point(522, 540);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(342, 50);
             this.groupBox8.TabIndex = 31;
@@ -860,9 +860,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 588);
+            this.button2.Location = new System.Drawing.Point(11, 606);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 23);
+            this.button2.Size = new System.Drawing.Size(125, 36);
             this.button2.TabIndex = 32;
             this.button2.Text = "CALCULATE";
             this.button2.UseVisualStyleBackColor = true;
@@ -870,9 +870,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(113, 588);
+            this.button3.Location = new System.Drawing.Point(142, 606);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 23);
+            this.button3.Size = new System.Drawing.Size(104, 36);
             this.button3.TabIndex = 33;
             this.button3.Text = "NEW";
             this.button3.UseVisualStyleBackColor = true;
@@ -880,18 +880,18 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(193, 587);
+            this.button4.Location = new System.Drawing.Point(252, 606);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(77, 23);
+            this.button4.Size = new System.Drawing.Size(107, 36);
             this.button4.TabIndex = 34;
             this.button4.Text = "CANCEL";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(277, 588);
+            this.button5.Location = new System.Drawing.Point(365, 606);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 23);
+            this.button5.Size = new System.Drawing.Size(145, 36);
             this.button5.TabIndex = 35;
             this.button5.Text = "PRINT PAYSLIP";
             this.button5.UseVisualStyleBackColor = true;
@@ -899,9 +899,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(398, 588);
+            this.button6.Location = new System.Drawing.Point(516, 606);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(179, 23);
+            this.button6.Size = new System.Drawing.Size(209, 36);
             this.button6.TabIndex = 36;
             this.button6.Text = "PREVIEW PAYMENT DETAILS";
             this.button6.UseVisualStyleBackColor = true;
@@ -909,9 +909,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(583, 588);
+            this.button7.Location = new System.Drawing.Point(731, 606);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 23);
+            this.button7.Size = new System.Drawing.Size(121, 36);
             this.button7.TabIndex = 37;
             this.button7.Text = "EXIT";
             this.button7.UseVisualStyleBackColor = true;
@@ -920,26 +920,27 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(852, 12);
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(950, 23);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(240, 24);
+            this.label32.Size = new System.Drawing.Size(344, 31);
             this.label32.TabIndex = 38;
             this.label32.Text = "PAYSLIP VIEW DETAILS";
             // 
             // listbox_payslipview
             // 
             this.listbox_payslipview.FormattingEnabled = true;
-            this.listbox_payslipview.Location = new System.Drawing.Point(780, 41);
+            this.listbox_payslipview.Location = new System.Drawing.Point(870, 57);
             this.listbox_payslipview.Name = "listbox_payslipview";
-            this.listbox_payslipview.Size = new System.Drawing.Size(366, 576);
+            this.listbox_payslipview.Size = new System.Drawing.Size(493, 784);
             this.listbox_payslipview.TabIndex = 39;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(644, 16);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(697, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(167, 142);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -948,7 +949,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1158, 622);
+            this.ClientSize = new System.Drawing.Size(1375, 885);
             this.Controls.Add(this.listbox_payslipview);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.button7);

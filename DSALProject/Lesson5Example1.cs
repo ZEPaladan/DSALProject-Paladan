@@ -19,12 +19,16 @@ namespace DSALProject
 
         private void Lesson5Example1_Load(object sender, EventArgs e)
         {
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.WindowState = FormWindowState.Maximized;
             textbox_username.Focus();
+
         }
 
         private void button_login_Click(object sender, EventArgs e)
         {
-            
+            //user account validation
 
             if (textbox_username.Text == "ehdrickpaladan" && textbox_password.Text == "admin")
             {
@@ -35,7 +39,7 @@ namespace DSALProject
                 textbox_password.Clear();
                 
             }
-            else if (textbox_username.Text == "chowqueen" && textbox_password.Text == "admin")
+            else if (textbox_username.Text == "pointofsale" && textbox_password.Text == "admin")
             {
                 MessageBox.Show("Welcome to Cashier Point of Sale Page.");
                 Lesson3Example2 cashier_pointofsale = new Lesson3Example2();
@@ -43,7 +47,7 @@ namespace DSALProject
                 textbox_username.Clear();
                 textbox_password.Clear();
             }
-            else if (textbox_username.Text == "pizzahurt" && textbox_password.Text == "admin")
+            else if (textbox_username.Text == "foodordering" && textbox_password.Text == "admin")
             {
                 MessageBox.Show("Welcome to Food Ordering Application.");
                 Lesson3Example3 cashier_orderingapplication = new Lesson3Example3();

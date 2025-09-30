@@ -538,6 +538,9 @@ namespace DSALProject
             combobox_others.Items.Add("Others 2");
             combobox_others.Items.Add("Others 3");
             combobox_others.Items.Add("Others 4");
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Lesson3Example5_Load(object sender, EventArgs e)
