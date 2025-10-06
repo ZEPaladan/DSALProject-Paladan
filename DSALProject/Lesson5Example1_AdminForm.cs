@@ -47,7 +47,7 @@ namespace DSALProject
         private void payrolApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Open Payroll form
-            Lesson3Example5 payrollForm = new Lesson3Example5();
+            Payrol_Function payrollForm = new Payrol_Function();
             payrollForm.MdiParent = this;
             payrollForm.Show();
         }
@@ -55,7 +55,7 @@ namespace DSALProject
         private void simplePOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Open Simple POS form
-            Lesson2Activity1 simplePOSForm = new Lesson2Activity1();
+            POS1_FunctionForm simplePOSForm = new POS1_FunctionForm();
             simplePOSForm.MdiParent = this;
             simplePOSForm.Show();
         }

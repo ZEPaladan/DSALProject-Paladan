@@ -1,6 +1,6 @@
 ﻿namespace DSALProject
 {
-    partial class Lesson2Activity1
+    partial class POS1_FunctionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_new = new System.Windows.Forms.Button();
-            this.button_exit = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,10 +60,23 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textbox_itemname = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textbox_price = new System.Windows.Forms.TextBox();
+            this.textbox_itemname = new System.Windows.Forms.TextBox();
+            this.button_exit = new System.Windows.Forms.Button();
+            this.button_new = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textbox_amountpaid = new System.Windows.Forms.TextBox();
+            this.textbox_quantity = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textbox_change = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textbox_cashgiven = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button_calculate = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,27 +93,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button_new
+            // tableLayoutPanel1
             // 
-            this.button_new.Location = new System.Drawing.Point(510, 744);
-            this.button_new.Name = "button_new";
-            this.button_new.Size = new System.Drawing.Size(75, 23);
-            this.button_new.TabIndex = 32;
-            this.button_new.Text = "NEW";
-            this.button_new.UseVisualStyleBackColor = true;
-            this.button_new.Click += new System.EventHandler(this.button_new_Click);
-            // 
-            // button_exit
-            // 
-            this.button_exit.Location = new System.Drawing.Point(591, 743);
-            this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(75, 23);
-            this.button_exit.TabIndex = 33;
-            this.button_exit.Text = "EXIT";
-            this.button_exit.UseVisualStyleBackColor = true;
-            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.91941F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.08059F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1365, 881);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox1
             // 
@@ -135,10 +144,11 @@
             this.groupBox1.Controls.Add(this.pictureBox8);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.pictureBox7);
-            this.groupBox1.Location = new System.Drawing.Point(12, 7);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1354, 731);
-            this.groupBox1.TabIndex = 61;
+            this.groupBox1.Size = new System.Drawing.Size(1359, 795);
+            this.groupBox1.TabIndex = 62;
             this.groupBox1.TabStop = false;
             // 
             // label11
@@ -177,6 +187,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label14
             // 
@@ -196,6 +207,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label15
             // 
@@ -215,6 +227,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox11
             // 
@@ -225,6 +238,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 54;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox5
             // 
@@ -235,6 +249,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 33;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox12
             // 
@@ -245,6 +260,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 53;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox4
             // 
@@ -255,6 +271,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
             // pictureBox13
             // 
@@ -265,6 +282,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 52;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // label1
             // 
@@ -284,6 +302,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 51;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // label2
             // 
@@ -303,6 +322,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 50;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // label3
             // 
@@ -367,7 +387,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 40;
             this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click_1);
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // label9
             // 
@@ -387,6 +407,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 41;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // label10
             // 
@@ -406,6 +427,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 42;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox6
             // 
@@ -416,6 +438,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 44;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -426,56 +449,171 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 43;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // label16
+            // groupBox2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(18, 749);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 13);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "Item Name:";
+            this.groupBox2.Controls.Add(this.button_calculate);
+            this.groupBox2.Controls.Add(this.textbox_change);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.textbox_cashgiven);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.textbox_amountpaid);
+            this.groupBox2.Controls.Add(this.textbox_quantity);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.textbox_price);
+            this.groupBox2.Controls.Add(this.textbox_itemname);
+            this.groupBox2.Controls.Add(this.button_exit);
+            this.groupBox2.Controls.Add(this.button_new);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(3, 804);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1359, 74);
+            this.groupBox2.TabIndex = 63;
+            this.groupBox2.TabStop = false;
+            // 
+            // textbox_price
+            // 
+            this.textbox_price.Location = new System.Drawing.Point(359, 13);
+            this.textbox_price.Name = "textbox_price";
+            this.textbox_price.Size = new System.Drawing.Size(181, 20);
+            this.textbox_price.TabIndex = 41;
+            // 
+            // textbox_itemname
+            // 
+            this.textbox_itemname.Location = new System.Drawing.Point(76, 13);
+            this.textbox_itemname.Name = "textbox_itemname";
+            this.textbox_itemname.Size = new System.Drawing.Size(181, 20);
+            this.textbox_itemname.TabIndex = 40;
+            // 
+            // button_exit
+            // 
+            this.button_exit.Location = new System.Drawing.Point(1244, 16);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(97, 43);
+            this.button_exit.TabIndex = 39;
+            this.button_exit.Text = "EXIT";
+            this.button_exit.UseVisualStyleBackColor = true;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
+            // 
+            // button_new
+            // 
+            this.button_new.Location = new System.Drawing.Point(1141, 16);
+            this.button_new.Name = "button_new";
+            this.button_new.Size = new System.Drawing.Size(97, 43);
+            this.button_new.TabIndex = 38;
+            this.button_new.Text = "NEW";
+            this.button_new.UseVisualStyleBackColor = true;
+            this.button_new.Click += new System.EventHandler(this.button_new_Click);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(272, 749);
+            this.label17.Location = new System.Drawing.Point(289, 16);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(34, 13);
-            this.label17.TabIndex = 31;
+            this.label17.TabIndex = 37;
             this.label17.Text = "Price:";
             // 
-            // textbox_itemname
+            // label16
             // 
-            this.textbox_itemname.Location = new System.Drawing.Point(85, 746);
-            this.textbox_itemname.Name = "textbox_itemname";
-            this.textbox_itemname.Size = new System.Drawing.Size(181, 20);
-            this.textbox_itemname.TabIndex = 34;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(9, 16);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 13);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Item Name:";
             // 
-            // textbox_price
+            // textbox_amountpaid
             // 
-            this.textbox_price.Location = new System.Drawing.Point(312, 746);
-            this.textbox_price.Name = "textbox_price";
-            this.textbox_price.Size = new System.Drawing.Size(181, 20);
-            this.textbox_price.TabIndex = 35;
+            this.textbox_amountpaid.Location = new System.Drawing.Point(359, 44);
+            this.textbox_amountpaid.Name = "textbox_amountpaid";
+            this.textbox_amountpaid.Size = new System.Drawing.Size(181, 20);
+            this.textbox_amountpaid.TabIndex = 45;
             // 
-            // Lesson2Activity1
+            // textbox_quantity
+            // 
+            this.textbox_quantity.Location = new System.Drawing.Point(76, 44);
+            this.textbox_quantity.Name = "textbox_quantity";
+            this.textbox_quantity.Size = new System.Drawing.Size(181, 20);
+            this.textbox_quantity.TabIndex = 44;
+            this.textbox_quantity.TextChanged += new System.EventHandler(this.textbox_quantity_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(289, 47);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(70, 13);
+            this.label18.TabIndex = 43;
+            this.label18.Text = "Amount Paid:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 47);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(49, 13);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "Quantity:";
+            // 
+            // textbox_change
+            // 
+            this.textbox_change.Location = new System.Drawing.Point(669, 44);
+            this.textbox_change.Name = "textbox_change";
+            this.textbox_change.Size = new System.Drawing.Size(181, 20);
+            this.textbox_change.TabIndex = 49;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(599, 47);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(47, 13);
+            this.label20.TabIndex = 48;
+            this.label20.Text = "Change:";
+            // 
+            // textbox_cashgiven
+            // 
+            this.textbox_cashgiven.Location = new System.Drawing.Point(669, 13);
+            this.textbox_cashgiven.Name = "textbox_cashgiven";
+            this.textbox_cashgiven.Size = new System.Drawing.Size(181, 20);
+            this.textbox_cashgiven.TabIndex = 47;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(599, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(65, 13);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "Cash Given:";
+            // 
+            // button_calculate
+            // 
+            this.button_calculate.Location = new System.Drawing.Point(1038, 17);
+            this.button_calculate.Name = "button_calculate";
+            this.button_calculate.Size = new System.Drawing.Size(97, 43);
+            this.button_calculate.TabIndex = 50;
+            this.button_calculate.Text = "CALCULATE";
+            this.button_calculate.UseVisualStyleBackColor = true;
+            this.button_calculate.Click += new System.EventHandler(this.button_calculate_Click);
+            // 
+            // POS1_FunctionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 786);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textbox_price);
-            this.Controls.Add(this.textbox_itemname);
-            this.Controls.Add(this.button_exit);
-            this.Controls.Add(this.button_new);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Name = "Lesson2Activity1";
+            this.ClientSize = new System.Drawing.Size(1365, 881);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Name = "POS1_FunctionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "POS1_FunctionForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Lesson2Activity1_Load);
+            this.Load += new System.EventHandler(this.POS1_FunctionForm_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -493,14 +631,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button_new;
-        private System.Windows.Forms.Button button_exit;
+
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -532,9 +671,21 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textbox_itemname;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textbox_amountpaid;
+        private System.Windows.Forms.TextBox textbox_quantity;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textbox_price;
+        private System.Windows.Forms.TextBox textbox_itemname;
+        private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Button button_new;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textbox_change;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textbox_cashgiven;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button_calculate;
     }
 }

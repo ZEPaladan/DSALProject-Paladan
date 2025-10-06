@@ -58,7 +58,7 @@ namespace DSALProject
             else if (textbox_username.Text == "payrol" && textbox_password.Text == "admin")
             {
                 MessageBox.Show("Welcome to Payrol Page.");
-                Lesson3Example5 payrolform = new Lesson3Example5();
+                Payrol_Function payrolform = new Payrol_Function();
                 payrolform.ShowDialog();
                 textbox_username.Clear();
                 textbox_password.Clear();
