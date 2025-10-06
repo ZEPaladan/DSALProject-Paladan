@@ -16,7 +16,7 @@ namespace DSALProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new POS2_FunctionForm());
+            Application.Run(new POS3_FunctionForm());
         }
     }
 }
