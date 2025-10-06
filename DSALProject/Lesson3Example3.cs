@@ -20,8 +20,7 @@ namespace DSALProject
         {
             InitializeComponent();
 
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.WindowState = FormWindowState.Maximized;
+            
 
         }
 
