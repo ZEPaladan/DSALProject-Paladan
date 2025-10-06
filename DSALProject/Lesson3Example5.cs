@@ -163,18 +163,18 @@ namespace DSALProject
         {
             try
             {
-                // Get the values for hours worked and rates for each income type
-                double basic_numhrs = Convert.ToDouble(textbox_noofhourspercutoff_basicpay.Text);
-                double basic_rate = Convert.ToDouble(textbox_rateperhour_basicpay.Text);
-                double hono_numhrs = Convert.ToDouble(textbox_noofhourspercutoff_honorarium.Text);
-                double hono_rate = Convert.ToDouble(textbox_rateperhour_honorarium.Text);
-                double other_numhrs = Convert.ToDouble(textbox_noofhourspercutoff_otherincome.Text);
-                double other_rate = Convert.ToDouble(textbox_rateperhour_otherincome.Text);
+                // Get the values for hours worked and rates for each income type (default 0 if blank)
+                double basic_numhrs = string.IsNullOrWhiteSpace(textbox_noofhourspercutoff_basicpay.Text) ? 0 : Convert.ToDouble(textbox_noofhourspercutoff_basicpay.Text);
+                double basic_rate = string.IsNullOrWhiteSpace(textbox_rateperhour_basicpay.Text) ? 0 : Convert.ToDouble(textbox_rateperhour_basicpay.Text);
+                double hono_numhrs = string.IsNullOrWhiteSpace(textbox_noofhourspercutoff_honorarium.Text) ? 0 : Convert.ToDouble(textbox_noofhourspercutoff_honorarium.Text);
+                double hono_rate = string.IsNullOrWhiteSpace(textbox_rateperhour_honorarium.Text) ? 0 : Convert.ToDouble(textbox_rateperhour_honorarium.Text);
+                double other_numhrs = string.IsNullOrWhiteSpace(textbox_noofhourspercutoff_otherincome.Text) ? 0 : Convert.ToDouble(textbox_noofhourspercutoff_otherincome.Text);
+                double other_rate = string.IsNullOrWhiteSpace(textbox_rateperhour_otherincome.Text) ? 0 : Convert.ToDouble(textbox_rateperhour_otherincome.Text);
 
                 // Calculate net income for each
-                double basic_netincome = basic_numhrs * basic_rate;
-                double hono_netincome = hono_numhrs * hono_rate;
-                double other_netincome = other_numhrs * other_rate;
+                basic_netincome = basic_numhrs * basic_rate;
+                hono_netincome = hono_numhrs * hono_rate;
+                other_netincome = other_numhrs * other_rate;
 
                 // Set the textboxes for the individual income types
                 textbox_incomepercutoff.Text = basic_netincome.ToString("n");
@@ -182,45 +182,56 @@ namespace DSALProject
                 textbox_totalincomepay.Text = other_netincome.ToString("n");
 
                 // Calculate gross income
-                double grossincome = basic_netincome + hono_netincome + other_netincome;
+                grossincome = basic_netincome + hono_netincome + other_netincome;
                 textbox_grossincome.Text = grossincome.ToString("n");
 
                 // Contributions and deductions
-                double sss_contrib = CalculateSSSContribution(grossincome);
-                double pagibig_contrib = 100.00; // Assuming Pag-IBIG is fixed at 100, else you can calculate it
-                double philhealth_contrib = CalculatePhilHealthContribution(grossincome);
-                double tax_contrib = CalculateTaxContribution(grossincome);
+                sss_contrib = CalculateSSSContribution(grossincome);
+                pagibig_contrib = 100.00; // fixed Pag-IBIG
+                philhealth_contrib = CalculatePhilHealthContribution(grossincome);
+                tax_contrib = CalculateTaxContribution(grossincome);
 
-                // Loans and other deductions
-                double sss_loan = Convert.ToDouble(textbox_sssloan.Text);
-                double pagibig_loan = Convert.ToDouble(textbox_pagibigloan.Text);
-                double salary_loan = Convert.ToDouble(textbox_salaryloan.Text);
-                double faculty_sav_loan = Convert.ToDouble(textbox_facultysavingsloan.Text);
-                double salary_savings = Convert.ToDouble(textbox_facultysavingsdeposit.Text);
-                double other_deduction = Convert.ToDouble(textbox_others.Text);
+                // Show contributions in textboxes
+                textbox_ssscontribution.Text = sss_contrib.ToString("n");
+                textbox_pagibigcontribution.Text = pagibig_contrib.ToString("n");
+                textbox_philhealthcontribution.Text = philhealth_contrib.ToString("n");
+                textbox_taxcontribution.Text = tax_contrib.ToString("n");
+
+                // Loans and other deductions (default 0 if blank)
+                sss_loan = string.IsNullOrWhiteSpace(textbox_sssloan.Text) ? 0 : Convert.ToDouble(textbox_sssloan.Text);
+                pagibig_loan = string.IsNullOrWhiteSpace(textbox_pagibigloan.Text) ? 0 : Convert.ToDouble(textbox_pagibigloan.Text);
+                salary_loan = string.IsNullOrWhiteSpace(textbox_salaryloan.Text) ? 0 : Convert.ToDouble(textbox_salaryloan.Text);
+                faculty_sav_loan = string.IsNullOrWhiteSpace(textbox_facultysavingsloan.Text) ? 0 : Convert.ToDouble(textbox_facultysavingsloan.Text);
+                salary_savings = string.IsNullOrWhiteSpace(textbox_facultysavingsdeposit.Text) ? 0 : Convert.ToDouble(textbox_facultysavingsdeposit.Text);
+                other_deduction = string.IsNullOrWhiteSpace(textbox_others.Text) ? 0 : Convert.ToDouble(textbox_others.Text);
 
                 // Total contributions and deductions
-                double total_contrib = sss_contrib + pagibig_contrib + philhealth_contrib + tax_contrib;
-                double total_loan = sss_loan + pagibig_loan + salary_loan + faculty_sav_loan + salary_savings + other_deduction;
-                double total_deduction = total_contrib + total_loan;
+                total_contrib = sss_contrib + pagibig_contrib + philhealth_contrib + tax_contrib;
+                total_loan = sss_loan + pagibig_loan + salary_loan + faculty_sav_loan + salary_savings + other_deduction;
+                total_deduction = total_contrib + total_loan;
 
                 // Display deductions
                 textbox_totaldeduction.Text = total_deduction.ToString("n");
 
                 // Calculate net income
-                double netincome = grossincome - total_deduction;
+                netincome = grossincome - total_deduction;
                 textbox_netincome.Text = netincome.ToString("n");
             }
-            catch (FormatException ex)
+            catch
             {
-                MessageBox.Show("Invalid data entry: " + ex.Message);
-                textbox_noofhourspercutoff_otherincome.Clear();
-                textbox_noofhourspercutoff_otherincome.Focus();
+                MessageBox.Show("Invalid data entry");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An error occurred: " + ex.Message);
-            }
+            
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
         }
 
         private double CalculatePhilHealthContribution(double grossincome)
@@ -265,7 +276,32 @@ namespace DSALProject
             else if (grossincome <= 1249.99) return 36.30;
             else if (grossincome <= 1749.99) return 54.50;
             else if (grossincome <= 2249.99) return 72.70;
-            // ... Continue this pattern for the rest of the ranges
+            else if (grossincome <= 2749.99) return 90.80;
+            else if (grossincome <= 3249.99) return 109.00;
+            else if (grossincome <= 3749.99) return 127.20;
+            else if (grossincome <= 4249.99) return 145.30;
+            else if (grossincome <= 4749.99) return 163.50;
+            else if (grossincome <= 5249.99) return 181.70;
+            else if (grossincome <= 5749.99) return 199.80;
+            else if (grossincome <= 6249.99) return 218.00;
+            else if (grossincome <= 6749.99) return 236.20;
+            else if (grossincome <= 7249.99) return 254.30;
+            else if (grossincome <= 7749.99) return 272.50;
+            else if (grossincome <= 8249.99) return 290.70;
+            else if (grossincome <= 8749.99) return 308.80;
+            else if (grossincome <= 9249.99) return 327.00;
+            else if (grossincome <= 9749.99) return 345.20;
+            else if (grossincome <= 10249.99) return 363.30;
+            else if (grossincome <= 10749.99) return 381.50;
+            else if (grossincome <= 11249.99) return 399.70;
+            else if (grossincome <= 11749.99) return 417.80;
+            else if (grossincome <= 12249.99) return 436.00;
+            else if (grossincome <= 12749.99) return 454.20;
+            else if (grossincome <= 13249.99) return 472.30;
+            else if (grossincome <= 13749.99) return 490.50;
+            else if (grossincome <= 14249.99) return 508.70;
+            else if (grossincome <= 14749.99) return 526.80;
+            else if (grossincome <= 15249.99) return 545.00;
             else return 581.30; // Max contribution for gross income > 15250
         }
 
@@ -325,7 +361,7 @@ namespace DSALProject
 
         private void Lesson3Example5_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

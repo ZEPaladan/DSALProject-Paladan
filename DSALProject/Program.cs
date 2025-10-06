@@ -16,7 +16,7 @@ namespace DSALProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Lesson5Example1());
+            Application.Run(new Payrol_Function());
         }
     }
 }

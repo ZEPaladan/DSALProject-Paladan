@@ -64,6 +64,12 @@
     <Compile Include="Lesson5Example2.Designer.cs">
       <DependentUpon>Lesson5Example2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Payrol_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payrol_Function.Designer.cs">
+      <DependentUpon>Payrol_Function.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrelimExam_Lesson5Activity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson5Example2.resx">
       <DependentUpon>Lesson5Example2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payrol_Function.resx">
+      <DependentUpon>Payrol_Function.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrelimExam_Lesson5Activity.resx">
       <DependentUpon>PrelimExam_Lesson5Activity.cs</DependentUpon>
