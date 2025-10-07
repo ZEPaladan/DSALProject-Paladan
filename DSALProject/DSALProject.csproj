@@ -70,6 +70,12 @@
     <Compile Include="Payrol_Function.Designer.cs">
       <DependentUpon>Payrol_Function.cs</DependentUpon>
     </Compile>
+    <Compile Include="POS1_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS1_Class.Designer.cs">
+      <DependentUpon>POS1_Class.cs</DependentUpon>
+    </Compile>
     <Compile Include="POS1_FunctionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variables.cs" />
     <EmbeddedResource Include="Lesson2Activity1.resx">
       <DependentUpon>Lesson2Activity1.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payrol_Function.resx">
       <DependentUpon>Payrol_Function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS1_Class.resx">
+      <DependentUpon>POS1_Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS1_FunctionForm.resx">
       <DependentUpon>POS1_FunctionForm.cs</DependentUpon>

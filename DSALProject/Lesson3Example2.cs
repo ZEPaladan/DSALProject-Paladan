@@ -295,6 +295,31 @@ namespace DSALProject
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button_exit_Click(object sender, EventArgs e)
         {
             this.Close();
