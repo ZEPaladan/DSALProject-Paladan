@@ -74,5 +74,26 @@ namespace DSALProject
             { 30, ("Chicago Deep Dish", 370, 0) }
         };
     }
+    public class Payroll_Variables
+    {
+        public static Payroll_Variables Current = new Payroll_Variables();
+
+        public double gross_income;
+        public double net_income;
+
+        public double sss_contribution;
+        public double philhealth_contribution;
+        public double pagibig_contribution;
+        public double tax_contribution;
+
+        public double sss_loan;
+        public double pagibig_loan;
+        public double faculty_savings_deposit;
+        public double faculty_savings_loan;
+        public double salary_loan;
+        public double other_loans;
+
+        public double total_deductions;
+    }
 
 }

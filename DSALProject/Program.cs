@@ -16,7 +16,7 @@ namespace DSALProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new POS2_Class());
+            Application.Run(new Payrol_Class());
         }
     }
 }

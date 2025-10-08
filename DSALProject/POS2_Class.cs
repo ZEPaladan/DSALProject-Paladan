@@ -15,6 +15,15 @@ namespace DSALProject
         public POS2_Class()
         {
             InitializeComponent();
+
+            POS1_Functions.DisableTextboxes(
+                textbox_price,
+                textbox_discountamount,
+                textbox_discountedamount,
+                textbox_change,
+                textbox_totalquantity,
+                textbox_totalbills
+                );
         }
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
@@ -284,7 +293,7 @@ namespace DSALProject
 
         private void radiobutton_foodbundleA_CheckedChanged(object sender, EventArgs e)
         {
-            POS2_Functions.FoodBundlesDisplay("A", Color.LightCyan, picturebox_orderimage, Properties.Resources.Food_Bundle_A, 
+            POS2_Functions.FoodBundlesDisplay(this, "A", Color.LightCyan, picturebox_orderimage, Properties.Resources.Food_Bundle_A, 
                 textbox_price, textbox_discountamount, textbox_quantity, radiobutton_foodbundleA, 
                 checkbox_A_chicken, checkbox_A_coke, checkbox_A_fries, checkbox_A_pizza, checkbox_A_sidedishes, 
                 checkbox_B_carbonara, checkbox_B_chicken, checkbox_B_fries, checkbox_B_halohalo, checkbox_B_pizza);
@@ -292,7 +301,7 @@ namespace DSALProject
 
         private void radiobutton_foodbundleB_CheckedChanged(object sender, EventArgs e)
         {
-            POS2_Functions.FoodBundlesDisplay("B", Color.LightYellow, picturebox_orderimage, Properties.Resources.Food_Bundle_B,
+            POS2_Functions.FoodBundlesDisplay(this, "B", Color.LightBlue, picturebox_orderimage, Properties.Resources.Food_Bundle_B,
                 textbox_price, textbox_discountamount, textbox_quantity, radiobutton_foodbundleB,
                 checkbox_B_carbonara, checkbox_B_chicken, checkbox_B_fries, checkbox_B_halohalo, checkbox_B_pizza,
                 checkbox_A_chicken, checkbox_A_coke, checkbox_A_fries, checkbox_A_pizza, checkbox_A_sidedishes);
