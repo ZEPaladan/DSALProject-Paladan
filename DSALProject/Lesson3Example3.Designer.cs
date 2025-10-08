@@ -36,21 +36,41 @@
             this.checkBox23 = new System.Windows.Forms.CheckBox();
             this.checkBox24 = new System.Windows.Forms.CheckBox();
             this.checkBox25 = new System.Windows.Forms.CheckBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.checkBox26 = new System.Windows.Forms.CheckBox();
             this.checkBox27 = new System.Windows.Forms.CheckBox();
             this.checkBox28 = new System.Windows.Forms.CheckBox();
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox30 = new System.Windows.Forms.CheckBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.checkBox19 = new System.Windows.Forms.CheckBox();
             this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -58,60 +78,39 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.picturebox_orderimage = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radiobutton_foodbundleA = new System.Windows.Forms.RadioButton();
             this.radiobutton_foodbundleB = new System.Windows.Forms.RadioButton();
+            this.radiobutton_foodbundleA = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textbox_discountedamount = new System.Windows.Forms.TextBox();
-            this.textbox_discountamount = new System.Windows.Forms.TextBox();
-            this.textbox_quantity = new System.Windows.Forms.TextBox();
-            this.textbox_price = new System.Windows.Forms.TextBox();
-            this.textbox_change = new System.Windows.Forms.TextBox();
-            this.textbox_cashgiven = new System.Windows.Forms.TextBox();
-            this.textbox_totalquantity = new System.Windows.Forms.TextBox();
             this.textbox_totalbills = new System.Windows.Forms.TextBox();
+            this.textbox_totalquantity = new System.Windows.Forms.TextBox();
+            this.textbox_cashgiven = new System.Windows.Forms.TextBox();
+            this.textbox_change = new System.Windows.Forms.TextBox();
+            this.textbox_price = new System.Windows.Forms.TextBox();
+            this.textbox_quantity = new System.Windows.Forms.TextBox();
+            this.textbox_discountamount = new System.Windows.Forms.TextBox();
+            this.textbox_discountedamount = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.checkbox_A_chicken = new System.Windows.Forms.CheckBox();
-            this.checkbox_A_fries = new System.Windows.Forms.CheckBox();
-            this.checkbox_A_coke = new System.Windows.Forms.CheckBox();
-            this.checkbox_A_sidedishes = new System.Windows.Forms.CheckBox();
             this.checkbox_A_pizza = new System.Windows.Forms.CheckBox();
+            this.checkbox_A_sidedishes = new System.Windows.Forms.CheckBox();
+            this.checkbox_A_coke = new System.Windows.Forms.CheckBox();
+            this.checkbox_A_fries = new System.Windows.Forms.CheckBox();
+            this.checkbox_A_chicken = new System.Windows.Forms.CheckBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.checkbox_B_halohalo = new System.Windows.Forms.CheckBox();
-            this.checkbox_B_chicken = new System.Windows.Forms.CheckBox();
-            this.checkbox_B_carbonara = new System.Windows.Forms.CheckBox();
-            this.checkbox_B_fries = new System.Windows.Forms.CheckBox();
             this.checkbox_B_pizza = new System.Windows.Forms.CheckBox();
+            this.checkbox_B_fries = new System.Windows.Forms.CheckBox();
+            this.checkbox_B_carbonara = new System.Windows.Forms.CheckBox();
+            this.checkbox_B_chicken = new System.Windows.Forms.CheckBox();
+            this.checkbox_B_halohalo = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -132,6 +131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -155,6 +155,7 @@
             this.listbox_display.Name = "listbox_display";
             this.listbox_display.Size = new System.Drawing.Size(271, 225);
             this.listbox_display.TabIndex = 4;
+            this.listbox_display.SelectedIndexChanged += new System.EventHandler(this.listbox_display_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -260,6 +261,56 @@
             this.checkBox25.UseVisualStyleBackColor = true;
             this.checkBox25.CheckedChanged += new System.EventHandler(this.checkBox25_CheckedChanged);
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::DSALProject.Properties.Resources.Chicago_Deep_Dish;
+            this.pictureBox11.Location = new System.Drawing.Point(946, 589);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 64;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::DSALProject.Properties.Resources.Calzone;
+            this.pictureBox12.Location = new System.Drawing.Point(687, 590);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 63;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::DSALProject.Properties.Resources.Neapolitan;
+            this.pictureBox13.Location = new System.Drawing.Point(446, 589);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 62;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::DSALProject.Properties.Resources.Detroit_Style_Pizza;
+            this.pictureBox14.Location = new System.Drawing.Point(226, 590);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 61;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::DSALProject.Properties.Resources.Sicilian;
+            this.pictureBox15.Location = new System.Drawing.Point(6, 589);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 60;
+            this.pictureBox15.TabStop = false;
+            // 
             // checkBox26
             // 
             this.checkBox26.AutoSize = true;
@@ -314,6 +365,56 @@
             this.checkBox30.Text = "Spinach and Feta";
             this.checkBox30.UseVisualStyleBackColor = true;
             this.checkBox30.CheckedChanged += new System.EventHandler(this.checkBox30_CheckedChanged);
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::DSALProject.Properties.Resources.White_Pizza;
+            this.pictureBox16.Location = new System.Drawing.Point(946, 392);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 54;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::DSALProject.Properties.Resources.Cheeseburger;
+            this.pictureBox17.Location = new System.Drawing.Point(687, 393);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 53;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::DSALProject.Properties.Resources.Breakfast;
+            this.pictureBox18.Location = new System.Drawing.Point(446, 392);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 52;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::DSALProject.Properties.Resources.Mushroom_Truffle;
+            this.pictureBox19.Location = new System.Drawing.Point(226, 393);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 51;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::DSALProject.Properties.Resources.Spinach_and_Feta;
+            this.pictureBox20.Location = new System.Drawing.Point(6, 392);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 50;
+            this.pictureBox20.TabStop = false;
             // 
             // checkBox16
             // 
@@ -370,6 +471,56 @@
             this.checkBox20.UseVisualStyleBackColor = true;
             this.checkBox20.CheckedChanged += new System.EventHandler(this.checkBox20_CheckedChanged);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DSALProject.Properties.Resources.Seafood;
+            this.pictureBox6.Location = new System.Drawing.Point(946, 200);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 44;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::DSALProject.Properties.Resources.Buffalo_Chicken;
+            this.pictureBox7.Location = new System.Drawing.Point(687, 201);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 43;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::DSALProject.Properties.Resources.Supreme;
+            this.pictureBox8.Location = new System.Drawing.Point(446, 200);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 42;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::DSALProject.Properties.Resources.Four_Cheese;
+            this.pictureBox9.Location = new System.Drawing.Point(226, 201);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 41;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::DSALProject.Properties.Resources.Veggie;
+            this.pictureBox10.Location = new System.Drawing.Point(6, 200);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 40;
+            this.pictureBox10.TabStop = false;
+            // 
             // checkBox15
             // 
             this.checkBox15.AutoSize = true;
@@ -424,6 +575,56 @@
             this.checkBox11.Text = "Margherita";
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DSALProject.Properties.Resources.Meat_Lovers;
+            this.pictureBox4.Location = new System.Drawing.Point(946, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DSALProject.Properties.Resources.BBQ_Chicken;
+            this.pictureBox5.Location = new System.Drawing.Point(687, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DSALProject.Properties.Resources.Hawaiian;
+            this.pictureBox3.Location = new System.Drawing.Point(446, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DSALProject.Properties.Resources.Pepperoni;
+            this.pictureBox2.Location = new System.Drawing.Point(226, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DSALProject.Properties.Resources.Margherita;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -493,206 +694,6 @@
             this.picturebox_orderimage.TabIndex = 17;
             this.picturebox_orderimage.TabStop = false;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::DSALProject.Properties.Resources.Chicago_Deep_Dish;
-            this.pictureBox11.Location = new System.Drawing.Point(946, 589);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 64;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::DSALProject.Properties.Resources.Calzone;
-            this.pictureBox12.Location = new System.Drawing.Point(687, 590);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 63;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::DSALProject.Properties.Resources.Neapolitan;
-            this.pictureBox13.Location = new System.Drawing.Point(446, 589);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 62;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::DSALProject.Properties.Resources.Detroit_Style_Pizza;
-            this.pictureBox14.Location = new System.Drawing.Point(226, 590);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 61;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::DSALProject.Properties.Resources.Sicilian;
-            this.pictureBox15.Location = new System.Drawing.Point(6, 589);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 60;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::DSALProject.Properties.Resources.White_Pizza;
-            this.pictureBox16.Location = new System.Drawing.Point(946, 392);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 54;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::DSALProject.Properties.Resources.Cheeseburger;
-            this.pictureBox17.Location = new System.Drawing.Point(687, 393);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 53;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::DSALProject.Properties.Resources.Breakfast;
-            this.pictureBox18.Location = new System.Drawing.Point(446, 392);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 52;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::DSALProject.Properties.Resources.Mushroom_Truffle;
-            this.pictureBox19.Location = new System.Drawing.Point(226, 393);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 51;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::DSALProject.Properties.Resources.Spinach_and_Feta;
-            this.pictureBox20.Location = new System.Drawing.Point(6, 392);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 50;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DSALProject.Properties.Resources.Seafood;
-            this.pictureBox6.Location = new System.Drawing.Point(946, 200);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 44;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::DSALProject.Properties.Resources.Buffalo_Chicken;
-            this.pictureBox7.Location = new System.Drawing.Point(687, 201);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 43;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::DSALProject.Properties.Resources.Supreme;
-            this.pictureBox8.Location = new System.Drawing.Point(446, 200);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 42;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::DSALProject.Properties.Resources.Four_Cheese;
-            this.pictureBox9.Location = new System.Drawing.Point(226, 201);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 41;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::DSALProject.Properties.Resources.Veggie;
-            this.pictureBox10.Location = new System.Drawing.Point(6, 200);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 40;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DSALProject.Properties.Resources.Meat_Lovers;
-            this.pictureBox4.Location = new System.Drawing.Point(946, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::DSALProject.Properties.Resources.BBQ_Chicken;
-            this.pictureBox5.Location = new System.Drawing.Point(687, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DSALProject.Properties.Resources.Hawaiian;
-            this.pictureBox3.Location = new System.Drawing.Point(446, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DSALProject.Properties.Resources.Pepperoni;
-            this.pictureBox2.Location = new System.Drawing.Point(226, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DSALProject.Properties.Resources.Margherita;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radiobutton_foodbundleB);
@@ -703,18 +704,6 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Food Ordering Choices";
-            // 
-            // radiobutton_foodbundleA
-            // 
-            this.radiobutton_foodbundleA.AutoSize = true;
-            this.radiobutton_foodbundleA.Location = new System.Drawing.Point(40, 19);
-            this.radiobutton_foodbundleA.Name = "radiobutton_foodbundleA";
-            this.radiobutton_foodbundleA.Size = new System.Drawing.Size(95, 17);
-            this.radiobutton_foodbundleA.TabIndex = 0;
-            this.radiobutton_foodbundleA.TabStop = true;
-            this.radiobutton_foodbundleA.Text = "Food Bundle A";
-            this.radiobutton_foodbundleA.UseVisualStyleBackColor = true;
-            this.radiobutton_foodbundleA.CheckedChanged += new System.EventHandler(this.radiobutton_foodbundleA_CheckedChanged);
             // 
             // radiobutton_foodbundleB
             // 
@@ -727,6 +716,18 @@
             this.radiobutton_foodbundleB.Text = "Food Bundle B";
             this.radiobutton_foodbundleB.UseVisualStyleBackColor = true;
             this.radiobutton_foodbundleB.CheckedChanged += new System.EventHandler(this.radiobutton_foodbundleB_CheckedChanged);
+            // 
+            // radiobutton_foodbundleA
+            // 
+            this.radiobutton_foodbundleA.AutoSize = true;
+            this.radiobutton_foodbundleA.Location = new System.Drawing.Point(40, 19);
+            this.radiobutton_foodbundleA.Name = "radiobutton_foodbundleA";
+            this.radiobutton_foodbundleA.Size = new System.Drawing.Size(95, 17);
+            this.radiobutton_foodbundleA.TabIndex = 0;
+            this.radiobutton_foodbundleA.TabStop = true;
+            this.radiobutton_foodbundleA.Text = "Food Bundle A";
+            this.radiobutton_foodbundleA.UseVisualStyleBackColor = true;
+            this.radiobutton_foodbundleA.CheckedChanged += new System.EventHandler(this.radiobutton_foodbundleA_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -753,68 +754,62 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Order Details";
             // 
-            // label22
+            // textbox_totalbills
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(34, 13);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Price:";
+            this.textbox_totalbills.Location = new System.Drawing.Point(115, 145);
+            this.textbox_totalbills.Name = "textbox_totalbills";
+            this.textbox_totalbills.Size = new System.Drawing.Size(150, 20);
+            this.textbox_totalbills.TabIndex = 15;
             // 
-            // label23
+            // textbox_totalquantity
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 52);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(49, 13);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Quantity:";
+            this.textbox_totalquantity.Location = new System.Drawing.Point(115, 178);
+            this.textbox_totalquantity.Name = "textbox_totalquantity";
+            this.textbox_totalquantity.Size = new System.Drawing.Size(150, 20);
+            this.textbox_totalquantity.TabIndex = 14;
             // 
-            // label24
+            // textbox_cashgiven
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 84);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(91, 13);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Discount Amount:";
+            this.textbox_cashgiven.Location = new System.Drawing.Point(115, 208);
+            this.textbox_cashgiven.Name = "textbox_cashgiven";
+            this.textbox_cashgiven.Size = new System.Drawing.Size(150, 20);
+            this.textbox_cashgiven.TabIndex = 13;
             // 
-            // label25
+            // textbox_change
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 118);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(103, 13);
-            this.label25.TabIndex = 3;
-            this.label25.Text = "Discounted Amount:";
+            this.textbox_change.Location = new System.Drawing.Point(115, 242);
+            this.textbox_change.Name = "textbox_change";
+            this.textbox_change.Size = new System.Drawing.Size(150, 20);
+            this.textbox_change.TabIndex = 12;
             // 
-            // label29
+            // textbox_price
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(6, 148);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(55, 13);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "Total Bills:";
+            this.textbox_price.Location = new System.Drawing.Point(115, 18);
+            this.textbox_price.Name = "textbox_price";
+            this.textbox_price.Size = new System.Drawing.Size(150, 20);
+            this.textbox_price.TabIndex = 11;
             // 
-            // label28
+            // textbox_quantity
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 182);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(76, 13);
-            this.label28.TabIndex = 5;
-            this.label28.Text = "Total Quantity:";
+            this.textbox_quantity.Location = new System.Drawing.Point(115, 51);
+            this.textbox_quantity.Name = "textbox_quantity";
+            this.textbox_quantity.Size = new System.Drawing.Size(150, 20);
+            this.textbox_quantity.TabIndex = 10;
+            this.textbox_quantity.TextChanged += new System.EventHandler(this.textbox_quantity_TextChanged);
             // 
-            // label27
+            // textbox_discountamount
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(6, 213);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(65, 13);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "Cash Given:";
+            this.textbox_discountamount.Location = new System.Drawing.Point(115, 81);
+            this.textbox_discountamount.Name = "textbox_discountamount";
+            this.textbox_discountamount.Size = new System.Drawing.Size(150, 20);
+            this.textbox_discountamount.TabIndex = 9;
+            // 
+            // textbox_discountedamount
+            // 
+            this.textbox_discountedamount.Location = new System.Drawing.Point(115, 115);
+            this.textbox_discountedamount.Name = "textbox_discountedamount";
+            this.textbox_discountedamount.Size = new System.Drawing.Size(150, 20);
+            this.textbox_discountedamount.TabIndex = 8;
             // 
             // label26
             // 
@@ -825,62 +820,68 @@
             this.label26.TabIndex = 7;
             this.label26.Text = "Change:";
             // 
-            // textbox_discountedamount
+            // label27
             // 
-            this.textbox_discountedamount.Location = new System.Drawing.Point(115, 115);
-            this.textbox_discountedamount.Name = "textbox_discountedamount";
-            this.textbox_discountedamount.Size = new System.Drawing.Size(150, 20);
-            this.textbox_discountedamount.TabIndex = 8;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 213);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(65, 13);
+            this.label27.TabIndex = 6;
+            this.label27.Text = "Cash Given:";
             // 
-            // textbox_discountamount
+            // label28
             // 
-            this.textbox_discountamount.Location = new System.Drawing.Point(115, 81);
-            this.textbox_discountamount.Name = "textbox_discountamount";
-            this.textbox_discountamount.Size = new System.Drawing.Size(150, 20);
-            this.textbox_discountamount.TabIndex = 9;
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 182);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(76, 13);
+            this.label28.TabIndex = 5;
+            this.label28.Text = "Total Quantity:";
             // 
-            // textbox_quantity
+            // label29
             // 
-            this.textbox_quantity.Location = new System.Drawing.Point(115, 51);
-            this.textbox_quantity.Name = "textbox_quantity";
-            this.textbox_quantity.Size = new System.Drawing.Size(150, 20);
-            this.textbox_quantity.TabIndex = 10;
-            this.textbox_quantity.TextChanged += new System.EventHandler(this.textbox_quantity_TextChanged);
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(6, 148);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(55, 13);
+            this.label29.TabIndex = 4;
+            this.label29.Text = "Total Bills:";
             // 
-            // textbox_price
+            // label25
             // 
-            this.textbox_price.Location = new System.Drawing.Point(115, 18);
-            this.textbox_price.Name = "textbox_price";
-            this.textbox_price.Size = new System.Drawing.Size(150, 20);
-            this.textbox_price.TabIndex = 11;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 118);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(103, 13);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Discounted Amount:";
             // 
-            // textbox_change
+            // label24
             // 
-            this.textbox_change.Location = new System.Drawing.Point(115, 242);
-            this.textbox_change.Name = "textbox_change";
-            this.textbox_change.Size = new System.Drawing.Size(150, 20);
-            this.textbox_change.TabIndex = 12;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 84);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(91, 13);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Discount Amount:";
             // 
-            // textbox_cashgiven
+            // label23
             // 
-            this.textbox_cashgiven.Location = new System.Drawing.Point(115, 208);
-            this.textbox_cashgiven.Name = "textbox_cashgiven";
-            this.textbox_cashgiven.Size = new System.Drawing.Size(150, 20);
-            this.textbox_cashgiven.TabIndex = 13;
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 52);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(49, 13);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Quantity:";
             // 
-            // textbox_totalquantity
+            // label22
             // 
-            this.textbox_totalquantity.Location = new System.Drawing.Point(115, 178);
-            this.textbox_totalquantity.Name = "textbox_totalquantity";
-            this.textbox_totalquantity.Size = new System.Drawing.Size(150, 20);
-            this.textbox_totalquantity.TabIndex = 14;
-            // 
-            // textbox_totalbills
-            // 
-            this.textbox_totalbills.Location = new System.Drawing.Point(115, 145);
-            this.textbox_totalbills.Name = "textbox_totalbills";
-            this.textbox_totalbills.Size = new System.Drawing.Size(150, 20);
-            this.textbox_totalbills.TabIndex = 15;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 20);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(34, 13);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Price:";
             // 
             // groupBox4
             // 
@@ -896,35 +897,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Food Bundle A";
             // 
-            // checkbox_A_chicken
+            // checkbox_A_pizza
             // 
-            this.checkbox_A_chicken.AutoSize = true;
-            this.checkbox_A_chicken.Location = new System.Drawing.Point(28, 19);
-            this.checkbox_A_chicken.Name = "checkbox_A_chicken";
-            this.checkbox_A_chicken.Size = new System.Drawing.Size(175, 17);
-            this.checkbox_A_chicken.TabIndex = 0;
-            this.checkbox_A_chicken.Text = "10 pcs. Delicious Fried Chicken";
-            this.checkbox_A_chicken.UseVisualStyleBackColor = true;
-            // 
-            // checkbox_A_fries
-            // 
-            this.checkbox_A_fries.AutoSize = true;
-            this.checkbox_A_fries.Location = new System.Drawing.Point(28, 42);
-            this.checkbox_A_fries.Name = "checkbox_A_fries";
-            this.checkbox_A_fries.Size = new System.Drawing.Size(87, 17);
-            this.checkbox_A_fries.TabIndex = 1;
-            this.checkbox_A_fries.Text = "2 Large Fries";
-            this.checkbox_A_fries.UseVisualStyleBackColor = true;
-            // 
-            // checkbox_A_coke
-            // 
-            this.checkbox_A_coke.AutoSize = true;
-            this.checkbox_A_coke.Location = new System.Drawing.Point(28, 65);
-            this.checkbox_A_coke.Name = "checkbox_A_coke";
-            this.checkbox_A_coke.Size = new System.Drawing.Size(69, 17);
-            this.checkbox_A_coke.TabIndex = 2;
-            this.checkbox_A_coke.Text = "1.5 Coke";
-            this.checkbox_A_coke.UseVisualStyleBackColor = true;
+            this.checkbox_A_pizza.AutoSize = true;
+            this.checkbox_A_pizza.Location = new System.Drawing.Point(28, 110);
+            this.checkbox_A_pizza.Name = "checkbox_A_pizza";
+            this.checkbox_A_pizza.Size = new System.Drawing.Size(130, 17);
+            this.checkbox_A_pizza.TabIndex = 4;
+            this.checkbox_A_pizza.Text = "Special Pizza Delights";
+            this.checkbox_A_pizza.UseVisualStyleBackColor = true;
             // 
             // checkbox_A_sidedishes
             // 
@@ -936,15 +917,35 @@
             this.checkbox_A_sidedishes.Text = "4 Side Dishes";
             this.checkbox_A_sidedishes.UseVisualStyleBackColor = true;
             // 
-            // checkbox_A_pizza
+            // checkbox_A_coke
             // 
-            this.checkbox_A_pizza.AutoSize = true;
-            this.checkbox_A_pizza.Location = new System.Drawing.Point(28, 110);
-            this.checkbox_A_pizza.Name = "checkbox_A_pizza";
-            this.checkbox_A_pizza.Size = new System.Drawing.Size(130, 17);
-            this.checkbox_A_pizza.TabIndex = 4;
-            this.checkbox_A_pizza.Text = "Special Pizza Delights";
-            this.checkbox_A_pizza.UseVisualStyleBackColor = true;
+            this.checkbox_A_coke.AutoSize = true;
+            this.checkbox_A_coke.Location = new System.Drawing.Point(28, 65);
+            this.checkbox_A_coke.Name = "checkbox_A_coke";
+            this.checkbox_A_coke.Size = new System.Drawing.Size(69, 17);
+            this.checkbox_A_coke.TabIndex = 2;
+            this.checkbox_A_coke.Text = "1.5 Coke";
+            this.checkbox_A_coke.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_A_fries
+            // 
+            this.checkbox_A_fries.AutoSize = true;
+            this.checkbox_A_fries.Location = new System.Drawing.Point(28, 42);
+            this.checkbox_A_fries.Name = "checkbox_A_fries";
+            this.checkbox_A_fries.Size = new System.Drawing.Size(87, 17);
+            this.checkbox_A_fries.TabIndex = 1;
+            this.checkbox_A_fries.Text = "2 Large Fries";
+            this.checkbox_A_fries.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_A_chicken
+            // 
+            this.checkbox_A_chicken.AutoSize = true;
+            this.checkbox_A_chicken.Location = new System.Drawing.Point(28, 19);
+            this.checkbox_A_chicken.Name = "checkbox_A_chicken";
+            this.checkbox_A_chicken.Size = new System.Drawing.Size(175, 17);
+            this.checkbox_A_chicken.TabIndex = 0;
+            this.checkbox_A_chicken.Text = "10 pcs. Delicious Fried Chicken";
+            this.checkbox_A_chicken.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -960,35 +961,15 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Food Bundle B";
             // 
-            // checkbox_B_halohalo
+            // checkbox_B_pizza
             // 
-            this.checkbox_B_halohalo.AutoSize = true;
-            this.checkbox_B_halohalo.Location = new System.Drawing.Point(28, 19);
-            this.checkbox_B_halohalo.Name = "checkbox_B_halohalo";
-            this.checkbox_B_halohalo.Size = new System.Drawing.Size(184, 17);
-            this.checkbox_B_halohalo.TabIndex = 0;
-            this.checkbox_B_halohalo.Text = "4 cups Special Halo-halo Regular";
-            this.checkbox_B_halohalo.UseVisualStyleBackColor = true;
-            // 
-            // checkbox_B_chicken
-            // 
-            this.checkbox_B_chicken.AutoSize = true;
-            this.checkbox_B_chicken.Location = new System.Drawing.Point(28, 42);
-            this.checkbox_B_chicken.Name = "checkbox_B_chicken";
-            this.checkbox_B_chicken.Size = new System.Drawing.Size(169, 17);
-            this.checkbox_B_chicken.TabIndex = 1;
-            this.checkbox_B_chicken.Text = "6 pcs. Delicious Fried Chicken";
-            this.checkbox_B_chicken.UseVisualStyleBackColor = true;
-            // 
-            // checkbox_B_carbonara
-            // 
-            this.checkbox_B_carbonara.AutoSize = true;
-            this.checkbox_B_carbonara.Location = new System.Drawing.Point(28, 65);
-            this.checkbox_B_carbonara.Name = "checkbox_B_carbonara";
-            this.checkbox_B_carbonara.Size = new System.Drawing.Size(144, 17);
-            this.checkbox_B_carbonara.TabIndex = 2;
-            this.checkbox_B_carbonara.Text = "1 Family Pack Carbonara";
-            this.checkbox_B_carbonara.UseVisualStyleBackColor = true;
+            this.checkbox_B_pizza.AutoSize = true;
+            this.checkbox_B_pizza.Location = new System.Drawing.Point(28, 110);
+            this.checkbox_B_pizza.Name = "checkbox_B_pizza";
+            this.checkbox_B_pizza.Size = new System.Drawing.Size(147, 17);
+            this.checkbox_B_pizza.TabIndex = 4;
+            this.checkbox_B_pizza.Text = "1 Medium Hawaiian Pizza";
+            this.checkbox_B_pizza.UseVisualStyleBackColor = true;
             // 
             // checkbox_B_fries
             // 
@@ -1000,15 +981,35 @@
             this.checkbox_B_fries.Text = "1 Family Pack Fries";
             this.checkbox_B_fries.UseVisualStyleBackColor = true;
             // 
-            // checkbox_B_pizza
+            // checkbox_B_carbonara
             // 
-            this.checkbox_B_pizza.AutoSize = true;
-            this.checkbox_B_pizza.Location = new System.Drawing.Point(28, 110);
-            this.checkbox_B_pizza.Name = "checkbox_B_pizza";
-            this.checkbox_B_pizza.Size = new System.Drawing.Size(147, 17);
-            this.checkbox_B_pizza.TabIndex = 4;
-            this.checkbox_B_pizza.Text = "1 Medium Hawaiian Pizza";
-            this.checkbox_B_pizza.UseVisualStyleBackColor = true;
+            this.checkbox_B_carbonara.AutoSize = true;
+            this.checkbox_B_carbonara.Location = new System.Drawing.Point(28, 65);
+            this.checkbox_B_carbonara.Name = "checkbox_B_carbonara";
+            this.checkbox_B_carbonara.Size = new System.Drawing.Size(144, 17);
+            this.checkbox_B_carbonara.TabIndex = 2;
+            this.checkbox_B_carbonara.Text = "1 Family Pack Carbonara";
+            this.checkbox_B_carbonara.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_B_chicken
+            // 
+            this.checkbox_B_chicken.AutoSize = true;
+            this.checkbox_B_chicken.Location = new System.Drawing.Point(28, 42);
+            this.checkbox_B_chicken.Name = "checkbox_B_chicken";
+            this.checkbox_B_chicken.Size = new System.Drawing.Size(169, 17);
+            this.checkbox_B_chicken.TabIndex = 1;
+            this.checkbox_B_chicken.Text = "6 pcs. Delicious Fried Chicken";
+            this.checkbox_B_chicken.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_B_halohalo
+            // 
+            this.checkbox_B_halohalo.AutoSize = true;
+            this.checkbox_B_halohalo.Location = new System.Drawing.Point(28, 19);
+            this.checkbox_B_halohalo.Name = "checkbox_B_halohalo";
+            this.checkbox_B_halohalo.Size = new System.Drawing.Size(184, 17);
+            this.checkbox_B_halohalo.TabIndex = 0;
+            this.checkbox_B_halohalo.Text = "4 cups Special Halo-halo Regular";
+            this.checkbox_B_halohalo.UseVisualStyleBackColor = true;
             // 
             // Lesson3Example3
             // 
@@ -1034,7 +1035,6 @@
             this.Load += new System.EventHandler(this.Lesson3Example3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -1055,6 +1055,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);

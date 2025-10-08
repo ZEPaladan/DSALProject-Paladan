@@ -48,9 +48,31 @@ namespace DSALProject
          };
     
     }
-    public class Variables2
+    public class POS2_ItemsAndPrices
     {
-       
+        public static Dictionary<int, (string ItemName, double Price, double Discount)> ItemsAndPrices = new Dictionary<int, (string, double, double)>()
+        {
+            { 11, ("Margherita", 280, 0) },
+            { 12, ("Pepperoni", 320, 0) },
+            { 13, ("Hawaiian", 350, 0) },
+            { 14, ("BBQ Chicken", 380, 0) },
+            { 15, ("Meat Lovers", 420, 0) },
+            { 16, ("Veggie", 480, 0) },
+            { 17, ("Four Cheese", 390, 0) },
+            { 18, ("Supreme", 450, 0) },
+            { 19, ("Buffalo Chicken", 400, 0) },
+            { 20, ("Seafood Pizza", 330, 0) },
+            { 21, ("Spinach and Feta", 520, 0) },
+            { 22, ("Mushroom Truffle", 300, 0) },
+            { 23, ("Breakfast Pizza", 400, 0) },
+            { 24, ("Cheeseburger", 450, 0) },
+            { 25, ("White Pizza", 360, 0) },
+            { 26, ("Sicilian", 340, 0) },
+            { 27, ("Detroit Style", 380, 0) },
+            { 28, ("Neapolitan", 360, 0) },
+            { 29, ("Calzone", 500, 0) },
+            { 30, ("Chicago Deep Dish", 370, 0) }
+        };
     }
 
 }

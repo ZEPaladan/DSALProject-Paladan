@@ -431,5 +431,10 @@ namespace DSALProject
             textbox_quantity.Text = "0";
             textbox_quantity.Focus();
         }
+
+        private void listbox_display_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

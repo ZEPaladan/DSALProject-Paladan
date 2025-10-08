@@ -29,48 +29,16 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBox29 = new System.Windows.Forms.CheckBox();
-            this.checkBox30 = new System.Windows.Forms.CheckBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listbox_display = new System.Windows.Forms.ListBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.checkbox_B_pizza = new System.Windows.Forms.CheckBox();
             this.checkbox_B_fries = new System.Windows.Forms.CheckBox();
@@ -103,18 +71,58 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radiobutton_foodbundleB = new System.Windows.Forms.RadioButton();
             this.radiobutton_foodbundleA = new System.Windows.Forms.RadioButton();
-            this.label21 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
+            this.checkBox25 = new System.Windows.Forms.CheckBox();
+            this.checkBox26 = new System.Windows.Forms.CheckBox();
+            this.checkBox27 = new System.Windows.Forms.CheckBox();
+            this.checkBox28 = new System.Windows.Forms.CheckBox();
+            this.checkBox29 = new System.Windows.Forms.CheckBox();
+            this.checkBox30 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.picturebox_orderimage = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listbox_display = new System.Windows.Forms.ListBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -135,13 +143,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -160,456 +161,90 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1487, 838);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.checkBox21);
-            this.groupBox1.Controls.Add(this.checkBox22);
-            this.groupBox1.Controls.Add(this.checkBox23);
-            this.groupBox1.Controls.Add(this.checkBox24);
-            this.groupBox1.Controls.Add(this.checkBox25);
-            this.groupBox1.Controls.Add(this.pictureBox11);
-            this.groupBox1.Controls.Add(this.pictureBox12);
-            this.groupBox1.Controls.Add(this.pictureBox13);
-            this.groupBox1.Controls.Add(this.pictureBox14);
-            this.groupBox1.Controls.Add(this.pictureBox15);
-            this.groupBox1.Controls.Add(this.checkBox26);
-            this.groupBox1.Controls.Add(this.checkBox27);
-            this.groupBox1.Controls.Add(this.checkBox28);
-            this.groupBox1.Controls.Add(this.checkBox29);
-            this.groupBox1.Controls.Add(this.checkBox30);
-            this.groupBox1.Controls.Add(this.pictureBox16);
-            this.groupBox1.Controls.Add(this.pictureBox17);
-            this.groupBox1.Controls.Add(this.pictureBox18);
-            this.groupBox1.Controls.Add(this.pictureBox19);
-            this.groupBox1.Controls.Add(this.pictureBox20);
-            this.groupBox1.Controls.Add(this.checkBox16);
-            this.groupBox1.Controls.Add(this.checkBox17);
-            this.groupBox1.Controls.Add(this.checkBox18);
-            this.groupBox1.Controls.Add(this.checkBox19);
-            this.groupBox1.Controls.Add(this.checkBox20);
-            this.groupBox1.Controls.Add(this.pictureBox6);
-            this.groupBox1.Controls.Add(this.pictureBox7);
-            this.groupBox1.Controls.Add(this.pictureBox8);
-            this.groupBox1.Controls.Add(this.pictureBox9);
-            this.groupBox1.Controls.Add(this.pictureBox10);
-            this.groupBox1.Controls.Add(this.checkBox15);
-            this.groupBox1.Controls.Add(this.checkBox14);
-            this.groupBox1.Controls.Add(this.checkBox13);
-            this.groupBox1.Controls.Add(this.checkBox12);
-            this.groupBox1.Controls.Add(this.checkBox11);
-            this.groupBox1.Controls.Add(this.pictureBox4);
-            this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(510, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.tableLayoutPanel1.SetRowSpan(this.groupBox1, 2);
-            this.groupBox1.Size = new System.Drawing.Size(974, 832);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pizza Choices";
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(741, 754);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(118, 17);
-            this.checkBox21.TabIndex = 69;
-            this.checkBox21.Text = "Chicago Deep Dish";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(557, 755);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(64, 17);
-            this.checkBox22.TabIndex = 68;
-            this.checkBox22.Text = "Calzone";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(374, 754);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(77, 17);
-            this.checkBox23.TabIndex = 67;
-            this.checkBox23.Text = "Neapolitan";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(192, 755);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(83, 17);
-            this.checkBox24.TabIndex = 66;
-            this.checkBox24.Text = "Detroit Style";
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(6, 754);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(59, 17);
-            this.checkBox25.TabIndex = 65;
-            this.checkBox25.Text = "Sicilian";
-            this.checkBox25.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::DSALProject.Properties.Resources.Chicago_Deep_Dish;
-            this.pictureBox11.Location = new System.Drawing.Point(741, 589);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 64;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::DSALProject.Properties.Resources.Calzone;
-            this.pictureBox12.Location = new System.Drawing.Point(557, 590);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 63;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::DSALProject.Properties.Resources.Neapolitan;
-            this.pictureBox13.Location = new System.Drawing.Point(374, 589);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 62;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::DSALProject.Properties.Resources.Detroit_Style_Pizza;
-            this.pictureBox14.Location = new System.Drawing.Point(192, 590);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 61;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::DSALProject.Properties.Resources.Sicilian;
-            this.pictureBox15.Location = new System.Drawing.Point(6, 589);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 60;
-            this.pictureBox15.TabStop = false;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(741, 557);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(82, 17);
-            this.checkBox26.TabIndex = 59;
-            this.checkBox26.Text = "White Pizza";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox27
-            // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(557, 558);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(92, 17);
-            this.checkBox27.TabIndex = 58;
-            this.checkBox27.Text = "Cheeseburger";
-            this.checkBox27.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(374, 557);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(99, 17);
-            this.checkBox28.TabIndex = 57;
-            this.checkBox28.Text = "Breakfast Pizza";
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBox29
-            // 
-            this.checkBox29.AutoSize = true;
-            this.checkBox29.Location = new System.Drawing.Point(192, 558);
-            this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(108, 17);
-            this.checkBox29.TabIndex = 56;
-            this.checkBox29.Text = "Mushroom Truffle";
-            this.checkBox29.UseVisualStyleBackColor = true;
-            // 
-            // checkBox30
-            // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.Location = new System.Drawing.Point(6, 557);
-            this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(110, 17);
-            this.checkBox30.TabIndex = 55;
-            this.checkBox30.Text = "Spinach and Feta";
-            this.checkBox30.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::DSALProject.Properties.Resources.White_Pizza;
-            this.pictureBox16.Location = new System.Drawing.Point(741, 392);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 54;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = global::DSALProject.Properties.Resources.Cheeseburger;
-            this.pictureBox17.Location = new System.Drawing.Point(557, 393);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 53;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::DSALProject.Properties.Resources.Breakfast;
-            this.pictureBox18.Location = new System.Drawing.Point(374, 392);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 52;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::DSALProject.Properties.Resources.Mushroom_Truffle;
-            this.pictureBox19.Location = new System.Drawing.Point(192, 393);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 51;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::DSALProject.Properties.Resources.Spinach_and_Feta;
-            this.pictureBox20.Location = new System.Drawing.Point(6, 392);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 50;
-            this.pictureBox20.TabStop = false;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(741, 365);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(94, 17);
-            this.checkBox16.TabIndex = 49;
-            this.checkBox16.Text = "Seafood Pizza";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(557, 366);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(101, 17);
-            this.checkBox17.TabIndex = 48;
-            this.checkBox17.Text = "Buffalo Chicken";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(374, 365);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(68, 17);
-            this.checkBox18.TabIndex = 47;
-            this.checkBox18.Text = "Supreme";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(192, 366);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(86, 17);
-            this.checkBox19.TabIndex = 46;
-            this.checkBox19.Text = "Four Cheese";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(6, 365);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(59, 17);
-            this.checkBox20.TabIndex = 45;
-            this.checkBox20.Text = "Veggie";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::DSALProject.Properties.Resources.Seafood;
-            this.pictureBox6.Location = new System.Drawing.Point(741, 200);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 44;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::DSALProject.Properties.Resources.Buffalo_Chicken;
-            this.pictureBox7.Location = new System.Drawing.Point(557, 201);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 43;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::DSALProject.Properties.Resources.Supreme;
-            this.pictureBox8.Location = new System.Drawing.Point(374, 200);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 42;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::DSALProject.Properties.Resources.Four_Cheese;
-            this.pictureBox9.Location = new System.Drawing.Point(192, 201);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 41;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::DSALProject.Properties.Resources.Veggie;
-            this.pictureBox10.Location = new System.Drawing.Point(6, 200);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 40;
-            this.pictureBox10.TabStop = false;
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(741, 177);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(85, 17);
-            this.checkBox15.TabIndex = 39;
-            this.checkBox15.Text = "Meat Lovers";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox14
-            // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(557, 178);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(90, 17);
-            this.checkBox14.TabIndex = 38;
-            this.checkBox14.Text = "BBQ Chicken";
-            this.checkBox14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox13
-            // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(374, 177);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(70, 17);
-            this.checkBox13.TabIndex = 37;
-            this.checkBox13.Text = "Hawaiian";
-            this.checkBox13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(192, 178);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(74, 17);
-            this.checkBox12.TabIndex = 36;
-            this.checkBox12.Text = "Pepperoni";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(6, 177);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(76, 17);
-            this.checkBox11.TabIndex = 35;
-            this.checkBox11.Text = "Margherita";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::DSALProject.Properties.Resources.Meat_Lovers;
-            this.pictureBox4.Location = new System.Drawing.Point(741, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::DSALProject.Properties.Resources.BBQ_Chicken;
-            this.pictureBox5.Location = new System.Drawing.Point(557, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DSALProject.Properties.Resources.Hawaiian;
-            this.pictureBox3.Location = new System.Drawing.Point(374, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DSALProject.Properties.Resources.Pepperoni;
-            this.pictureBox2.Location = new System.Drawing.Point(192, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DSALProject.Properties.Resources.Margherita;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button6);
+            this.groupBox7.Controls.Add(this.picturebox_orderimage);
+            this.groupBox7.Controls.Add(this.label1);
+            this.groupBox7.Controls.Add(this.button5);
+            this.groupBox7.Controls.Add(this.button4);
+            this.groupBox7.Controls.Add(this.button3);
+            this.groupBox7.Controls.Add(this.button2);
+            this.groupBox7.Controls.Add(this.button1);
+            this.groupBox7.Controls.Add(this.listbox_display);
+            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox7.Location = new System.Drawing.Point(3, 477);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(500, 358);
+            this.groupBox7.TabIndex = 20;
+            this.groupBox7.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(336, 228);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Order Image";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(417, 289);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(70, 40);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "EXIT";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(341, 289);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(70, 40);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "NEW";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(167, 289);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(70, 40);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "REMOVE ORDER";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(243, 289);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 40);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "PRINT TRANSACTION";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(7, 289);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 40);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "CALCULATE BILLS";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // listbox_display
+            // 
+            this.listbox_display.FormattingEnabled = true;
+            this.listbox_display.Location = new System.Drawing.Point(6, 6);
+            this.listbox_display.Name = "listbox_display";
+            this.listbox_display.Size = new System.Drawing.Size(236, 277);
+            this.listbox_display.TabIndex = 4;
             // 
             // groupBox6
             // 
@@ -621,9 +256,19 @@
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(3, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(501, 468);
+            this.groupBox6.Size = new System.Drawing.Size(500, 468);
             this.groupBox6.TabIndex = 19;
             this.groupBox6.TabStop = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(6, 16);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(481, 24);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "PIZZA HURT FOOD ORDERING APPLICATION";
             // 
             // groupBox5
             // 
@@ -942,32 +587,257 @@
             this.radiobutton_foodbundleA.UseVisualStyleBackColor = true;
             this.radiobutton_foodbundleA.CheckedChanged += new System.EventHandler(this.radiobutton_foodbundleA_CheckedChanged);
             // 
-            // label21
+            // groupBox1
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(6, 16);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(481, 24);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "PIZZA HURT FOOD ORDERING APPLICATION";
+            this.groupBox1.Controls.Add(this.checkBox21);
+            this.groupBox1.Controls.Add(this.checkBox22);
+            this.groupBox1.Controls.Add(this.checkBox23);
+            this.groupBox1.Controls.Add(this.checkBox24);
+            this.groupBox1.Controls.Add(this.checkBox25);
+            this.groupBox1.Controls.Add(this.pictureBox11);
+            this.groupBox1.Controls.Add(this.pictureBox12);
+            this.groupBox1.Controls.Add(this.pictureBox13);
+            this.groupBox1.Controls.Add(this.pictureBox14);
+            this.groupBox1.Controls.Add(this.pictureBox15);
+            this.groupBox1.Controls.Add(this.checkBox26);
+            this.groupBox1.Controls.Add(this.checkBox27);
+            this.groupBox1.Controls.Add(this.checkBox28);
+            this.groupBox1.Controls.Add(this.checkBox29);
+            this.groupBox1.Controls.Add(this.checkBox30);
+            this.groupBox1.Controls.Add(this.pictureBox16);
+            this.groupBox1.Controls.Add(this.pictureBox17);
+            this.groupBox1.Controls.Add(this.pictureBox18);
+            this.groupBox1.Controls.Add(this.pictureBox19);
+            this.groupBox1.Controls.Add(this.pictureBox20);
+            this.groupBox1.Controls.Add(this.checkBox16);
+            this.groupBox1.Controls.Add(this.checkBox17);
+            this.groupBox1.Controls.Add(this.checkBox18);
+            this.groupBox1.Controls.Add(this.checkBox19);
+            this.groupBox1.Controls.Add(this.checkBox20);
+            this.groupBox1.Controls.Add(this.pictureBox6);
+            this.groupBox1.Controls.Add(this.pictureBox7);
+            this.groupBox1.Controls.Add(this.pictureBox8);
+            this.groupBox1.Controls.Add(this.pictureBox9);
+            this.groupBox1.Controls.Add(this.pictureBox10);
+            this.groupBox1.Controls.Add(this.checkBox15);
+            this.groupBox1.Controls.Add(this.checkBox14);
+            this.groupBox1.Controls.Add(this.checkBox13);
+            this.groupBox1.Controls.Add(this.checkBox12);
+            this.groupBox1.Controls.Add(this.checkBox11);
+            this.groupBox1.Controls.Add(this.pictureBox4);
+            this.groupBox1.Controls.Add(this.pictureBox5);
+            this.groupBox1.Controls.Add(this.pictureBox3);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(509, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.tableLayoutPanel1.SetRowSpan(this.groupBox1, 2);
+            this.groupBox1.Size = new System.Drawing.Size(975, 832);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Pizza Choices";
             // 
-            // groupBox7
+            // checkBox21
             // 
-            this.groupBox7.Controls.Add(this.picturebox_orderimage);
-            this.groupBox7.Controls.Add(this.label1);
-            this.groupBox7.Controls.Add(this.button5);
-            this.groupBox7.Controls.Add(this.button4);
-            this.groupBox7.Controls.Add(this.button3);
-            this.groupBox7.Controls.Add(this.button2);
-            this.groupBox7.Controls.Add(this.button1);
-            this.groupBox7.Controls.Add(this.listbox_display);
-            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox7.Location = new System.Drawing.Point(3, 477);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(501, 358);
-            this.groupBox7.TabIndex = 20;
-            this.groupBox7.TabStop = false;
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(741, 754);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(118, 17);
+            this.checkBox21.TabIndex = 69;
+            this.checkBox21.Text = "Chicago Deep Dish";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            // 
+            // checkBox22
+            // 
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Location = new System.Drawing.Point(557, 755);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(64, 17);
+            this.checkBox22.TabIndex = 68;
+            this.checkBox22.Text = "Calzone";
+            this.checkBox22.UseVisualStyleBackColor = true;
+            // 
+            // checkBox23
+            // 
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Location = new System.Drawing.Point(374, 754);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(77, 17);
+            this.checkBox23.TabIndex = 67;
+            this.checkBox23.Text = "Neapolitan";
+            this.checkBox23.UseVisualStyleBackColor = true;
+            // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Location = new System.Drawing.Point(192, 755);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(83, 17);
+            this.checkBox24.TabIndex = 66;
+            this.checkBox24.Text = "Detroit Style";
+            this.checkBox24.UseVisualStyleBackColor = true;
+            // 
+            // checkBox25
+            // 
+            this.checkBox25.AutoSize = true;
+            this.checkBox25.Location = new System.Drawing.Point(6, 754);
+            this.checkBox25.Name = "checkBox25";
+            this.checkBox25.Size = new System.Drawing.Size(59, 17);
+            this.checkBox25.TabIndex = 65;
+            this.checkBox25.Text = "Sicilian";
+            this.checkBox25.UseVisualStyleBackColor = true;
+            // 
+            // checkBox26
+            // 
+            this.checkBox26.AutoSize = true;
+            this.checkBox26.Location = new System.Drawing.Point(741, 557);
+            this.checkBox26.Name = "checkBox26";
+            this.checkBox26.Size = new System.Drawing.Size(82, 17);
+            this.checkBox26.TabIndex = 59;
+            this.checkBox26.Text = "White Pizza";
+            this.checkBox26.UseVisualStyleBackColor = true;
+            // 
+            // checkBox27
+            // 
+            this.checkBox27.AutoSize = true;
+            this.checkBox27.Location = new System.Drawing.Point(557, 558);
+            this.checkBox27.Name = "checkBox27";
+            this.checkBox27.Size = new System.Drawing.Size(92, 17);
+            this.checkBox27.TabIndex = 58;
+            this.checkBox27.Text = "Cheeseburger";
+            this.checkBox27.UseVisualStyleBackColor = true;
+            // 
+            // checkBox28
+            // 
+            this.checkBox28.AutoSize = true;
+            this.checkBox28.Location = new System.Drawing.Point(374, 557);
+            this.checkBox28.Name = "checkBox28";
+            this.checkBox28.Size = new System.Drawing.Size(99, 17);
+            this.checkBox28.TabIndex = 57;
+            this.checkBox28.Text = "Breakfast Pizza";
+            this.checkBox28.UseVisualStyleBackColor = true;
+            // 
+            // checkBox29
+            // 
+            this.checkBox29.AutoSize = true;
+            this.checkBox29.Location = new System.Drawing.Point(192, 558);
+            this.checkBox29.Name = "checkBox29";
+            this.checkBox29.Size = new System.Drawing.Size(108, 17);
+            this.checkBox29.TabIndex = 56;
+            this.checkBox29.Text = "Mushroom Truffle";
+            this.checkBox29.UseVisualStyleBackColor = true;
+            // 
+            // checkBox30
+            // 
+            this.checkBox30.AutoSize = true;
+            this.checkBox30.Location = new System.Drawing.Point(6, 557);
+            this.checkBox30.Name = "checkBox30";
+            this.checkBox30.Size = new System.Drawing.Size(110, 17);
+            this.checkBox30.TabIndex = 55;
+            this.checkBox30.Text = "Spinach and Feta";
+            this.checkBox30.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(741, 365);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(94, 17);
+            this.checkBox16.TabIndex = 49;
+            this.checkBox16.Text = "Seafood Pizza";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(557, 366);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(101, 17);
+            this.checkBox17.TabIndex = 48;
+            this.checkBox17.Text = "Buffalo Chicken";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            this.checkBox18.AutoSize = true;
+            this.checkBox18.Location = new System.Drawing.Point(374, 365);
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.Size = new System.Drawing.Size(68, 17);
+            this.checkBox18.TabIndex = 47;
+            this.checkBox18.Text = "Supreme";
+            this.checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.Location = new System.Drawing.Point(192, 366);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(86, 17);
+            this.checkBox19.TabIndex = 46;
+            this.checkBox19.Text = "Four Cheese";
+            this.checkBox19.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.Location = new System.Drawing.Point(6, 365);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(59, 17);
+            this.checkBox20.TabIndex = 45;
+            this.checkBox20.Text = "Veggie";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(741, 177);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(85, 17);
+            this.checkBox15.TabIndex = 39;
+            this.checkBox15.Text = "Meat Lovers";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(557, 178);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(90, 17);
+            this.checkBox14.TabIndex = 38;
+            this.checkBox14.Text = "BBQ Chicken";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(374, 177);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(70, 17);
+            this.checkBox13.TabIndex = 37;
+            this.checkBox13.Text = "Hawaiian";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(192, 178);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(74, 17);
+            this.checkBox12.TabIndex = 36;
+            this.checkBox12.Text = "Pepperoni";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(6, 177);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(76, 17);
+            this.checkBox11.TabIndex = 35;
+            this.checkBox11.Text = "Margherita";
+            this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // picturebox_orderimage
             // 
@@ -979,72 +849,215 @@
             this.picturebox_orderimage.TabIndex = 17;
             this.picturebox_orderimage.TabStop = false;
             // 
-            // label1
+            // pictureBox11
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(336, 228);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Order Image";
+            this.pictureBox11.Image = global::DSALProject.Properties.Resources.Chicago_Deep_Dish;
+            this.pictureBox11.Location = new System.Drawing.Point(741, 589);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 64;
+            this.pictureBox11.TabStop = false;
             // 
-            // button5
+            // pictureBox12
             // 
-            this.button5.Location = new System.Drawing.Point(343, 289);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(70, 40);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "EXIT";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.pictureBox12.Image = global::DSALProject.Properties.Resources.Calzone;
+            this.pictureBox12.Location = new System.Drawing.Point(557, 590);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 63;
+            this.pictureBox12.TabStop = false;
             // 
-            // button4
+            // pictureBox13
             // 
-            this.button4.Location = new System.Drawing.Point(267, 289);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 40);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "NEW";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.pictureBox13.Image = global::DSALProject.Properties.Resources.Neapolitan;
+            this.pictureBox13.Location = new System.Drawing.Point(374, 589);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 62;
+            this.pictureBox13.TabStop = false;
             // 
-            // button3
+            // pictureBox14
             // 
-            this.button3.Location = new System.Drawing.Point(191, 289);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 40);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "REMOVE ORDER";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.pictureBox14.Image = global::DSALProject.Properties.Resources.Detroit_Style_Pizza;
+            this.pictureBox14.Location = new System.Drawing.Point(0, 590);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 61;
+            this.pictureBox14.TabStop = false;
             // 
-            // button2
+            // pictureBox15
             // 
-            this.button2.Location = new System.Drawing.Point(93, 289);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 40);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "PRINT TRANSACTION";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox15.Image = global::DSALProject.Properties.Resources.Sicilian;
+            this.pictureBox15.Location = new System.Drawing.Point(194, 590);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 60;
+            this.pictureBox15.TabStop = false;
             // 
-            // button1
+            // pictureBox16
             // 
-            this.button1.Location = new System.Drawing.Point(7, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 40);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "CALCULATE BILLS";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pictureBox16.Image = global::DSALProject.Properties.Resources.White_Pizza;
+            this.pictureBox16.Location = new System.Drawing.Point(741, 392);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 54;
+            this.pictureBox16.TabStop = false;
             // 
-            // listbox_display
+            // pictureBox17
             // 
-            this.listbox_display.FormattingEnabled = true;
-            this.listbox_display.Location = new System.Drawing.Point(6, 6);
-            this.listbox_display.Name = "listbox_display";
-            this.listbox_display.Size = new System.Drawing.Size(236, 277);
-            this.listbox_display.TabIndex = 4;
+            this.pictureBox17.Image = global::DSALProject.Properties.Resources.Cheeseburger;
+            this.pictureBox17.Location = new System.Drawing.Point(557, 393);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 53;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::DSALProject.Properties.Resources.Breakfast;
+            this.pictureBox18.Location = new System.Drawing.Point(374, 392);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 52;
+            this.pictureBox18.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::DSALProject.Properties.Resources.Mushroom_Truffle;
+            this.pictureBox19.Location = new System.Drawing.Point(192, 393);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 51;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::DSALProject.Properties.Resources.Spinach_and_Feta;
+            this.pictureBox20.Location = new System.Drawing.Point(6, 392);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox20.TabIndex = 50;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::DSALProject.Properties.Resources.Seafood;
+            this.pictureBox6.Location = new System.Drawing.Point(741, 200);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 44;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::DSALProject.Properties.Resources.Buffalo_Chicken;
+            this.pictureBox7.Location = new System.Drawing.Point(557, 201);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 43;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::DSALProject.Properties.Resources.Supreme;
+            this.pictureBox8.Location = new System.Drawing.Point(374, 200);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 42;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::DSALProject.Properties.Resources.Four_Cheese;
+            this.pictureBox9.Location = new System.Drawing.Point(192, 201);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 41;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::DSALProject.Properties.Resources.Veggie;
+            this.pictureBox10.Location = new System.Drawing.Point(6, 200);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 40;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::DSALProject.Properties.Resources.Meat_Lovers;
+            this.pictureBox4.Location = new System.Drawing.Point(741, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::DSALProject.Properties.Resources.BBQ_Chicken;
+            this.pictureBox5.Location = new System.Drawing.Point(557, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DSALProject.Properties.Resources.Hawaiian;
+            this.pictureBox3.Location = new System.Drawing.Point(374, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DSALProject.Properties.Resources.Pepperoni;
+            this.pictureBox2.Location = new System.Drawing.Point(192, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DSALProject.Properties.Resources.Margherita;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(174, 159);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(93, 289);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(70, 40);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "ADD TO RECEIPT";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // POS2_FunctionForm
             // 
@@ -1058,8 +1071,21 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.POS2_FunctionForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -1080,19 +1106,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1184,5 +1197,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listbox_display;
+        private System.Windows.Forms.Button button6;
     }
 }

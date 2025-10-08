@@ -16,15 +16,8 @@ namespace DSALProject
         {
             InitializeComponent();
 
-            textbox_itemname.Enabled = false;
-            textbox_price.Enabled = false;
-            textbox_discountamount.Enabled = false;
-            textbox_discountedamount.Enabled = false;
-            textbox_change.Enabled = false;
-
-            textbox_totalquantity.Enabled = false;
-            textbox_totaldiscountgiven.Enabled = false;
-            textbox_totaldicountedamount.Enabled = false;
+            POS1_Functions.DisableTextboxes(textbox_itemname, textbox_price, textbox_discountamount, textbox_discountedamount, textbox_change, textbox_totalquantity,
+                textbox_totaldiscountgiven, textbox_totaldicountedamount);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -211,6 +204,11 @@ namespace DSALProject
                 textbox_discountamount, textbox_discountedamount, radiobutton_seniorcitizen, radiobutton_withdisccard,
                 radiobutton_employeedisc, radiobutton_nodiscount, textbox_totalquantity, textbox_totaldiscountgiven,
                 textbox_totaldicountedamount, textbox_cashrendered, textbox_change);
+        }
+
+        private void POS1_Class_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

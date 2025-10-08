@@ -1209,6 +1209,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POS1_Class";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.POS1_Class_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
