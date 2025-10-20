@@ -53,6 +53,12 @@
     <Compile Include="Lesson13Example1.Designer.cs">
       <DependentUpon>Lesson13Example1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lesson13Example1_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lesson13Example1_Class.Designer.cs">
+      <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lesson5Example1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     <Compile Include="Variables.cs" />
     <EmbeddedResource Include="Lesson13Example1.resx">
       <DependentUpon>Lesson13Example1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lesson13Example1_Class.resx">
+      <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson2Activity1.resx">
       <DependentUpon>Lesson2Activity1.cs</DependentUpon>
@@ -456,6 +465,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\default image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\blank_image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

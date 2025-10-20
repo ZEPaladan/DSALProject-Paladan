@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
 namespace DSALProject
 {
@@ -16,13 +18,13 @@ namespace DSALProject
         // Function to display item name and price based on item number
         public static void ItemsAndPricesDisplay(TextBox itemNameBox, TextBox priceBox, int itemNumber)
         {
-            try 
+            try
             {
                 var item = POS1_ItemsAndPrices.ItemsAndPrices[itemNumber];
                 itemNameBox.Text = item.ItemName;
                 priceBox.Text = item.Price.ToString("F2");
 
-                
+
                 Variables.Current.item_name = item.ItemName;
                 Variables.Current.price = item.Price;
             }
@@ -76,7 +78,7 @@ namespace DSALProject
                 // Display results
                 discountAmountBox.Text = Variables.Current.discount.ToString("n");
                 discountedAmountBox.Text = Variables.Current.discounted_amount.ToString("n");
-               
+
             }
             catch (Exception ex)
             {
@@ -88,7 +90,7 @@ namespace DSALProject
         // Function to clear and focus on quantity textbox
         public static void ClearAndFocusQuanity(TextBox quantityBox)
         {
-            try 
+            try
             {
                 quantityBox.Clear();
                 quantityBox.Focus();
@@ -100,10 +102,10 @@ namespace DSALProject
         }
 
         // Function to calculate totals and change
-        public static void Calculate(TextBox totalQuantityBox, TextBox totalDiscountGivenBox, TextBox totalDiscountedAmountBox, 
+        public static void Calculate(TextBox totalQuantityBox, TextBox totalDiscountGivenBox, TextBox totalDiscountedAmountBox,
             TextBox quantityBox, TextBox discountBox, TextBox discountedAmountBox, TextBox cashrenderedBox, TextBox changeBox)
         {
-            try 
+            try
             {
                 //Calculate for change
                 Variables.Current.cash_rendered = Convert.ToDouble(cashrenderedBox.Text);
@@ -119,7 +121,7 @@ namespace DSALProject
                 totalDiscountGivenBox.Text = Variables.Current.total_discount_given.ToString("F2");
                 Variables.Current.total_discounted_amount += Convert.ToDouble(discountedAmountBox.Text);
                 totalDiscountedAmountBox.Text = Variables.Current.total_discounted_amount.ToString("F2");
-                
+
             }
             catch (Exception ex)
             {
@@ -133,7 +135,7 @@ namespace DSALProject
             TextBox totalQuantityBox, TextBox totalDiscountGivenBox, TextBox totalDiscountedAmountBox,
             TextBox cashrenderedBox, TextBox changeBox)
         {
-            try 
+            try
             {
                 // Clear all textboxes
                 itemNameBox.Clear();
@@ -160,7 +162,7 @@ namespace DSALProject
                 Variables.Current.cash_rendered = 0;
                 Variables.Current.change = 0;
                 // Note: Total variables are not reset here to preserve running totals
-                
+
             }
             catch (Exception ex)
             {
@@ -199,7 +201,7 @@ namespace DSALProject
         }
         // Function to display food bundles and manage checkboxes
         public static void FoodBundlesDisplay(Form form, string bundleName, Color bgColor, PictureBox pictureBox, Image bundleImage, TextBox priceBox, TextBox discountBox,
-            TextBox quantityBox, RadioButton bundleRadioButton, 
+            TextBox quantityBox, RadioButton bundleRadioButton,
             CheckBox check1, CheckBox check2, CheckBox check3, CheckBox check4, CheckBox check5, // group to check
             CheckBox uncheck1, CheckBox uncheck2, CheckBox uncheck3, CheckBox uncheck4, CheckBox uncheck5) // group to uncheck
         {
@@ -218,7 +220,7 @@ namespace DSALProject
             uncheck5.Checked = false;
 
             if (bundleName == "A")
-            {   
+            {
                 form.BackColor = bgColor;
                 pictureBox.BackColor = bgColor;
                 Variables.Current.item_name = "Food Bundle A";
@@ -236,7 +238,7 @@ namespace DSALProject
 
 
             quantityBox.Focus();
-            
+
         }
         // Function to calculate price, discount, and discounted amount
         public static void CalculatePriceAndDiscount(TextBox priceBox, TextBox discountBox, TextBox quantityBox, TextBox discountedAmountBox)
@@ -269,7 +271,7 @@ namespace DSALProject
             }
         }
         // Function to add item to listbox and update totals
-        public static void AddToListboxAndIncrementTotal(ListBox listbox, TextBox priceBox, TextBox totalQuantityBox, 
+        public static void AddToListboxAndIncrementTotal(ListBox listbox, TextBox priceBox, TextBox totalQuantityBox,
             TextBox quantityBox, TextBox discountBox, TextBox discountedAmountBox, TextBox totalPrice, RadioButton radioButton1, RadioButton radioButton2)
         {
             try
@@ -298,7 +300,7 @@ namespace DSALProject
                 listbox.Items.Add($"    Price: {price:F2}");
                 listbox.Items.Add($"    Discount: {discount:F2}");
                 listbox.Items.Add($"    Total: {discountedAmount:F2}");
-                listbox.Items.Add("----------------------------------------------");                
+                listbox.Items.Add("----------------------------------------------");
                 // Increment totals
                 totalQuantity += quantity;
                 totalPriceValue += discountedAmount;
@@ -314,7 +316,7 @@ namespace DSALProject
                 priceBox.Clear();
                 discountBox.Clear();
                 discountedAmountBox.Clear();
-                
+
 
             }
             catch (Exception ex)
@@ -442,8 +444,8 @@ namespace DSALProject
         // Function to print the contents of the listbox
         public static void PrintListBox(ListBox listbox)
         {
-            try 
-            { 
+            try
+            {
                 Lesson3Example3_PrintForm printForm = new Lesson3Example3_PrintForm();
                 printForm.listbox_printdisplay.Items.AddRange(listbox.Items);
                 printForm.ShowDialog();
@@ -456,7 +458,7 @@ namespace DSALProject
         // Function to calculate change and display transaction summary
         public static void CalculateChange(TextBox cashGivenBox, TextBox changeBox, TextBox totalPriceBox, ListBox listbox)
         {
-            try 
+            try
             {
                 double cashGiven = 0;
                 double totalPrice = 0;
@@ -611,11 +613,11 @@ namespace DSALProject
                 double salaryLoan = double.TryParse(salaryloanBox.Text, out double saL) ? saL : 0;
                 double otherLoan = double.TryParse(otherloanBox.Text, out double oL) ? oL : 0;
 
-                
+
 
                 // Net Income
-                
-                
+
+
 
                 // Tax Contribution (simplified example)
                 double taxContribution = 0;
@@ -631,7 +633,7 @@ namespace DSALProject
                 taxcontribBox.Text = taxContribution.ToString("F2");
 
                 double totalDeductions = sssContribution + philHealthContribution + pagibigContribution + sssLoan + pagibigLoan + facultySavings + facultyLoan + salaryLoan + otherLoan + taxContribution;
-                
+
                 totaldeductionBox.Text = totalDeductions.ToString("F2");
                 double netIncome = grossIncome - totalDeductions;
                 netIncome = grossIncome - totalDeductions;
@@ -755,4 +757,66 @@ namespace DSALProject
     }
     //----------------------------------------------------------------------------------------------------------------------------------------//
     //----------------------------------------------------------------------------------------------------------------------------------------//
+    public class SQL_Class
+    {
+       
+        string picpath;
+        string connectionString = null;
+        SqlConnection connection;
+        SqlCommand command;
+        DataSet dataset;
+        SqlDataAdapter adaptersql;
+        string sql = null;
+        // Function to initialize SQL connection
+        public void InitializeSQLConnection()
+        {
+            connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = SampleDatabaseDb; User ID = sa; Password = admin";
+            connection = new SqlConnection(connectionString);
+            command = new SqlCommand();
+            adaptersql = new SqlDataAdapter();
+            dataset = new DataSet();
+        }
+        // Function to execute a non-query SQL command (INSERT, UPDATE, DELETE)
+        public void ExecuteSQLCommand(string sql)
+        {
+            try
+            {
+                connection.Open();
+                command = new SqlCommand(sql, connection);
+                command.CommandType = CommandType.Text;
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error in ExecuteSQLCommand: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        // Function to retrieve a DataSet based on the provided SQL query
+        public DataSet GetDataSet(string sql)
+        {
+            try
+            {
+                connection.Open();
+                command = new SqlCommand(sql, connection);
+                command.CommandType = CommandType.Text;
+                adaptersql = new SqlDataAdapter(command);
+                dataset = new DataSet();
+                adaptersql.Fill(dataset, "studentTbl");
+                return dataset;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error in GetDataSet: " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        
+    }
 }
