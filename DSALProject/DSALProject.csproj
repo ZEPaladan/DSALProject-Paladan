@@ -78,6 +78,7 @@
     <Compile Include="Lesson5Example2.Designer.cs">
       <DependentUpon>Lesson5Example2.cs</DependentUpon>
     </Compile>
+    <Compile Include="loginDb_dbconnection.cs" />
     <Compile Include="Payrol_Class.cs">
       <SubType>Form</SubType>
     </Compile>
