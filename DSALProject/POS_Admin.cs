@@ -27,6 +27,10 @@ namespace DSALProject
         {
             try
             {
+                textbox_picpath1.Hide();
+                textbox_picpath2.Hide();
+                textbox_picpath3.Hide();
+                textbox_picpath4.Hide();
                 textbox_picpath5.Hide();
                 textbox_picpath6.Hide();
                 textbox_picpath7.Hide();
@@ -43,7 +47,10 @@ namespace DSALProject
                 textbox_picpath18.Hide();
                 textbox_picpath19.Hide();
                 textbox_picpath20.Hide();
-
+                
+                combobox_posidno.Items.Add("1");
+                combobox_posidno.Items.Add("2");
+                combobox_posidno.Items.Add("3");
             }
             catch (Exception ex)
             {
@@ -57,6 +64,10 @@ namespace DSALProject
             {
                 pic = null;
 
+                textbox_picpath1.Clear();
+                textbox_picpath2.Clear();
+                textbox_picpath3.Clear();
+                textbox_picpath4.Clear();
                 textbox_picpath5.Clear();
                 textbox_picpath6.Clear();
                 textbox_picpath7.Clear();
@@ -74,6 +85,10 @@ namespace DSALProject
                 textbox_picpath19.Clear();
                 textbox_picpath20.Clear();
 
+                pictureBox1.Image = pic;
+                pictureBox2.Image = pic;
+                pictureBox3.Image = pic;
+                pictureBox4.Image = pic;
                 pictureBox5.Image = pic;
                 pictureBox6.Image = pic;
                 pictureBox7.Image = pic;
@@ -91,6 +106,10 @@ namespace DSALProject
                 pictureBox19.Image = pic;
                 pictureBox20.Image = pic;
 
+                textbox_price1.Clear();
+                textbox_price2.Clear();
+                textbox_price3.Clear();
+                textbox_price4.Clear();
                 textbox_price5.Clear();
                 textbox_price6.Clear();
                 textbox_price7.Clear();
@@ -108,6 +127,10 @@ namespace DSALProject
                 textbox_price19.Clear();
                 textbox_price20.Clear();
 
+                textbox_name1.Clear();
+                textbox_name2.Clear();
+                textbox_name3.Clear();
+                textbox_name4.Clear();
                 textbox_name5.Clear();
                 textbox_name6.Clear();
                 textbox_name7.Clear();
