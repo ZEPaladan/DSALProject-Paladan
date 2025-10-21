@@ -20,7 +20,8 @@ namespace DSALProject
         public void payrol_connString()
         {
             // Codes to establish connection from C# forms to the SQL Server database
-            payrol_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = SampleDatabaseDb; User ID = sa; Password = admin";
+            //payrol_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = SampleDatabaseDb; User ID = sa; Password = admin";
+            payrol_connectionString = "Data Source = C203-33; Initial Catalog = POSDB; user id = SA; password = B1Admin123@";
             payrol_sql_connection = new SqlConnection(payrol_connectionString);
             payrol_sql_connection.ConnectionString = payrol_connectionString;
             payrol_sql_connection.Open();

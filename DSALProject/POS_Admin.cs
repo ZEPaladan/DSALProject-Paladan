@@ -1,13 +1,14 @@
-﻿using System;
+﻿using DSALProject.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace DSALProject
 {
@@ -51,6 +52,12 @@ namespace DSALProject
                 combobox_posidno.Items.Add("1");
                 combobox_posidno.Items.Add("2");
                 combobox_posidno.Items.Add("3");
+
+                posdb_connect.pos_select();
+                posdb_connect.pos_cmd();
+                posdb_connect.pos_sqladapterSelect();
+                posdb_connect.pos_sqldatasetSELECT();
+                dataGridView1.DataSource = posdb_connect.pos_sql_dataset.Tables[0];
             }
             catch (Exception ex)
             {
@@ -62,7 +69,7 @@ namespace DSALProject
         {
             try
             {
-                pic = null;
+                pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
 
                 textbox_picpath1.Clear();
                 textbox_picpath2.Clear();

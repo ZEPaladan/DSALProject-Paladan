@@ -493,7 +493,28 @@
     <None Include="Resources\default image.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Assorted Chiffon Cake Slices 8s Pack.png" />
+    <Content Include="Resources\Banana Crunch Loaf.png" />
+    <Content Include="Resources\Bato-Dela-Rosa-1.jpg" />
+    <Content Include="Resources\Black Forest Cake.png" />
     <Content Include="Resources\blank_image.jpg" />
+    <Content Include="Resources\Brownie Square.png" />
+    <Content Include="Resources\Butter Mamon.png" />
+    <Content Include="Resources\Cheesy Ensaymada.png" />
+    <Content Include="Resources\Chocolate Bliss Cake.png" />
+    <Content Include="Resources\Chocolate Roll.png" />
+    <Content Include="Resources\ChocoPeanut Butter Cake Slice.png" />
+    <Content Include="Resources\Mango Blossom Cake Petite.png" />
+    <Content Include="Resources\Mango Blossom Cake Regular.png" />
+    <Content Include="Resources\Milky Caramel Roll.png" />
+    <Content Include="Resources\Mocha Dedication Cake.png" />
+    <Content Include="Resources\Mocha Marble Cake Slice.png" />
+    <Content Include="Resources\Red Velvet Cake Slice.png" />
+    <Content Include="Resources\Strawberry Cake Slice.png" />
+    <Content Include="Resources\Supreme Caramel Mocha Cake.png" />
+    <Content Include="Resources\Triple Chocolate Roll.png" />
+    <Content Include="Resources\Ube Marble Cake Slice.png" />
+    <Content Include="Resources\Ube Overload Cake.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

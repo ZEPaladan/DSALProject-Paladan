@@ -21,7 +21,8 @@ namespace DSALProject
         public void pos_connString()
         {
             // Codes to establish connection from C# forms to the SQL Server database
-            pos_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = POSDB; User ID = sa; Password = admin";
+            //pos_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = POSDB; User ID = sa; Password = admin";
+            pos_connectionString = "Data Source = C203-33; Initial Catalog = POSDB; user id = SA; password = B1Admin123@";
             pos_sql_connection = new SqlConnection(pos_connectionString);
             pos_sql_connection.ConnectionString = pos_connectionString;
             pos_sql_connection.Open();
