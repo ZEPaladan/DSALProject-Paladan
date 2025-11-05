@@ -60,6 +60,12 @@
     <Compile Include="Lesson13Example1_Class.Designer.cs">
       <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
     </Compile>
+    <Compile Include="POSOrderingApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSOrderingApplication.Designer.cs">
+      <DependentUpon>POSOrderingApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="POS_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson13Example1_Class.resx">
       <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSOrderingApplication.resx">
+      <DependentUpon>POSOrderingApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS_Admin.resx">
       <DependentUpon>POS_Admin.cs</DependentUpon>

@@ -30,6 +30,7 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.combobox_posidno = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button_exit = new System.Windows.Forms.Button();
             this.button_newcancel = new System.Windows.Forms.Button();
@@ -159,7 +160,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textbox_name1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.combobox_posidno = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -198,7 +198,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 98F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1241, 939);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1241, 881);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox2
@@ -215,9 +215,18 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(995, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(243, 933);
+            this.groupBox2.Size = new System.Drawing.Size(243, 875);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
+            // 
+            // combobox_posidno
+            // 
+            this.combobox_posidno.FormattingEnabled = true;
+            this.combobox_posidno.Location = new System.Drawing.Point(6, 18);
+            this.combobox_posidno.Name = "combobox_posidno";
+            this.combobox_posidno.Size = new System.Drawing.Size(188, 21);
+            this.combobox_posidno.TabIndex = 10;
+            this.combobox_posidno.SelectedIndexChanged += new System.EventHandler(this.combobox_posidno_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -421,7 +430,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(986, 933);
+            this.groupBox1.Size = new System.Drawing.Size(986, 875);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -1425,19 +1434,11 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Price:";
             // 
-            // combobox_posidno
-            // 
-            this.combobox_posidno.FormattingEnabled = true;
-            this.combobox_posidno.Location = new System.Drawing.Point(6, 18);
-            this.combobox_posidno.Name = "combobox_posidno";
-            this.combobox_posidno.Size = new System.Drawing.Size(188, 21);
-            this.combobox_posidno.TabIndex = 10;
-            // 
             // POS_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 939);
+            this.ClientSize = new System.Drawing.Size(1241, 881);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "POS_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

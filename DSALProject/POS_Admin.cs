@@ -28,6 +28,30 @@ namespace DSALProject
         {
             try
             {
+                //pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
+                pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+
+                pictureBox1.Image = pic;
+                pictureBox2.Image = pic;
+                pictureBox3.Image = pic;
+                pictureBox4.Image = pic;
+                pictureBox5.Image = pic;
+                pictureBox6.Image = pic;
+                pictureBox7.Image = pic;
+                pictureBox8.Image = pic;
+                pictureBox9.Image = pic;
+                pictureBox10.Image = pic;
+                pictureBox11.Image = pic;
+                pictureBox12.Image = pic;
+                pictureBox13.Image = pic;
+                pictureBox14.Image = pic;
+                pictureBox15.Image = pic;
+                pictureBox16.Image = pic;
+                pictureBox17.Image = pic;
+                pictureBox18.Image = pic;
+                pictureBox19.Image = pic;
+                pictureBox20.Image = pic;
+
                 textbox_picpath1.Hide();
                 textbox_picpath2.Hide();
                 textbox_picpath3.Hide();
@@ -69,7 +93,8 @@ namespace DSALProject
         {
             try
             {
-                pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
+                //pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
+                pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
 
                 textbox_picpath1.Clear();
                 textbox_picpath2.Clear();
@@ -629,6 +654,11 @@ namespace DSALProject
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             open_file_image(pictureBox11, textbox_picpath11);
+        }
+
+        private void combobox_posidno_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
