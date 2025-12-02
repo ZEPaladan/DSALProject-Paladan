@@ -22,7 +22,7 @@ namespace DSALProject
         public void employee_connString()
         {
             employee_sql_connection = new SqlConnection();
-            employee_connectionstring = "Data Source = .\\SQLEXPRESS; Initial Catalog = SampleDatabaseDb; User ID = sa; Password = admin";
+            employee_connectionstring = "Data Source = .\\SQLEXPRESS; Initial Catalog = POSDB; User ID = sa; Password = admin";
             employee_sql_connection = new SqlConnection(employee_connectionstring);
             employee_sql_connection.ConnectionString = employee_connectionstring;
             employee_sql_connection.Open();

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeRegistration.Designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="employee_dbconnection.cs" />
     <Compile Include="Functions.cs" />
     <Compile Include="Lesson13Example1.cs">
@@ -59,6 +65,12 @@
     </Compile>
     <Compile Include="Lesson13Example1_Class.Designer.cs">
       <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSFoodOrderingApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSFoodOrderingApplication.Designer.cs">
+      <DependentUpon>POSFoodOrderingApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="POSOrderingApplication.cs">
       <SubType>Form</SubType>
@@ -220,11 +232,17 @@
     <Compile Include="useraccount_db_connection.cs" />
     <Compile Include="Variables.cs" />
     <Compile Include="Variables1.cs" />
+    <EmbeddedResource Include="EmployeeRegistration.resx">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lesson13Example1.resx">
       <DependentUpon>Lesson13Example1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson13Example1_Class.resx">
       <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSFoodOrderingApplication.resx">
+      <DependentUpon>POSFoodOrderingApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POSOrderingApplication.resx">
       <DependentUpon>POSOrderingApplication.cs</DependentUpon>
