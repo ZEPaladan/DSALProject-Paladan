@@ -1,0 +1,120 @@
+﻿namespace DSALProject
+{
+    partial class EmployeeReports
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.combobox_options = new System.Windows.Forms.ComboBox();
+            this.textbox_options = new System.Windows.Forms.TextBox();
+            this.button_search = new System.Windows.Forms.Button();
+            this.button_back = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.87629F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Select an option:";
+            // 
+            // combobox_options
+            // 
+            this.combobox_options.FormattingEnabled = true;
+            this.combobox_options.Location = new System.Drawing.Point(140, 8);
+            this.combobox_options.Name = "combobox_options";
+            this.combobox_options.Size = new System.Drawing.Size(178, 21);
+            this.combobox_options.TabIndex = 1;
+            // 
+            // textbox_options
+            // 
+            this.textbox_options.Location = new System.Drawing.Point(324, 8);
+            this.textbox_options.Name = "textbox_options";
+            this.textbox_options.Size = new System.Drawing.Size(186, 20);
+            this.textbox_options.TabIndex = 2;
+            // 
+            // button_search
+            // 
+            this.button_search.Location = new System.Drawing.Point(516, 6);
+            this.button_search.Name = "button_search";
+            this.button_search.Size = new System.Drawing.Size(96, 23);
+            this.button_search.TabIndex = 3;
+            this.button_search.Text = "SEARCH";
+            this.button_search.UseVisualStyleBackColor = true;
+            // 
+            // button_back
+            // 
+            this.button_back.Location = new System.Drawing.Point(618, 6);
+            this.button_back.Name = "button_back";
+            this.button_back.Size = new System.Drawing.Size(96, 23);
+            this.button_back.TabIndex = 4;
+            this.button_back.Text = "BACK";
+            this.button_back.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 44);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(857, 493);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // EmployeeReports
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(885, 549);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button_back);
+            this.Controls.Add(this.button_search);
+            this.Controls.Add(this.textbox_options);
+            this.Controls.Add(this.combobox_options);
+            this.Controls.Add(this.label1);
+            this.Name = "EmployeeReports";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "EmployeeReports";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox combobox_options;
+        private System.Windows.Forms.TextBox textbox_options;
+        private System.Windows.Forms.Button button_search;
+        private System.Windows.Forms.Button button_back;
+        private System.Windows.Forms.DataGridView dataGridView1;
+    }
+}

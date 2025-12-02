@@ -52,6 +52,12 @@
     <Compile Include="EmployeeRegistration.Designer.cs">
       <DependentUpon>EmployeeRegistration.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeReports.Designer.cs">
+      <DependentUpon>EmployeeReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="employee_dbconnection.cs" />
     <Compile Include="Functions.cs" />
     <Compile Include="Lesson13Example1.cs">
@@ -65,6 +71,12 @@
     </Compile>
     <Compile Include="Lesson13Example1_Class.Designer.cs">
       <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayrollDatabase.Designer.cs">
+      <DependentUpon>PayrollDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="POSFoodOrderingApplication.cs">
       <SubType>Form</SubType>
@@ -229,17 +241,29 @@
     <Compile Include="scratch.Designer.cs">
       <DependentUpon>scratch.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="useraccount_db_connection.cs" />
     <Compile Include="Variables.cs" />
     <Compile Include="Variables1.cs" />
     <EmbeddedResource Include="EmployeeRegistration.resx">
       <DependentUpon>EmployeeRegistration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReports.resx">
+      <DependentUpon>EmployeeReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lesson13Example1.resx">
       <DependentUpon>Lesson13Example1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lesson13Example1_Class.resx">
       <DependentUpon>Lesson13Example1_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayrollDatabase.resx">
+      <DependentUpon>PayrollDatabase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POSFoodOrderingApplication.resx">
       <DependentUpon>POSFoodOrderingApplication.cs</DependentUpon>
@@ -328,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="scratch.resx">
       <DependentUpon>scratch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
