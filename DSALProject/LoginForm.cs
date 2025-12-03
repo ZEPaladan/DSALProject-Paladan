@@ -23,6 +23,7 @@ namespace DSALProject
 
         private void button_login_Click(object sender, EventArgs e)
         {
+
             try
             {
                 login_db_connect.login_sql = "SELECT pos_empRegTbl.emp_id, emp_fname, emp_surname, username, password, account_type, pos_terminal_no " +
@@ -48,17 +49,40 @@ namespace DSALProject
                             case "Administrator":
                                 MessageBox.Show("Access granted");
                                 myform = new MainForm();
+                                ((MainForm)myform).EmployeeID = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
+                                ((MainForm)myform).EmployeeName =
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"].ToString() + " " +
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"].ToString();
+                                ((MainForm)myform).TerminalNo =
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
+                                ((MainForm)myform).LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                                 break;
 
                             case "Cashier1":
                                 MessageBox.Show("Access granted");
                                 myform = new POSFoodOrderingApplication();
+                                ((MainForm)myform).EmployeeID = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
+                                ((MainForm)myform).EmployeeName =
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"].ToString() + " " +
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"].ToString();
+                                ((MainForm)myform).TerminalNo =
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
+                                ((MainForm)myform).LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                                 break;
+                                
 
                             case "Cashier2":
                                 MessageBox.Show("Access granted");
                                 myform = new POSOrderingApplication();
                                 // Optional: set labels for terminal, employee info
+                                ((POSOrderingApplication)myform).EmployeeID = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
+                                ((POSOrderingApplication)myform).EmployeeName =
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"].ToString() + " " +
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"].ToString();
+                                ((POSOrderingApplication)myform).TerminalNo =
+                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
+                                ((POSOrderingApplication)myform).LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
                                 break;
 
                             case "HR Staff":

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace DSALProject
@@ -17,12 +18,19 @@ namespace DSALProject
         pos_dbconnection posdb_connect = new pos_dbconnection();
         Variables1 vars = new Variables1();
         Price_Item_Value price_item_value = new Price_Item_Value();
+        useraccount_db_connection useraccount_Db_Connection = new useraccount_db_connection();
         private Image pic;
+
+        public string EmployeeID { get; set; }
+        public string EmployeeName { get; set; }
+        public string TerminalNo { get; set; }
+        public string LoginDate { get; set; }
 
         public POSOrderingApplication()
         {
             InitializeComponent();
             posdb_connect = new pos_dbconnection(); // fixed: use class-level instance
+            
         }
 
         private void POSOrderingApplication_Load(object sender, EventArgs e)
@@ -91,6 +99,18 @@ namespace DSALProject
             combobox_posidno.Items.Add("1");
             combobox_posidno.Items.Add("2");
             combobox_posidno.Items.Add("3");
+
+            textbox_employeeid.Text = EmployeeID;
+            textbox_employeename.Text = EmployeeName;
+            textbox_pcterminalno.Text = TerminalNo;
+            if (!string.IsNullOrEmpty(LoginDate))
+                dateTimePicker1.Value = DateTime.Parse(LoginDate);
+            else
+                dateTimePicker1.Value = DateTime.Now;
+
+
+
+
         }
         private void quantity_function()
         {

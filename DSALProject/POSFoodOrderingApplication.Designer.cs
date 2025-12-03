@@ -157,6 +157,14 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textbox_pcterminalno = new System.Windows.Forms.TextBox();
+            this.textbox_employeename = new System.Windows.Forms.TextBox();
+            this.textbox_employeeid = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).BeginInit();
@@ -229,7 +237,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 40);
             this.button6.TabIndex = 18;
-            this.button6.Text = "ADD TO RECEIPT";
+            this.button6.Text = "SUBMIT";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -685,6 +693,14 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.textbox_pcterminalno);
+            this.groupBox8.Controls.Add(this.textbox_employeename);
+            this.groupBox8.Controls.Add(this.textbox_employeeid);
+            this.groupBox8.Controls.Add(this.dateTimePicker1);
+            this.groupBox8.Controls.Add(this.label55);
+            this.groupBox8.Controls.Add(this.label54);
+            this.groupBox8.Controls.Add(this.label53);
+            this.groupBox8.Controls.Add(this.label30);
             this.groupBox8.Controls.Add(this.label16);
             this.groupBox8.Controls.Add(this.label17);
             this.groupBox8.Controls.Add(this.label18);
@@ -1492,6 +1508,75 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // textbox_pcterminalno
+            // 
+            this.textbox_pcterminalno.Location = new System.Drawing.Point(530, 721);
+            this.textbox_pcterminalno.Name = "textbox_pcterminalno";
+            this.textbox_pcterminalno.Size = new System.Drawing.Size(111, 20);
+            this.textbox_pcterminalno.TabIndex = 107;
+            // 
+            // textbox_employeename
+            // 
+            this.textbox_employeename.Location = new System.Drawing.Point(336, 721);
+            this.textbox_employeename.Name = "textbox_employeename";
+            this.textbox_employeename.Size = new System.Drawing.Size(188, 20);
+            this.textbox_employeename.TabIndex = 106;
+            // 
+            // textbox_employeeid
+            // 
+            this.textbox_employeeid.Location = new System.Drawing.Point(219, 721);
+            this.textbox_employeeid.Name = "textbox_employeeid";
+            this.textbox_employeeid.Size = new System.Drawing.Size(111, 20);
+            this.textbox_employeeid.TabIndex = 105;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "MM/DD/YYYY";
+            this.dateTimePicker1.Location = new System.Drawing.Point(2, 721);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(211, 20);
+            this.dateTimePicker1.TabIndex = 104;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.164948F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(527, 700);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(103, 13);
+            this.label55.TabIndex = 103;
+            this.label55.Text = "PC Terminal No.:";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.164948F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(333, 700);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(101, 13);
+            this.label54.TabIndex = 102;
+            this.label54.Text = "Employee Name:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.164948F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(216, 700);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(82, 13);
+            this.label53.TabIndex = 101;
+            this.label53.Text = "Employee ID:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.164948F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(3, 700);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(38, 13);
+            this.label30.TabIndex = 100;
+            this.label30.Text = "Date:";
+            // 
             // POSFoodOrderingApplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1675,5 +1760,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textbox_pcterminalno;
+        private System.Windows.Forms.TextBox textbox_employeename;
+        private System.Windows.Forms.TextBox textbox_employeeid;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label30;
     }
 }

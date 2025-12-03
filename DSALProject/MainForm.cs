@@ -12,6 +12,10 @@ namespace DSALProject
 {
     public partial class MainForm : Form
     {
+        public string EmployeeID { get; set; }
+        public string EmployeeName { get; set; }
+        public string TerminalNo { get; set; }
+        public string LoginDate { get; set; }
         public MainForm()
         {
             InitializeComponent();
@@ -25,7 +29,7 @@ namespace DSALProject
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void pOSAdminToolStripMenuItem_Click(object sender, EventArgs e)
@@ -39,13 +43,25 @@ namespace DSALProject
         {
             POSFoodOrderingApplication foodOrdering = new POSFoodOrderingApplication();
             foodOrdering.MdiParent = this;
+            foodOrdering.EmployeeID = this.EmployeeID;
+            foodOrdering.EmployeeName = this.EmployeeName;
+            foodOrdering.TerminalNo = this.TerminalNo;
+            foodOrdering.LoginDate = this.LoginDate;
+            foodOrdering.MdiParent = this;
+
+            
+
             foodOrdering.Show();
         }
 
         private void pOSCashierToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            POSFoodOrderingApplication foodOrdering = new POSFoodOrderingApplication();
+            POSOrderingApplication foodOrdering = new POSOrderingApplication();
             foodOrdering.MdiParent = this;
+            foodOrdering.EmployeeID = this.EmployeeID;
+            foodOrdering.EmployeeName = this.EmployeeName;
+            foodOrdering.TerminalNo = this.TerminalNo;
+            foodOrdering.LoginDate = this.LoginDate;
             foodOrdering.Show();
         }
 
@@ -117,5 +133,6 @@ namespace DSALProject
         {
             this.LayoutMdi(MdiLayout.Cascade);
         }
+
     }
 }

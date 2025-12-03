@@ -32,6 +32,11 @@ namespace DSALProject
 
         private int lastCheckedIndex = -1;
 
+        public string EmployeeID { get; set; }
+        public string EmployeeName { get; set; }
+        public string TerminalNo { get; set; }
+        public string LoginDate { get; set; }
+
         // add after private int total_qty = 0;
         private double grandTotalAmount = 0;   // running total that persists after Add-to-Receipt
         private int grandTotalQty = 0;         // running qty that persists after Add-to-Receipt
@@ -127,6 +132,14 @@ namespace DSALProject
             textbox_totalbills.Enabled = false;
             textbox_totalquantity.Enabled = false;
             textbox_change.Enabled = false;
+
+            textbox_employeeid.Text = EmployeeID;
+            textbox_employeename.Text = EmployeeName;
+            textbox_pcterminalno.Text = TerminalNo;
+            if (!string.IsNullOrEmpty(LoginDate))
+                dateTimePicker1.Value = DateTime.Parse(LoginDate);
+            else
+                dateTimePicker1.Value = DateTime.Now;
         }
 
         private void button_search_Click(object sender, EventArgs e)
@@ -560,6 +573,7 @@ namespace DSALProject
                 double change = cash_given - total_amountPaid;
                 textbox_change.Text = change.ToString("n");
 
+                listbox_display.Items.Add("-----------------------------------------------------");
                 listbox_display.Items.Add("Total Bills: " + textbox_totalbills.Text);
                 listbox_display.Items.Add("Cash Given: " + textbox_cashgiven.Text);
                 listbox_display.Items.Add("Change: " + textbox_change.Text);
@@ -634,35 +648,37 @@ namespace DSALProject
         {
             try
             {
-                // if invalid number, treat as zero (but do not clear grand totals)
                 if (!int.TryParse(textbox_quantity.Text, out int qty))
                 {
-                    // set selection quantities to zero for safety (but don't clear grand)
-                    // do not call return; we still want totals updated
                     RefreshTotals();
                     return;
                 }
 
-                // If bundle selected, set bundle quantities
+                double price = 0;
+                double discount = 0;
+
+                // Bundles
                 if (radiobutton_foodbundleA.Checked)
                 {
                     bundleAQuantity = qty;
-                    RefreshTotals();
-                    return;
+                    price = 1000;
+                    discount = 200;
                 }
-
-                if (radiobutton_foodbundleB.Checked)
+                else if (radiobutton_foodbundleB.Checked)
                 {
                     bundleBQuantity = qty;
-                    RefreshTotals();
-                    return;
+                    price = 1299;
+                    discount = 194.85;
                 }
-
-                // If an individual item is active, update its quantity
-                if (lastCheckedIndex >= 0)
+                else if (lastCheckedIndex >= 0) // individual item
                 {
                     itemQuantities[lastCheckedIndex] = qty;
+                    price = itemPrices[lastCheckedIndex];
+                    discount = 0; // change if items have discounts
                 }
+
+                // Update discounted amount for current selection
+                textbox_discountedamount.Text = ((price - discount) * qty).ToString("n");
 
                 RefreshTotals();
             }
@@ -783,6 +799,7 @@ namespace DSALProject
                     listbox_display.Items.Add("Bundle A x " + bundleAQuantity + " = " + subtotal.ToString("n"));
                     currentQty += bundleAQuantity;
                     currentAmount += subtotal;
+                    InsertTransaction("Food Bundle A", bundleAQuantity, 1000, 200, "Bundle A");
                 }
 
                 if (bundleBQuantity > 0)
@@ -792,6 +809,7 @@ namespace DSALProject
                     listbox_display.Items.Add("Bundle B x " + bundleBQuantity + " = " + subtotal.ToString("n"));
                     currentQty += bundleBQuantity;
                     currentAmount += subtotal;
+                    InsertTransaction("Food Bundle B", bundleBQuantity, 1299, 194.85, "Bundle B");
                 }
 
                 // individual items
@@ -803,6 +821,7 @@ namespace DSALProject
                         listbox_display.Items.Add(itemNames[i] + " x " + itemQuantities[i] + " = " + subtotal.ToString("n"));
                         currentQty += itemQuantities[i];
                         currentAmount += subtotal;
+                        InsertTransaction(itemNames[i], itemQuantities[i], itemPrices[i], 0, ""); // No discount for individual items
                     }
                 }
 
@@ -816,6 +835,8 @@ namespace DSALProject
                 // update grand totals (accumulate)
                 grandTotalQty += currentQty;
                 grandTotalAmount += currentAmount;
+
+
 
                 // Update displayed totals to reflect accumulated totals (current selection is now added)
                 RefreshTotals();
@@ -840,5 +861,44 @@ namespace DSALProject
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void InsertTransaction(string productName, int quantity, double price, double discount, string discountOption)
+        {
+            try
+            {
+                // Multiply discount by quantity for total discount
+                double totalDiscount = discount * quantity;
+                double discountedAmount = (price * quantity) - totalDiscount;
+
+                // Optional: show total discounted amount in UI
+                textbox_discountedamount.Text = discountedAmount.ToString("n");
+                textbox_discountamount.Text = totalDiscount.ToString("n"); // now shows total discount for all items
+
+                posdb_connect.pos_sql =
+                    "INSERT INTO salesTbl (" +
+                    "product_name, product_quantity_per_transaction, product_price, discount_option, " +
+                    "discount_amount_per_transaction, discounted_amount_per_transaction, summary_total_quantity, " +
+                    "summary_total_disc_given, summary_total_discounted_amount, terminal_no, time_date, emp_id) " +
+                    "VALUES ('" + productName + "', '" +
+                    quantity + "', '" +
+                    price + "', '" +
+                    discountOption + "', '" +
+                    totalDiscount + "', '" +
+                    discountedAmount + "', '" +
+                    textbox_totalquantity.Text + "', '" +
+                    totalDiscount + "', '" +
+                    textbox_totalbills.Text + "', '" +
+                    textbox_pcterminalno.Text + "', '" +
+                    dateTimePicker1.Text + "', '" +
+                    textbox_employeeid.Text + "')";
+
+                posdb_connect.pos_cmd();
+                posdb_connect.pos_sqladapterInsert();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inserting transaction: " + ex.Message);
+            }
+        }
     }
+    
 }
