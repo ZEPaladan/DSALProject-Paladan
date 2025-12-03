@@ -652,5 +652,10 @@ namespace DSALProject
         {
             previewpayslip(sender, e);
         }
+
+        private void listbox_payslipview_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

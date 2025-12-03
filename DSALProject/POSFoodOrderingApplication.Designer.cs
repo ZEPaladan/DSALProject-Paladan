@@ -328,11 +328,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(6, 16);
+            this.label21.Location = new System.Drawing.Point(66, 16);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(503, 26);
+            this.label21.Size = new System.Drawing.Size(361, 26);
             this.label21.TabIndex = 7;
-            this.label21.Text = "PIZZA HURT FOOD ORDERING APPLICATION";
+            this.label21.Text = "FOOD ORDERING APPLICATION";
             // 
             // groupBox5
             // 

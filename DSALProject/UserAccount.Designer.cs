@@ -51,13 +51,13 @@
             this.button_searchforupdate = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.button_update = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_submit = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -195,6 +195,7 @@
             this.textbox_password.Name = "textbox_password";
             this.textbox_password.Size = new System.Drawing.Size(254, 20);
             this.textbox_password.TabIndex = 15;
+            this.textbox_password.TextChanged += new System.EventHandler(this.textbox_password_TextChanged);
             // 
             // combobox_status
             // 
@@ -223,19 +224,21 @@
             // 
             this.button_search.Location = new System.Drawing.Point(388, 38);
             this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(140, 23);
+            this.button_search.Size = new System.Drawing.Size(205, 23);
             this.button_search.TabIndex = 20;
             this.button_search.Text = "SEARCH";
             this.button_search.UseVisualStyleBackColor = true;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
             // button_searchforupdate
             // 
             this.button_searchforupdate.Location = new System.Drawing.Point(388, 75);
             this.button_searchforupdate.Name = "button_searchforupdate";
-            this.button_searchforupdate.Size = new System.Drawing.Size(140, 23);
+            this.button_searchforupdate.Size = new System.Drawing.Size(205, 23);
             this.button_searchforupdate.TabIndex = 21;
             this.button_searchforupdate.Text = "SEARCH FOR UPDATE";
             this.button_searchforupdate.UseVisualStyleBackColor = true;
+            this.button_searchforupdate.Click += new System.EventHandler(this.button_searchforupdate_Click);
             // 
             // button_delete
             // 
@@ -245,6 +248,7 @@
             this.button_delete.TabIndex = 22;
             this.button_delete.Text = "DELETE";
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_update
             // 
@@ -254,15 +258,7 @@
             this.button_update.TabIndex = 23;
             this.button_update.Text = "UPDATE";
             this.button_update.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(671, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 141);
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_submit
             // 
@@ -272,6 +268,7 @@
             this.button_submit.TabIndex = 25;
             this.button_submit.Text = "SUBMIT";
             this.button_submit.UseVisualStyleBackColor = true;
+            this.button_submit.Click += new System.EventHandler(this.button_submit_Click);
             // 
             // button_cancel
             // 
@@ -281,6 +278,7 @@
             this.button_cancel.TabIndex = 26;
             this.button_cancel.Text = "CANCEL";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_exit
             // 
@@ -290,6 +288,7 @@
             this.button_exit.TabIndex = 27;
             this.button_exit.Text = "EXIT";
             this.button_exit.UseVisualStyleBackColor = true;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
             // dataGridView1
             // 
@@ -298,6 +297,16 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(803, 188);
             this.dataGridView1.TabIndex = 28;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(671, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
             // 
             // UserAccount
             // 
@@ -335,8 +344,9 @@
             this.Name = "UserAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserAccount";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.UserAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,13 +374,13 @@
         private System.Windows.Forms.ComboBox combobox_accounttype;
         private System.Windows.Forms.TextBox textbox_confirmpassword;
         private System.Windows.Forms.Button button_search;
-        private System.Windows.Forms.Button button_searchforupdate;
-        private System.Windows.Forms.Button button_delete;
-        private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_submit;
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Button button_searchforupdate;
+        public System.Windows.Forms.Button button_delete;
+        public System.Windows.Forms.Button button_update;
     }
 }

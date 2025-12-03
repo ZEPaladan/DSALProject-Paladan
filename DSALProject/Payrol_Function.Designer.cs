@@ -168,6 +168,7 @@
             this.tableLayoutPanel1.SetRowSpan(this.listbox_payslipview, 5);
             this.listbox_payslipview.Size = new System.Drawing.Size(524, 812);
             this.listbox_payslipview.TabIndex = 42;
+            this.listbox_payslipview.SelectedIndexChanged += new System.EventHandler(this.listbox_payslipview_SelectedIndexChanged);
             // 
             // groupBox9
             // 
@@ -513,7 +514,7 @@
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(5, 97);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(87, 13);
+            this.label34.Size = new System.Drawing.Size(99, 15);
             this.label34.TabIndex = 28;
             this.label34.Text = "Tax Contribution:";
             // 
@@ -531,7 +532,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(5, 46);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(117, 13);
+            this.label23.Size = new System.Drawing.Size(136, 15);
             this.label23.TabIndex = 23;
             this.label23.Text = "PhilHealth Contribution:";
             // 
@@ -549,7 +550,7 @@
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(5, 21);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(90, 13);
+            this.label24.Size = new System.Drawing.Size(103, 15);
             this.label24.TabIndex = 22;
             this.label24.Text = "SSS Contribution:";
             // 
@@ -567,7 +568,7 @@
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(5, 71);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(112, 13);
+            this.label25.Size = new System.Drawing.Size(126, 15);
             this.label25.TabIndex = 24;
             this.label25.Text = "PAGIBIG Contribution:";
             // 
@@ -603,7 +604,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(5, 46);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(114, 13);
+            this.label13.Size = new System.Drawing.Size(123, 15);
             this.label13.TabIndex = 23;
             this.label13.Text = "No. of Hours / Cut Off:";
             // 
@@ -622,7 +623,7 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(5, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 13);
+            this.label14.Size = new System.Drawing.Size(72, 15);
             this.label14.TabIndex = 22;
             this.label14.Text = "Rate / Hour:";
             // 
@@ -641,7 +642,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(5, 71);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 13);
+            this.label12.Size = new System.Drawing.Size(96, 15);
             this.label12.TabIndex = 24;
             this.label12.Text = "Income / Cut Off:";
             // 
@@ -708,7 +709,7 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(5, 121);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(66, 13);
+            this.label29.Size = new System.Drawing.Size(75, 15);
             this.label29.TabIndex = 29;
             this.label29.Text = "Salary Loan:";
             // 
@@ -726,7 +727,7 @@
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(5, 96);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(112, 13);
+            this.label30.Size = new System.Drawing.Size(125, 15);
             this.label30.TabIndex = 28;
             this.label30.Text = "Faculty Savings Loan:";
             // 
@@ -744,7 +745,7 @@
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(5, 146);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 13);
+            this.label31.Size = new System.Drawing.Size(46, 15);
             this.label31.TabIndex = 30;
             this.label31.Text = "Others:";
             // 
@@ -762,7 +763,7 @@
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(5, 46);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(80, 13);
+            this.label26.Size = new System.Drawing.Size(88, 15);
             this.label26.TabIndex = 23;
             this.label26.Text = "PAGIBIG Loan:";
             // 
@@ -780,7 +781,7 @@
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(5, 21);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 13);
+            this.label27.Size = new System.Drawing.Size(65, 15);
             this.label27.TabIndex = 22;
             this.label27.Text = "SSS Loan:";
             // 
@@ -798,7 +799,7 @@
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(5, 71);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(124, 13);
+            this.label28.Size = new System.Drawing.Size(139, 15);
             this.label28.TabIndex = 24;
             this.label28.Text = "Faculty Savings Deposit:";
             // 
@@ -850,7 +851,7 @@
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(5, 46);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(114, 13);
+            this.label18.Size = new System.Drawing.Size(123, 15);
             this.label18.TabIndex = 23;
             this.label18.Text = "No. of Hours / Cut Off:";
             // 
@@ -869,7 +870,7 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(5, 21);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(67, 13);
+            this.label15.Size = new System.Drawing.Size(72, 15);
             this.label15.TabIndex = 22;
             this.label15.Text = "Rate / Hour:";
             // 
@@ -887,7 +888,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(5, 71);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 13);
+            this.label16.Size = new System.Drawing.Size(104, 15);
             this.label16.TabIndex = 24;
             this.label16.Text = "Total Income Pay:";
             // 
@@ -923,7 +924,7 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(5, 46);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(114, 13);
+            this.label19.Size = new System.Drawing.Size(123, 15);
             this.label19.TabIndex = 23;
             this.label19.Text = "No. of Hours / Cut Off:";
             // 
@@ -942,7 +943,7 @@
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(5, 21);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 13);
+            this.label20.Size = new System.Drawing.Size(72, 15);
             this.label20.TabIndex = 22;
             this.label20.Text = "Rate / Hour:";
             // 
@@ -960,7 +961,7 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(5, 71);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(112, 13);
+            this.label21.Size = new System.Drawing.Size(129, 15);
             this.label21.TabIndex = 24;
             this.label21.Text = "Total Honorarium Pay:";
             // 
@@ -998,7 +999,7 @@
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(5, 21);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(86, 13);
+            this.label33.Size = new System.Drawing.Size(96, 15);
             this.label33.TabIndex = 22;
             this.label33.Text = "Total Deduction:";
             // 
@@ -1031,7 +1032,7 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(5, 46);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 13);
+            this.label17.Size = new System.Drawing.Size(85, 15);
             this.label17.TabIndex = 23;
             this.label17.Text = "NET INCOME:";
             // 
@@ -1049,7 +1050,7 @@
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(5, 21);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(93, 13);
+            this.label22.Size = new System.Drawing.Size(104, 15);
             this.label22.TabIndex = 22;
             this.label22.Text = "GROSS INCOME:";
             // 

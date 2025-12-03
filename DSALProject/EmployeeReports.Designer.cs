@@ -41,44 +41,46 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.87629F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.Size = new System.Drawing.Size(134, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Select an option:";
             // 
             // combobox_options
             // 
             this.combobox_options.FormattingEnabled = true;
-            this.combobox_options.Location = new System.Drawing.Point(140, 8);
+            this.combobox_options.Location = new System.Drawing.Point(156, 5);
             this.combobox_options.Name = "combobox_options";
             this.combobox_options.Size = new System.Drawing.Size(178, 21);
             this.combobox_options.TabIndex = 1;
             // 
             // textbox_options
             // 
-            this.textbox_options.Location = new System.Drawing.Point(324, 8);
+            this.textbox_options.Location = new System.Drawing.Point(340, 5);
             this.textbox_options.Name = "textbox_options";
             this.textbox_options.Size = new System.Drawing.Size(186, 20);
             this.textbox_options.TabIndex = 2;
             // 
             // button_search
             // 
-            this.button_search.Location = new System.Drawing.Point(516, 6);
+            this.button_search.Location = new System.Drawing.Point(532, 3);
             this.button_search.Name = "button_search";
             this.button_search.Size = new System.Drawing.Size(96, 23);
             this.button_search.TabIndex = 3;
             this.button_search.Text = "SEARCH";
             this.button_search.UseVisualStyleBackColor = true;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
             // 
             // button_back
             // 
-            this.button_back.Location = new System.Drawing.Point(618, 6);
+            this.button_back.Location = new System.Drawing.Point(634, 3);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(96, 23);
             this.button_back.TabIndex = 4;
             this.button_back.Text = "BACK";
             this.button_back.UseVisualStyleBackColor = true;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // dataGridView1
             // 
@@ -102,6 +104,7 @@
             this.Name = "EmployeeReports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeReports";
+            this.Load += new System.EventHandler(this.EmployeeReports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

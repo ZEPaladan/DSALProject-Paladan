@@ -20,7 +20,7 @@ namespace DSALProject
         public void login_connString()
         {
             // Codes to establish a connection from C# forms to the SQL Server database
-            login_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = SampleDatabaseDb; User ID = sa; Password = admin";
+            login_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = POSDB; User ID = sa; Password = admin";
             login_sql_connection = new SqlConnection(login_connectionString);
             login_sql_connection.Open();
         }
@@ -29,6 +29,13 @@ namespace DSALProject
             // Public function codes that support the MSSQL query
             login_sql_command = new SqlCommand(login_sql, login_sql_connection);
             login_sql_command.CommandType = CommandType.Text;
+        }
+        public void login_sqladapterSelect()
+        {
+            // Public function codes for mediating between C# Language and the MSSQL SELECT command
+            login_sql_dataadapter = new SqlDataAdapter();
+            login_sql_dataadapter.SelectCommand = login_sql_command;
+            login_sql_command.ExecuteNonQuery();
         }
         public void login_sqladapterInsert()
         {

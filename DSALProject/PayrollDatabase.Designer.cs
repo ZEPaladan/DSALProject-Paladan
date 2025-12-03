@@ -31,6 +31,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.listbox_payslipview = new System.Windows.Forms.ListBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.button_edit = new System.Windows.Forms.Button();
+            this.button_save = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.button_previewpaymentdetails = new System.Windows.Forms.Button();
             this.button_printpayslip = new System.Windows.Forms.Button();
@@ -38,8 +41,10 @@
             this.button_new = new System.Windows.Forms.Button();
             this.button_calculate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button_searchedit = new System.Windows.Forms.Button();
+            this.textbox_picpath = new System.Windows.Forms.TextBox();
+            this.button_search = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.datetimepicker_paydate = new System.Windows.Forms.DateTimePicker();
             this.textbox_department = new System.Windows.Forms.TextBox();
             this.textbox_employeestatus = new System.Windows.Forms.TextBox();
@@ -117,12 +122,10 @@
             this.textbox_netincome = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.textbox_grossincome = new System.Windows.Forms.TextBox();
-            this.button_save = new System.Windows.Forms.Button();
-            this.button_edit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -134,6 +137,7 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -172,6 +176,7 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.button_delete);
             this.groupBox9.Controls.Add(this.button_edit);
             this.groupBox9.Controls.Add(this.button_save);
             this.groupBox9.Controls.Add(this.button_exit);
@@ -187,62 +192,101 @@
             this.groupBox9.TabIndex = 41;
             this.groupBox9.TabStop = false;
             // 
+            // button_delete
+            // 
+            this.button_delete.Location = new System.Drawing.Point(717, 19);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(102, 36);
+            this.button_delete.TabIndex = 46;
+            this.button_delete.Text = "DELETE";
+            this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
+            // 
+            // button_edit
+            // 
+            this.button_edit.Location = new System.Drawing.Point(650, 19);
+            this.button_edit.Name = "button_edit";
+            this.button_edit.Size = new System.Drawing.Size(61, 36);
+            this.button_edit.TabIndex = 45;
+            this.button_edit.Text = "EDIT";
+            this.button_edit.UseVisualStyleBackColor = true;
+            this.button_edit.Click += new System.EventHandler(this.button_edit_Click);
+            // 
+            // button_save
+            // 
+            this.button_save.Location = new System.Drawing.Point(583, 19);
+            this.button_save.Name = "button_save";
+            this.button_save.Size = new System.Drawing.Size(61, 36);
+            this.button_save.TabIndex = 44;
+            this.button_save.Text = "SAVE";
+            this.button_save.UseVisualStyleBackColor = true;
+            this.button_save.Click += new System.EventHandler(this.button_save_Click);
+            // 
             // button_exit
             // 
-            this.button_exit.Location = new System.Drawing.Point(819, 19);
+            this.button_exit.Location = new System.Drawing.Point(825, 19);
             this.button_exit.Name = "button_exit";
             this.button_exit.Size = new System.Drawing.Size(102, 36);
             this.button_exit.TabIndex = 43;
             this.button_exit.Text = "EXIT";
             this.button_exit.UseVisualStyleBackColor = true;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
             // button_previewpaymentdetails
             // 
-            this.button_previewpaymentdetails.Location = new System.Drawing.Point(510, 19);
+            this.button_previewpaymentdetails.Location = new System.Drawing.Point(392, 19);
             this.button_previewpaymentdetails.Name = "button_previewpaymentdetails";
-            this.button_previewpaymentdetails.Size = new System.Drawing.Size(171, 36);
+            this.button_previewpaymentdetails.Size = new System.Drawing.Size(185, 36);
             this.button_previewpaymentdetails.TabIndex = 42;
             this.button_previewpaymentdetails.Text = "PREVIEW PAYMENT DETAILS";
             this.button_previewpaymentdetails.UseVisualStyleBackColor = true;
+            this.button_previewpaymentdetails.Click += new System.EventHandler(this.button_previewpaymentdetails_Click);
             // 
             // button_printpayslip
             // 
-            this.button_printpayslip.Location = new System.Drawing.Point(359, 19);
+            this.button_printpayslip.Location = new System.Drawing.Point(277, 19);
             this.button_printpayslip.Name = "button_printpayslip";
-            this.button_printpayslip.Size = new System.Drawing.Size(145, 36);
+            this.button_printpayslip.Size = new System.Drawing.Size(112, 36);
             this.button_printpayslip.TabIndex = 41;
             this.button_printpayslip.Text = "PRINT PAYSLIP";
             this.button_printpayslip.UseVisualStyleBackColor = true;
+            this.button_printpayslip.Click += new System.EventHandler(this.button_printpayslip_Click);
             // 
             // button_cancel
             // 
-            this.button_cancel.Location = new System.Drawing.Point(246, 19);
+            this.button_cancel.Location = new System.Drawing.Point(164, 19);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(107, 36);
             this.button_cancel.TabIndex = 40;
             this.button_cancel.Text = "CANCEL";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_new
             // 
-            this.button_new.Location = new System.Drawing.Point(136, 19);
+            this.button_new.Location = new System.Drawing.Point(99, 19);
             this.button_new.Name = "button_new";
-            this.button_new.Size = new System.Drawing.Size(104, 36);
+            this.button_new.Size = new System.Drawing.Size(59, 36);
             this.button_new.TabIndex = 39;
             this.button_new.Text = "NEW";
             this.button_new.UseVisualStyleBackColor = true;
+            this.button_new.Click += new System.EventHandler(this.button_new_Click);
             // 
             // button_calculate
             // 
-            this.button_calculate.Location = new System.Drawing.Point(5, 19);
+            this.button_calculate.Location = new System.Drawing.Point(3, 19);
             this.button_calculate.Name = "button_calculate";
-            this.button_calculate.Size = new System.Drawing.Size(125, 36);
+            this.button_calculate.Size = new System.Drawing.Size(91, 36);
             this.button_calculate.TabIndex = 38;
             this.button_calculate.Text = "CALCULATE";
             this.button_calculate.UseVisualStyleBackColor = true;
+            this.button_calculate.Click += new System.EventHandler(this.button_calculate_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button_searchedit);
+            this.groupBox1.Controls.Add(this.textbox_picpath);
+            this.groupBox1.Controls.Add(this.button_search);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.datetimepicker_paydate);
@@ -273,6 +317,34 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // button_searchedit
+            // 
+            this.button_searchedit.Location = new System.Drawing.Point(3, 221);
+            this.button_searchedit.Name = "button_searchedit";
+            this.button_searchedit.Size = new System.Drawing.Size(109, 22);
+            this.button_searchedit.TabIndex = 42;
+            this.button_searchedit.Text = "SEARCH-EDIT";
+            this.button_searchedit.UseVisualStyleBackColor = true;
+            this.button_searchedit.Click += new System.EventHandler(this.button_searchedit_Click);
+            // 
+            // textbox_picpath
+            // 
+            this.textbox_picpath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox_picpath.Location = new System.Drawing.Point(739, 115);
+            this.textbox_picpath.Name = "textbox_picpath";
+            this.textbox_picpath.Size = new System.Drawing.Size(138, 20);
+            this.textbox_picpath.TabIndex = 30;
+            // 
+            // button_search
+            // 
+            this.button_search.Location = new System.Drawing.Point(309, 13);
+            this.button_search.Name = "button_search";
+            this.button_search.Size = new System.Drawing.Size(67, 22);
+            this.button_search.TabIndex = 41;
+            this.button_search.Text = "SEARCH";
+            this.button_search.UseVisualStyleBackColor = true;
+            this.button_search.Click += new System.EventHandler(this.button_search_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(739, 161);
@@ -281,16 +353,7 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "BROWSE";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(718, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 142);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // datetimepicker_paydate
             // 
@@ -498,7 +561,7 @@
             // textbox_taxcontribution
             // 
             this.textbox_taxcontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_taxcontribution.Location = new System.Drawing.Point(135, 94);
+            this.textbox_taxcontribution.Location = new System.Drawing.Point(147, 94);
             this.textbox_taxcontribution.Name = "textbox_taxcontribution";
             this.textbox_taxcontribution.Size = new System.Drawing.Size(195, 20);
             this.textbox_taxcontribution.TabIndex = 29;
@@ -516,7 +579,7 @@
             // textbox_pagibigcontribution
             // 
             this.textbox_pagibigcontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_pagibigcontribution.Location = new System.Drawing.Point(135, 68);
+            this.textbox_pagibigcontribution.Location = new System.Drawing.Point(147, 68);
             this.textbox_pagibigcontribution.Name = "textbox_pagibigcontribution";
             this.textbox_pagibigcontribution.Size = new System.Drawing.Size(195, 20);
             this.textbox_pagibigcontribution.TabIndex = 27;
@@ -534,7 +597,7 @@
             // textbox_philhealthcontribution
             // 
             this.textbox_philhealthcontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_philhealthcontribution.Location = new System.Drawing.Point(135, 42);
+            this.textbox_philhealthcontribution.Location = new System.Drawing.Point(147, 42);
             this.textbox_philhealthcontribution.Name = "textbox_philhealthcontribution";
             this.textbox_philhealthcontribution.Size = new System.Drawing.Size(195, 20);
             this.textbox_philhealthcontribution.TabIndex = 26;
@@ -552,7 +615,7 @@
             // textbox_ssscontribution
             // 
             this.textbox_ssscontribution.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_ssscontribution.Location = new System.Drawing.Point(135, 18);
+            this.textbox_ssscontribution.Location = new System.Drawing.Point(147, 18);
             this.textbox_ssscontribution.Name = "textbox_ssscontribution";
             this.textbox_ssscontribution.Size = new System.Drawing.Size(195, 20);
             this.textbox_ssscontribution.TabIndex = 25;
@@ -587,10 +650,11 @@
             // textbox_incomepercutoff
             // 
             this.textbox_incomepercutoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_incomepercutoff.Location = new System.Drawing.Point(125, 68);
+            this.textbox_incomepercutoff.Location = new System.Drawing.Point(134, 68);
             this.textbox_incomepercutoff.Name = "textbox_incomepercutoff";
             this.textbox_incomepercutoff.Size = new System.Drawing.Size(195, 20);
             this.textbox_incomepercutoff.TabIndex = 27;
+            this.textbox_incomepercutoff.TextChanged += new System.EventHandler(this.textbox_incomepercutoff_TextChanged);
             // 
             // label13
             // 
@@ -605,10 +669,11 @@
             // textbox_noofhourspercutoff_basicpay
             // 
             this.textbox_noofhourspercutoff_basicpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_noofhourspercutoff_basicpay.Location = new System.Drawing.Point(125, 42);
+            this.textbox_noofhourspercutoff_basicpay.Location = new System.Drawing.Point(134, 42);
             this.textbox_noofhourspercutoff_basicpay.Name = "textbox_noofhourspercutoff_basicpay";
             this.textbox_noofhourspercutoff_basicpay.Size = new System.Drawing.Size(195, 20);
             this.textbox_noofhourspercutoff_basicpay.TabIndex = 26;
+            this.textbox_noofhourspercutoff_basicpay.TextChanged += new System.EventHandler(this.textbox_noofhourspercutoff_basicpay_TextChanged);
             // 
             // label14
             // 
@@ -623,7 +688,7 @@
             // textbox_rateperhour_basicpay
             // 
             this.textbox_rateperhour_basicpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_rateperhour_basicpay.Location = new System.Drawing.Point(125, 18);
+            this.textbox_rateperhour_basicpay.Location = new System.Drawing.Point(134, 18);
             this.textbox_rateperhour_basicpay.Name = "textbox_rateperhour_basicpay";
             this.textbox_rateperhour_basicpay.Size = new System.Drawing.Size(195, 20);
             this.textbox_rateperhour_basicpay.TabIndex = 25;
@@ -681,15 +746,16 @@
             // 
             this.combobox_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combobox_others.FormattingEnabled = true;
-            this.combobox_others.Location = new System.Drawing.Point(135, 143);
+            this.combobox_others.Location = new System.Drawing.Point(146, 143);
             this.combobox_others.Name = "combobox_others";
             this.combobox_others.Size = new System.Drawing.Size(195, 21);
             this.combobox_others.TabIndex = 34;
+            this.combobox_others.SelectedIndexChanged += new System.EventHandler(this.combobox_others_SelectedIndexChanged);
             // 
             // textbox_others
             // 
             this.textbox_others.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_others.Location = new System.Drawing.Point(135, 170);
+            this.textbox_others.Location = new System.Drawing.Point(146, 170);
             this.textbox_others.Name = "textbox_others";
             this.textbox_others.Size = new System.Drawing.Size(195, 20);
             this.textbox_others.TabIndex = 33;
@@ -707,7 +773,7 @@
             // textbox_salaryloan
             // 
             this.textbox_salaryloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_salaryloan.Location = new System.Drawing.Point(135, 117);
+            this.textbox_salaryloan.Location = new System.Drawing.Point(146, 117);
             this.textbox_salaryloan.Name = "textbox_salaryloan";
             this.textbox_salaryloan.Size = new System.Drawing.Size(195, 20);
             this.textbox_salaryloan.TabIndex = 32;
@@ -725,7 +791,7 @@
             // textbox_facultysavingsloan
             // 
             this.textbox_facultysavingsloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_facultysavingsloan.Location = new System.Drawing.Point(135, 93);
+            this.textbox_facultysavingsloan.Location = new System.Drawing.Point(146, 93);
             this.textbox_facultysavingsloan.Name = "textbox_facultysavingsloan";
             this.textbox_facultysavingsloan.Size = new System.Drawing.Size(195, 20);
             this.textbox_facultysavingsloan.TabIndex = 31;
@@ -743,7 +809,7 @@
             // textbox_facultysavingsdeposit
             // 
             this.textbox_facultysavingsdeposit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_facultysavingsdeposit.Location = new System.Drawing.Point(135, 68);
+            this.textbox_facultysavingsdeposit.Location = new System.Drawing.Point(146, 68);
             this.textbox_facultysavingsdeposit.Name = "textbox_facultysavingsdeposit";
             this.textbox_facultysavingsdeposit.Size = new System.Drawing.Size(195, 20);
             this.textbox_facultysavingsdeposit.TabIndex = 27;
@@ -761,7 +827,7 @@
             // textbox_pagibigloan
             // 
             this.textbox_pagibigloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_pagibigloan.Location = new System.Drawing.Point(135, 42);
+            this.textbox_pagibigloan.Location = new System.Drawing.Point(146, 42);
             this.textbox_pagibigloan.Name = "textbox_pagibigloan";
             this.textbox_pagibigloan.Size = new System.Drawing.Size(195, 20);
             this.textbox_pagibigloan.TabIndex = 26;
@@ -779,7 +845,7 @@
             // textbox_sssloan
             // 
             this.textbox_sssloan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_sssloan.Location = new System.Drawing.Point(135, 18);
+            this.textbox_sssloan.Location = new System.Drawing.Point(146, 18);
             this.textbox_sssloan.Name = "textbox_sssloan";
             this.textbox_sssloan.Size = new System.Drawing.Size(195, 20);
             this.textbox_sssloan.TabIndex = 25;
@@ -830,10 +896,11 @@
             // textbox_totalincomepay
             // 
             this.textbox_totalincomepay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_totalincomepay.Location = new System.Drawing.Point(125, 68);
+            this.textbox_totalincomepay.Location = new System.Drawing.Point(134, 68);
             this.textbox_totalincomepay.Name = "textbox_totalincomepay";
             this.textbox_totalincomepay.Size = new System.Drawing.Size(195, 20);
             this.textbox_totalincomepay.TabIndex = 27;
+            this.textbox_totalincomepay.TextChanged += new System.EventHandler(this.textbox_totalincomepay_TextChanged);
             // 
             // label18
             // 
@@ -848,10 +915,11 @@
             // textbox_noofhourspercutoff_otherincome
             // 
             this.textbox_noofhourspercutoff_otherincome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_noofhourspercutoff_otherincome.Location = new System.Drawing.Point(125, 42);
+            this.textbox_noofhourspercutoff_otherincome.Location = new System.Drawing.Point(134, 42);
             this.textbox_noofhourspercutoff_otherincome.Name = "textbox_noofhourspercutoff_otherincome";
             this.textbox_noofhourspercutoff_otherincome.Size = new System.Drawing.Size(195, 20);
             this.textbox_noofhourspercutoff_otherincome.TabIndex = 26;
+            this.textbox_noofhourspercutoff_otherincome.TextChanged += new System.EventHandler(this.textbox_noofhourspercutoff_otherincome_TextChanged);
             // 
             // label15
             // 
@@ -866,7 +934,7 @@
             // textbox_rateperhour_otherincome
             // 
             this.textbox_rateperhour_otherincome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_rateperhour_otherincome.Location = new System.Drawing.Point(125, 18);
+            this.textbox_rateperhour_otherincome.Location = new System.Drawing.Point(134, 18);
             this.textbox_rateperhour_otherincome.Name = "textbox_rateperhour_otherincome";
             this.textbox_rateperhour_otherincome.Size = new System.Drawing.Size(195, 20);
             this.textbox_rateperhour_otherincome.TabIndex = 25;
@@ -901,10 +969,11 @@
             // textbox_totalhonorariumpay
             // 
             this.textbox_totalhonorariumpay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_totalhonorariumpay.Location = new System.Drawing.Point(125, 68);
+            this.textbox_totalhonorariumpay.Location = new System.Drawing.Point(134, 68);
             this.textbox_totalhonorariumpay.Name = "textbox_totalhonorariumpay";
             this.textbox_totalhonorariumpay.Size = new System.Drawing.Size(195, 20);
             this.textbox_totalhonorariumpay.TabIndex = 27;
+            this.textbox_totalhonorariumpay.TextChanged += new System.EventHandler(this.textbox_totalhonorariumpay_TextChanged);
             // 
             // label19
             // 
@@ -919,10 +988,11 @@
             // textbox_noofhourspercutoff_honorarium
             // 
             this.textbox_noofhourspercutoff_honorarium.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_noofhourspercutoff_honorarium.Location = new System.Drawing.Point(125, 42);
+            this.textbox_noofhourspercutoff_honorarium.Location = new System.Drawing.Point(134, 42);
             this.textbox_noofhourspercutoff_honorarium.Name = "textbox_noofhourspercutoff_honorarium";
             this.textbox_noofhourspercutoff_honorarium.Size = new System.Drawing.Size(195, 20);
             this.textbox_noofhourspercutoff_honorarium.TabIndex = 26;
+            this.textbox_noofhourspercutoff_honorarium.TextChanged += new System.EventHandler(this.textbox_noofhourspercutoff_honorarium_TextChanged);
             // 
             // label20
             // 
@@ -937,7 +1007,7 @@
             // textbox_rateperhour_honorarium
             // 
             this.textbox_rateperhour_honorarium.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_rateperhour_honorarium.Location = new System.Drawing.Point(125, 18);
+            this.textbox_rateperhour_honorarium.Location = new System.Drawing.Point(134, 18);
             this.textbox_rateperhour_honorarium.Name = "textbox_rateperhour_honorarium";
             this.textbox_rateperhour_honorarium.Size = new System.Drawing.Size(195, 20);
             this.textbox_rateperhour_honorarium.TabIndex = 25;
@@ -956,7 +1026,7 @@
             // 
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 537F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 390F));
             this.tableLayoutPanel5.Controls.Add(this.groupBox8, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.groupBox5, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1026,7 +1096,7 @@
             // textbox_netincome
             // 
             this.textbox_netincome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_netincome.Location = new System.Drawing.Point(125, 42);
+            this.textbox_netincome.Location = new System.Drawing.Point(134, 42);
             this.textbox_netincome.Name = "textbox_netincome";
             this.textbox_netincome.Size = new System.Drawing.Size(195, 20);
             this.textbox_netincome.TabIndex = 26;
@@ -1044,28 +1114,21 @@
             // textbox_grossincome
             // 
             this.textbox_grossincome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox_grossincome.Location = new System.Drawing.Point(125, 18);
+            this.textbox_grossincome.Location = new System.Drawing.Point(134, 18);
             this.textbox_grossincome.Name = "textbox_grossincome";
             this.textbox_grossincome.Size = new System.Drawing.Size(195, 20);
             this.textbox_grossincome.TabIndex = 25;
+            this.textbox_grossincome.TextChanged += new System.EventHandler(this.textbox_grossincome_TextChanged);
             // 
-            // button_save
+            // pictureBox1
             // 
-            this.button_save.Location = new System.Drawing.Point(685, 19);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(61, 36);
-            this.button_save.TabIndex = 44;
-            this.button_save.Text = "SAVE";
-            this.button_save.UseVisualStyleBackColor = true;
-            // 
-            // button_edit
-            // 
-            this.button_edit.Location = new System.Drawing.Point(752, 19);
-            this.button_edit.Name = "button_edit";
-            this.button_edit.Size = new System.Drawing.Size(61, 36);
-            this.button_edit.TabIndex = 45;
-            this.button_edit.Text = "EDIT";
-            this.button_edit.UseVisualStyleBackColor = true;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(718, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 142);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // PayrollDatabase
             // 
@@ -1077,11 +1140,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PayrollDatabase";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PayrollDatabase_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
@@ -1100,6 +1163,7 @@
             this.groupBox8.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1195,7 +1259,11 @@
         private System.Windows.Forms.TextBox textbox_netincome;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textbox_grossincome;
-        private System.Windows.Forms.Button button_edit;
         private System.Windows.Forms.Button button_save;
+        private System.Windows.Forms.Button button_search;
+        private System.Windows.Forms.TextBox textbox_picpath;
+        public System.Windows.Forms.Button button_searchedit;
+        public System.Windows.Forms.Button button_edit;
+        public System.Windows.Forms.Button button_delete;
     }
 }

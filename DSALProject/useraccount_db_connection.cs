@@ -20,8 +20,8 @@ namespace DSALProject
 
         public void useraccount_connString()
         {
-            // Codes to establish connection from C# forms to the SQL Server database
-            useraccount_connectionString = "Data Source=WYNE; Initial Catalog=POSDB; User ID=sa; Password=anabelladoctor";
+            useraccount_connectionString = "Data Source = .\\SQLEXPRESS; Initial Catalog = POSDB; User ID = sa; Password = admin";
+            //useraccount_connectionString = "Data Source = C203-33; Initial Catalog = POSDB; user id = SA; password = B1Admin123@";
             useraccount_sql_connection = new SqlConnection(useraccount_connectionString);
             useraccount_sql_connection.ConnectionString = useraccount_connectionString;
             useraccount_sql_connection.Open();
