@@ -29,7 +29,8 @@ namespace DSALProject
             try
             {
                 //pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
-                pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+                //pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+                pic = Resources.blank_image;
 
                 pictureBox1.Image = pic;
                 pictureBox2.Image = pic;
@@ -94,7 +95,8 @@ namespace DSALProject
             try
             {
                 //pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
-                pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+                //pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+                pic = Resources.blank_image;
 
                 textbox_picpath1.Clear();
                 textbox_picpath2.Clear();

@@ -50,8 +50,8 @@ namespace DSALProject
         private void POSFoodOrderingApplication_Load(object sender, EventArgs e)
         {
             //pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
-            pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
-            //pic = Properties.Resources.blank_image;
+            //pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+            pic = Properties.Resources.blank_image;
 
             pictureBox1.Image = pic;
             pictureBox2.Image = pic;

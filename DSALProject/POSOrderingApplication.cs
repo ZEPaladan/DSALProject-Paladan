@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DSALProject.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,8 +47,8 @@ namespace DSALProject
 
 
             //pic = Image.FromFile("C:\\Users\\C203-33\\source\\repos\\ZEPaladan\\DSALProject-Paladan\\DSALProject\\Resources\\blank_image.jpg");
-            pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
-
+            //pic = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+            pic = Resources.blank_image;
             pictureBox1.Image = pic;
             pictureBox2.Image = pic;
             pictureBox3.Image = pic;

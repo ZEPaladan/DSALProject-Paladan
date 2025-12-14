@@ -1,19 +1,21 @@
-﻿using System;
+﻿using DSALProject.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace DSALProject
 {
     public partial class EmployeeRegistration : Form
     {
         string picpath;
+        Image pic;
         employee_dbconnection dbcon = new employee_dbconnection();
         public EmployeeRegistration()
         {
@@ -26,7 +28,7 @@ namespace DSALProject
             try
             {
                 textbox_picpath.Hide();
-                pictureBox1.Image = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+                pic = Resources.blank_image;
                 dbcon.employee_sql = "SELECT * FROM pos_empRegTbl";
                 dbcon.employee_cmd();
                 dbcon.employee_sqladapterSelect();
@@ -93,6 +95,7 @@ namespace DSALProject
 
             textbox_seniorhighschool.Clear();
             textbox_shsaddress.Clear();
+            textbox_track.Clear();
             datetimepicker_shsyeargraduated.Value = DateTime.Now;
             textbox_shsawards.Clear();
 
@@ -109,7 +112,7 @@ namespace DSALProject
             textbox_department.Clear();
             textbox_noofdependents.Clear();
 
-            pictureBox1.Image = Image.FromFile("C:\\Users\\NewPC\\source\\repos\\DSALProject\\DSALProject\\Resources\\blank_image.jpg");
+            pic = Resources.blank_image;
         }
 
         private void button_browse_Click(object sender, EventArgs e)

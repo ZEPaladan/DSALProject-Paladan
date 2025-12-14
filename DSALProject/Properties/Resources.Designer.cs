@@ -153,6 +153,16 @@ namespace DSALProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blank_image {
+            get {
+                object obj = ResourceManager.GetObject("blank_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Breakfast {
             get {
                 object obj = ResourceManager.GetObject("Breakfast", resourceCulture);

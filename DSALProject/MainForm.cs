@@ -24,7 +24,9 @@ namespace DSALProject
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            LoginForm login = new LoginForm();
+            login.Show();
+            this.Close();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
