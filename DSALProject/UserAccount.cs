@@ -58,8 +58,11 @@ namespace DSALProject
 
                 combobox_accounttype.Items.Clear();
                 combobox_accounttype.Items.Add("Administrator");
-                combobox_accounttype.Items.Add("User");
-                combobox_accounttype.Items.Add("Manager");
+                combobox_accounttype.Items.Add("Cashier1");
+                    combobox_accounttype.Items.Add("Cashier2");
+                combobox_accounttype.Items.Add("HR Staff");
+                combobox_accounttype.Items.Add("Accounting Staff");
+                combobox_accounttype.Items.Add("IT Staff");
 
                 // Optional: set default selection
                 combobox_status.SelectedIndex = -1;       // nothing selected by default

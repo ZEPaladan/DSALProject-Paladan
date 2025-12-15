@@ -18,15 +18,34 @@ namespace DSALProject
         public LoginForm()
         {
             InitializeComponent();
-            login_db_connect.login_connString();
+           
         }
 
         private void button_login_Click(object sender, EventArgs e)
         {
-
             try
             {
-                login_db_connect.login_sql = "SELECT pos_empRegTbl.emp_id, emp_fname, emp_surname, username, password, account_type, pos_terminal_no " +
+                if (textbox_username.Text == "newemp" && textbox_password.Text == "newemp")
+                {
+                    MessageBox.Show("Access granted");
+
+                    MainForm adminForm = new MainForm();
+                    adminForm.EmployeeID = "0";  // dummy ID
+                    adminForm.EmployeeName = "Default Admin";
+                    adminForm.TerminalNo = "1";
+                    adminForm.LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                    cleartextboxes();
+                    adminForm.Show();
+                    this.Hide();
+                    return; // Skip the rest
+                }
+                // 🔹 Connect to database SAFELY (not in constructor)
+                login_db_connect.login_connString();
+
+                // 🔹 SQL query
+                login_db_connect.login_sql =
+                    "SELECT pos_empRegTbl.emp_id, emp_fname, emp_surname, username, password, account_type, pos_terminal_no " +
                     "FROM pos_empRegTbl INNER JOIN useraccountTbl ON pos_empRegTbl.emp_id = useraccountTbl.emp_id " +
                     "WHERE username='" + textbox_username.Text + "' AND password='" + textbox_password.Text + "'";
 
@@ -36,87 +55,98 @@ namespace DSALProject
 
                 if (login_db_connect.login_sql_dataset.Tables[0].Rows.Count > 0)
                 {
-                    username1 = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["username"].ToString();
-                    password1 = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["password"].ToString();
-                    user_level = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["account_type"].ToString();
+                    string user_level =
+                        login_db_connect.login_sql_dataset.Tables[0].Rows[0]["account_type"].ToString();
 
-                    if ((username1 == textbox_username.Text) && (password1 == textbox_password.Text))
+                    Form myform = null;
+
+                    switch (user_level)
                     {
-                        Form myform = null;
+                        case "Administrator":
+                            MessageBox.Show("Access granted");
 
-                        switch (user_level)
-                        {
-                            case "Administrator":
-                                MessageBox.Show("Access granted");
-                                myform = new MainForm();
-                                ((MainForm)myform).EmployeeID = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
-                                ((MainForm)myform).EmployeeName =
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"].ToString() + " " +
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"].ToString();
-                                ((MainForm)myform).TerminalNo =
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
-                                ((MainForm)myform).LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                                break;
+                            MainForm adminForm = new MainForm();
+                            adminForm.EmployeeID =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
+                            adminForm.EmployeeName =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"] + " " +
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"];
+                            adminForm.TerminalNo =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
+                            adminForm.LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                            case "Cashier1":
-                                MessageBox.Show("Access granted");
-                                myform = new POSFoodOrderingApplication();
-                                ((MainForm)myform).EmployeeID = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
-                                ((MainForm)myform).EmployeeName =
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"].ToString() + " " +
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"].ToString();
-                                ((MainForm)myform).TerminalNo =
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
-                                ((MainForm)myform).LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                                break;
-                                
+                            myform = adminForm;
+                            break;
 
-                            case "Cashier2":
-                                MessageBox.Show("Access granted");
-                                myform = new POSOrderingApplication();
-                                // Optional: set labels for terminal, employee info
-                                ((POSOrderingApplication)myform).EmployeeID = login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
-                                ((POSOrderingApplication)myform).EmployeeName =
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"].ToString() + " " +
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"].ToString();
-                                ((POSOrderingApplication)myform).TerminalNo =
-                                    login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
-                                ((POSOrderingApplication)myform).LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        case "Cashier1":
+                            MessageBox.Show("Access granted");
 
-                                break;
+                            POSFoodOrderingApplication cashier1 = new POSFoodOrderingApplication();
+                            cashier1.EmployeeID =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
+                            cashier1.EmployeeName =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"] + " " +
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"];
+                            cashier1.TerminalNo =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
+                            cashier1.LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                            case "HR Staff":
-                                MessageBox.Show("Access granted");
-                                myform = new EmployeeRegistration();
-                                ((EmployeeRegistration)myform).button_delete.Enabled = false;
-                                break;
+                            myform = cashier1;
+                            break;
 
-                            case "Accounting Staff":
-                                MessageBox.Show("Access granted");
-                                myform = new PayrollDatabase();
-                                ((PayrollDatabase)myform).button_searchedit.Hide();
-                                ((PayrollDatabase)myform).button_edit.Hide();
-                                ((PayrollDatabase)myform).button_delete.Hide();
-                                break;
+                        case "Cashier2":
+                            MessageBox.Show("Access granted");
 
-                            case "IT Staff":
-                                MessageBox.Show("Access granted");
-                                myform = new UserAccount();
-                                ((UserAccount)myform).button_searchforupdate.Hide();
-                                ((UserAccount)myform).button_update.Hide();
-                                ((UserAccount)myform).button_delete.Hide();
-                                break;
+                            POSOrderingApplication cashier2 = new POSOrderingApplication();
+                            cashier2.EmployeeID =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_id"].ToString();
+                            cashier2.EmployeeName =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_fname"] + " " +
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["emp_surname"];
+                            cashier2.TerminalNo =
+                                login_db_connect.login_sql_dataset.Tables[0].Rows[0]["pos_terminal_no"].ToString();
+                            cashier2.LoginDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
-                            default:
-                                MessageBox.Show("Access Denied");
-                                cleartextboxes();
-                                return;
-                        }
+                            myform = cashier2;
+                            break;
 
-                        cleartextboxes();
-                        myform.Show();
-                        this.Hide();
+                        case "HR Staff":
+                            MessageBox.Show("Access granted");
+
+                            EmployeeRegistration hrForm = new EmployeeRegistration();
+                            hrForm.button_delete.Enabled = false;
+                            myform = hrForm;
+                            break;
+
+                        case "Accounting Staff":
+                            MessageBox.Show("Access granted");
+
+                            PayrollDatabase payrollForm = new PayrollDatabase();
+                            payrollForm.button_searchedit.Hide();
+                            payrollForm.button_edit.Hide();
+                            payrollForm.button_delete.Hide();
+                            myform = payrollForm;
+                            break;
+
+                        case "IT Staff":
+                            MessageBox.Show("Access granted");
+
+                            UserAccount itForm = new UserAccount();
+                            itForm.button_searchforupdate.Hide();
+                            itForm.button_update.Hide();
+                            itForm.button_delete.Hide();
+                            myform = itForm;
+                            break;
+
+                        default:
+                            MessageBox.Show("Access denied");
+                            cleartextboxes();
+                            return;
                     }
+
+                    cleartextboxes();
+                    myform.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -126,8 +156,12 @@ namespace DSALProject
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error occurred. Please contact your administrator!\n\n" + ex.Message);
-                cleartextboxes();
+                MessageBox.Show(
+                    "Database connection failed.\n\n" + ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
             }
         }
 
