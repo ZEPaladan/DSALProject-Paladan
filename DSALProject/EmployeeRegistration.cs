@@ -112,7 +112,7 @@ namespace DSALProject
             textbox_department.Clear();
             textbox_noofdependents.Clear();
 
-            pic = Resources.blank_image;
+            pictureBox1.Image = Resources.blank_image;
         }
 
         private void button_browse_Click(object sender, EventArgs e)
